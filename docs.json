@@ -7,7 +7,7 @@
     "light": "#E8E8E8", 
     "dark": "#FFFFFF"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "https://beatsquare.com/favicon/favicon.ico?v=20241220001",
   "navigation": {
     "tabs": [
       {
@@ -29,7 +29,7 @@
               "core-features/creating-podcasts",
               "core-features/creating-newsletters",
               "core-features/creating-whatsapp-messages",
-              "core-features/adding-manual-articles"
+              "core-features/manually-adding-articles"
             ]
           },
           {
