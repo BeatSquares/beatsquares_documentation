@@ -1,44 +1,96 @@
-# Mintlify Starter Kit
+# Beatsquares Documentation
 
-Use the starter kit to get your docs deployed and ready to customize.
+Official documentation for [Beatsquares](https://www.beatsquares.com) - the platform for creating, organizing, and sharing content through Squares, Podcasts, Newsletters, and WhatsApp messages.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## 📚 Documentation Overview
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+This repository contains comprehensive documentation covering:
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+- **Getting Started** - Account setup, dashboard overview, and understanding Squares
+- **Core Features** - Creating and managing Squares, Podcasts, Newsletters, and WhatsApp messages
+- **Changelog** - Product updates with RSS feed subscription
+- **Troubleshooting** - Common errors and frequently asked questions
 
-## Development
+## 🚀 Features
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+- **RSS-Enabled Changelog** - Subscribe to product updates automatically
+- **Modern Design** - Clean, minimalist interface matching Beatsquares branding
+- **Responsive Layout** - Optimized for all devices and screen sizes
+- **Search & Navigation** - Easy-to-use search and organized navigation structure
 
-```
+## 🛠️ Development
+
+### Local Development
+
+Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally:
+
+```bash
 npm i -g mint
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+Run the development server at the root of your documentation:
 
-```
+```bash
 mint dev
 ```
 
 View your local preview at `http://localhost:3000`.
 
-## Publishing changes
+### Project Structure
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+```
+beatsquares_documentation/
+├── getting-started/          # User onboarding and basics
+├── core-features/            # Main platform features
+├── changelog/                # Product updates with RSS
+├── troubleshooting/          # Help and support
+├── images/                   # Documentation assets
+├── docs.json                 # Mintlify configuration
+└── README.md                 # This file
+```
 
-## Need help?
+## 🚀 Publishing Changes
+
+This documentation is automatically deployed using Mintlify's GitHub integration. Changes are deployed to production automatically after pushing to the `main` branch.
+
+### Deployment Process
+
+1. Make changes to documentation files
+2. Commit and push to `main` branch
+3. Mintlify automatically builds and deploys
+4. Changes are live within minutes
+
+## 📖 RSS Feed
+
+Stay updated with product changes by subscribing to our RSS feed:
+
+- **Changelog RSS**: `/changelog/overview/rss.xml`
+- **Automatic Updates**: Get notified of new features and improvements
+- **RSS Readers**: Compatible with Feedly, RSS Reader, and other popular clients
+
+## 🔧 Configuration
+
+The documentation is configured via `docs.json` with:
+
+- **Theme**: Maple (sophisticated, minimalist design)
+- **Colors**: Beatsquares brand colors (black, white, gray)
+- **Logo**: External logo from Beatsquares.com
+- **Navigation**: Organized tabs for easy content discovery
+
+## 🆘 Need Help?
 
 ### Troubleshooting
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
+- **Dev environment issues**: Run `mint update` to ensure latest CLI version
+- **404 errors**: Verify you're running in a folder with valid `docs.json`
+- **Build failures**: Check `docs.json` syntax and file references
 
 ### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
-- [Mintlify community](https://mintlify.com/community)
+
+- [Mintlify Documentation](https://mintlify.com/docs)
+- [Mintlify Community](https://mintlify.com/community)
+- [Beatsquares Support](mailto:support@beatsquares.com)
+
+## 📄 License
+
+This documentation is part of the Beatsquares platform. For more information, visit [beatsquares.com](https://www.beatsquares.com).
