@@ -1,6 +1,6 @@
-# Beatsquares Documentation
+# BeatSquares Documentation
 
-Official documentation for [Beatsquares](https://www.beatsquares.com) - the platform for creating, organizing, and sharing content through Squares, Podcasts, Newsletters, and WhatsApp messages.
+Official documentation for [BeatSquares](https://www.beatsquares.com) - the platform for creating, organizing, and sharing content through Squares, Podcasts, Newsletters, and WhatsApp messages.
 
 ## 📚 Documentation Overview
 
@@ -14,7 +14,7 @@ This repository contains comprehensive documentation covering:
 ## 🚀 Features
 
 - **RSS-Enabled Changelog** - Subscribe to product updates automatically
-- **Modern Design** - Clean, minimalist interface matching Beatsquares branding
+- **Modern Design** - Clean, minimalist interface matching BeatSquares branding
 - **Responsive Layout** - Optimized for all devices and screen sizes
 - **Search & Navigation** - Easy-to-use search and organized navigation structure
 
@@ -73,8 +73,8 @@ Stay updated with product changes by subscribing to our RSS feed:
 The documentation is configured via `docs.json` with:
 
 - **Theme**: Maple (sophisticated, minimalist design)
-- **Colors**: Beatsquares brand colors (black, white, gray)
-- **Logo**: External logo from Beatsquares.com
+- **Colors**: BeatSquares brand colors (black, white, gray)
+- **Logo**: External logo from BeatSquares.com
 - **Navigation**: Organized tabs for easy content discovery
 
 ## 🆘 Need Help?
@@ -93,4 +93,4 @@ The documentation is configured via `docs.json` with:
 
 ## 📄 License
 
-This documentation is part of the Beatsquares platform. For more information, visit [beatsquares.com](https://www.beatsquares.com).
+This documentation is part of the BeatSquares platform. For more information, visit [beatsquares.com](https://www.beatsquares.com).

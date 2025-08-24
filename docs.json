@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
-  "name": "Beatsquares Documentation",
+  "name": "BeatSquares Documentation",
   "colors": {
     "primary": "#000000",
     "light": "#E8E8E8", 
