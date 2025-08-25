@@ -35,7 +35,6 @@
           {
             "group": "Troubleshooting",
             "pages": [
-              "troubleshooting/common-errors",
               "troubleshooting/faq"
             ]
           }
