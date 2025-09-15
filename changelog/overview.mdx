@@ -10,6 +10,28 @@ rss: true
 
 ## Recent Updates
 
+<Update label="Version 0.8.5 - Strategy Builder & WhatsApp Enhancements" description="Released September 10, 2025">
+
+**New Features**
+- **Strategy Builder**: Released a completely new pipeline system that allows developers and business users to quickly iterate on agentic workflows for content transformtations. Initial release supports newsletters as a first pipeline.
+
+**Improvements**
+- **Session Management**: Implemented caching and webhook system for WhatsApp sessions
+- **Performance**: Eliminated N+1 queries in media item script changelog with batched snapshots
+
+**Bug Fixes**
+- **Article Deduplication**: Fixed critical issue switching from External ID to URL for uniqueness
+- **WhatsApp Channel Naming**: Resolved text replacement bug when creating new channels
+- **UI Content Overflow**: Fixed popup content overflow in WhatsApp editor "Create an Article" dialog
+- **Deployment Issues**: Resolved strategy builder deployment version problems
+- **Load Redirects**: Fixed redirect behavior after content generation
+- **Service Exceptions**: Resolved 500 errors caused by excessive requests when opening squares
+- **Environment Configuration**: Fixed LangSmith target environment settings
+
+</Update>
+
+---
+
 <Update label="Version 0.8.0 - Scraping & Suggestion Enhancements" description="Released August 20, 2025">
 
 **New Features**
