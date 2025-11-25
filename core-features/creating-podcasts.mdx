@@ -1,18 +1,18 @@
 ---
 title: "Creating Podcasts"
-description: "Step-by-step guide to creating, editing, and publishing podcast content using BeatSquares' podcast creation tools"
+description: "Step-by-step guide to creating, editing, and publishing podcast content using BeatSquares' segment-based podcast creation workflow"
 ---
 
 
 ![Podcast preview](/images/podcast_preview.png)
 
-Creating a podcast in BeatSquares follows a structured workflow that transforms your written content into audio episodes. You'll start by working within a Square configured for podcast output, where you'll assemble your episode by organizing articles into segments—think of these as the building blocks of your podcast. Each segment can pull from one or more articles, giving you flexibility in how you structure your content.
+Creating a podcast in BeatSquares follows a segment-based workflow that gives you granular control over each part of your episode. Unlike traditional podcast creation tools, BeatSquares lets you work on individual segments independently—generating, reviewing, and perfecting each one before moving to the next.
 
-The process moves through three main phases: first, you'll select and arrange your content segments; then BeatSquares generates a script that you can review and edit; and finally, the system creates the audio file. 
+The process is built around segments as your primary building blocks. For each segment, you'll select articles, generate audio, choose from multiple AI-generated variants, and select background music. Once you're satisfied with a segment, you verify it and move on to the next. This segment-by-segment approach means you're never locked into decisions made early in the process—you can always go back and refine individual segments without affecting the rest of your podcast.
 
-Throughout this workflow, you maintain control—you can reorder segments, add custom prompts to guide the AI's interpretation, and refine the generated script before committing to audio production. Once complete, you can either stream your podcast directly in BeatSquares or download it for distribution on external platforms.
+The workflow includes a special "overview" segment that can only be generated once all your content segments are verified. This ensures your introduction or summary accurately reflects your finalized content. When all segments are verified and you're happy with the results, you publish the podcast to generate the final audio file.
 
-The entire process typically takes just 10-15 minutes of active work, with the system handling the heavy lifting of script generation and audio production in the background while you focus on other tasks.
+The entire process typically takes 15-20 minutes of active work per segment, with BeatSquares handling the AI generation in the background while you continue working on other segments or tasks.
 
 ---
 
@@ -20,21 +20,27 @@ The entire process typically takes just 10-15 minutes of active work, with the s
 
 You will learn how to:
 - Create a new podcast episode inside a Square
-- Create and edit podcast episodes
-- Download and distribute your podcast
+- Add articles to podcast segments
+- Generate and review individual segment audio
+- Select from AI-generated variants for each segment
+- Choose background music for segments
+- Verify segments when complete
+- Generate overview segments
+- Publish your finished podcast
 
 ---
 
 ## Before You Start
 
 ### Prerequisites
-- A BeatSquares account with podcast features enabled  
-- At least one Square created for organizing content  
+- A BeatSquares account with podcast features enabled
+- At least one Square created with "Podcast" format
+- Articles available in your data source
 
-### What You’ll Need
-- A podcast idea and intended audience  
-- Podcast artwork and branding materials  
-- Accounts on podcast distribution platforms (if you plan to publish externally)
+### What You'll Need
+- A podcast concept and structure in mind
+- Understanding of which articles you want to feature
+- Time to review and refine each segment individually
 
 ---
 
@@ -42,89 +48,224 @@ You will learn how to:
 
 ### Start from the Dashboard
 
-Go to the [BeatSquares Dashboard](https://app.beatsquares.com/).  
+Go to the [BeatSquares Dashboard](https://app.beatsquares.com/).
 
-Podcasts are created within Squares set to the output format **“Podcast.”**  
+Podcasts are created within Squares set to the output format **"Podcast."**
 
-If you don’t have a Square yet, [learn how to create one here](/core-features/creating-squares).
+If you don't have a Square yet, [learn how to create one here](/core-features/creating-squares).
 
-### Step 1. Open a Square
-If you already have a Square set to “Podcast,” click **View square** to begin.  
-![Step 1 screenshot](https://images.tango.us/workflows/b81f753c-c0f6-446d-86d9-a605ade7c0c9/steps/59604030-fa34-4e54-80c5-23d28eb8db10/b81ea10a-b412-40eb-a4bd-28d225f5592a.png)
+### Step 1. Open a Podcast Square
 
-### Step 2. Create a podcast
-Click **Create podcast**.  
-![Step 2 screenshot](https://images.tango.us/workflows/b81f753c-c0f6-446d-86d9-a605ade7c0c9/steps/de2ade41-8a3b-42e1-8b61-22e82e6beb93/8f9e9766-54d6-4692-ab78-38a928696854.png)
+Click **View square** on a Square configured for podcast output to begin.
 
-### Step 3. Name your podcast
-Enter a name. Podcasts cannot be saved without one.  
-![Step 3 screenshot](https://images.tango.us/workflows/b81f753c-c0f6-446d-86d9-a605ade7c0c9/steps/84990d97-8cf6-484a-bd1a-9c2482f5c69e/533358d1-6978-41be-962f-5cb222010f4d.png)
+![Step 1 screenshot](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/a4960af8-2407-4089-9320-8dcdba9d00de/fae0fbbe-65da-4832-ac48-aae5f5ff7551.png?crop=focalpoint&fit=crop&fp-x=0.4954&fp-y=0.3356&fp-z=1.4278&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=370&mark-y=156&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz00NjAmaD00NjAmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
 
-### Step 4. Add articles as segments
-Each podcast is built from **segments**, and each segment is based on one or more **articles**.  
-You can add, remove, or reorder segments.  
-![Step 4 screenshot](https://images.tango.us/workflows/b81f753c-c0f6-446d-86d9-a605ade7c0c9/steps/717e847b-e1e3-42c2-a650-17e1c381e3cc/767185b4-d546-43b9-af3c-62ddb00c43a3.png)
+### Step 2. Create a Podcast
 
-### Step 5. Select articles
-Click **Add articles**. A popup lets you choose articles for each segment.  
-- By default, you’ll see articles from the same Square.  
-- To use articles from outside, check **Search for articles outside this square**.  
-![Step 5 screenshot](https://images.tango.us/workflows/b81f753c-c0f6-446d-86d9-a605ade7c0c9/steps/c51cc63d-e94f-4291-8b58-987546177073/462c7812-15e6-4435-984d-b376c4d6380f.png)
+Click **Create podcast** to start a new episode.
 
-### Step 6. Add to segment
-Confirm your selection by clicking **Add to segment**. Repeat for all segments.  
-![Step 6 screenshot](https://images.tango.us/workflows/b81f753c-c0f6-446d-86d9-a605ade7c0c9/steps/5c5e5121-2a4e-4016-a382-d6289c0c2c90/38d0353c-c302-417a-ba77-f462c0b8c577.png)
+![Step 2 screenshot](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/167f9aca-2692-4aed-947d-0bb691683c45/987c2b12-4c27-44d2-83a7-c81380bcf3e8.png?crop=focalpoint&fit=crop&fp-x=0.8577&fp-y=0.1649&fp-z=2.9139&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=523&mark-y=336&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zNTkmaD0xMDEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
 
-### Step 7. Add custom prompts
-You may add a custom prompts per segment to change how they’re generated.  
-Examples:  
-- Translate a section  
-- Apply stylistic edits  
-- Turn content into a poem  
-![Step 7 screenshot](https://images.tango.us/workflows/b81f753c-c0f6-446d-86d9-a605ade7c0c9/steps/f7b654f8-371f-4a68-9b62-dd685e8b48f3/831adf3e-b4de-4824-82e7-77795404c164.png)
+### Step 3. Name Your Podcast
 
-### Step 8. Continue
-When done, click **Continue**.  
-![Step 8 screenshot](https://images.tango.us/workflows/b81f753c-c0f6-446d-86d9-a605ade7c0c9/steps/d5958d2c-919d-4eaf-b670-a69590efd261/9f901a60-4f63-4170-a9e2-64bee1f62d4f.png)
+Enter a name for your podcast episode. Podcasts cannot be saved without a name.
 
-### Step 9. Start generation
-Podcast generation starts. You don’t need to wait — click **Close and Notify Me**.  
-![Step 9 screenshot](https://images.tango.us/workflows/b81f753c-c0f6-446d-86d9-a605ade7c0c9/steps/8dd8fc40-1333-4f84-ba77-1ae0d07e8b9e/bb139680-e31d-46a5-98aa-7adcf267e5cc.png)
+### Step 4. Add Articles to Segment
 
-### Step 10. Script generated
-When the status changes to **Script generated**, click **Action → Edit Content**.  
-![Step 10 screenshot](https://images.tango.us/workflows/b81f753c-c0f6-446d-86d9-a605ade7c0c9/steps/12ff3e51-301b-4c83-988a-bf50c0bb7d8d/472c40a8-5fac-4745-a040-1a44aa6243fc.png)
+Each podcast is built from **segments**, and each segment is based on one or more **articles**.
 
-### Step 11. Edit sections
-Use the pen icon ✏️ to edit each section. When ready, click **Continue** to start audio generation.  
-![Step 11 screenshot](https://images.tango.us/workflows/b81f753c-c0f6-446d-86d9-a605ade7c0c9/steps/bc63eb04-20b8-4233-8bde-e54eec468f56/5c99dea0-32e0-4664-a883-1f2f134184f7.png)
+Click **Add articles** to begin adding content to your first segment.
 
-### Step 12. Wait for audio
-You’ll return to the Square’s media overview. The status shows **Generating podcast...** and switches to **Ready** when finished.  
-![Step 12 screenshot](https://images.tango.us/workflows/b81f753c-c0f6-446d-86d9-a605ade7c0c9/steps/eeb57419-76dc-4e43-ab71-6fe917b197a9/0e724e5b-a86d-465e-a735-caa0dae29c7f.png)
+<Note>
+You can add, remove, or reorder segments at any time during the creation process. Each segment can be worked on independently.
+</Note>
 
-### Step 13. Play or download
-Now you can:  
-- Play the podcast in the built-in player  
-- Download for distribution  
-- Edit content or segments (requires regeneration)  
-![Step 13 screenshot](https://images.tango.us/workflows/b81f753c-c0f6-446d-86d9-a605ade7c0c9/steps/8bacf8a5-dc67-4269-864e-3963f0dae88d/291c3787-2ebe-4d96-812b-2149147989fa.png)
+![Step 4 screenshot](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/33f988b4-881d-4ebd-b3cf-ce7006ca1aa2/c0ab6844-7042-4f89-98c4-ae33bdb0e998.png?crop=focalpoint&fit=crop&fp-x=0.7922&fp-y=0.5604&fp-z=1.9836&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=264&mark-y=240&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz04ODMmaD0zMjYmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
 
-### Step 14. Listen in the player
-![Step 14 screenshot](https://images.tango.us/workflows/b81f753c-c0f6-446d-86d9-a605ade7c0c9/steps/5d7f3667-61c5-4be9-b102-72b371c61f09/148aabc2-3010-4a1f-aa2e-4accb84a7332.png)
+### Step 5. Select Articles
 
-### Step 15. Download the file
-![Step 15 screenshot](https://images.tango.us/workflows/b81f753c-c0f6-446d-86d9-a605ade7c0c9/steps/37331714-92b9-4a50-b4cf-c5c7935a093a/dc8c0be5-9955-43af-a0a8-21e88a2686c8.png)
+A popup lets you choose articles for the segment.
+
+- By default, you'll see articles from the same Square
+- To use articles from other sources, check **Search for articles outside this square**
+
+Select the articles you want to include in this segment, then click **Add to segment**.
+
+![Step 5 screenshot](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/7957917f-6656-4390-b89b-e8b63237a423/eb9ce850-7432-4999-9a39-bdc2658a767a.png?crop=focalpoint&fit=crop&fp-x=0.4951&fp-y=0.6369&fp-z=1.1016&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=67&mark-y=443&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDY1Jmg9ODAmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+
+### Step 6. Generate Segment
+
+Once you've added articles to a segment, click **Generate** to create the audio for that specific segment.
+
+<Tip>
+Unlike the old workflow where all segments were generated at once, you can now generate, review, and perfect each segment individually before moving to the next one.
+</Tip>
+
+![Step 6 screenshot](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/0fc71547-2c2b-4bc0-9bcb-6aa03ff994b7/10ba08bf-5be9-48e7-96ec-4ae7999c8f45.png?crop=focalpoint&fit=crop&fp-x=0.8745&fp-y=0.9264&fp-z=4.0000&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=440&mark-y=499&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zMTkmaD0xMzkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+
+### Step 7. Play Segment Audio
+
+When generation is complete, you can play the segment audio using the built-in player. Listen carefully to ensure the content, tone, and pacing meet your expectations.
+
+![Step 7 screenshot](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/21acabfd-5892-4003-8a65-935aebb409d0/2c7ffe2f-a137-487e-b477-34acfa567a74.png?crop=focalpoint&fit=crop&fp-x=0.9051&fp-y=0.4917&fp-z=2.9139&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=818&mark-y=352&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDEmaD0xMDEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+
+### Step 8. Review Segment Content
+
+Click the **Edit** icon (✏️) to review the generated script for the segment. You can make adjustments to the text before finalizing.
+
+![Step 8 screenshot](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/896406a1-1b94-4179-a550-203fb10bf96d/a7942765-f895-441b-b059-d2849e55b2fe.png?crop=focalpoint&fit=crop&fp-x=0.9532&fp-y=0.4799&fp-z=3.0175&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=992&mark-y=365&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz03NiZoPTc2JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+
+### Step 9. Explore Variants
+
+BeatSquares generates multiple variants of each segment. Click through **Var 2**, **Var 3**, and other available options to hear different interpretations of the same content.
+
+<Note>
+Each variant uses different phrasing, tone, or emphasis. Choose the one that best fits your podcast's style and the specific segment's purpose.
+</Note>
+
+![Step 9 screenshot - Var 2](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/a7ffff4f-dda1-4406-a2c0-d52d6ed8d00f/9d86e1e1-1852-4c9a-a5e1-56f870453fda.png?crop=focalpoint&fit=crop&fp-x=0.6703&fp-y=0.5132&fp-z=2.9170&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=525&mark-y=361&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNTAmaD04MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+![Step 9 screenshot - Var 3](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/0b687f5a-e330-4c10-9933-7b3ff17477b6/b6f598b4-aceb-42be-9704-b0f049deac17.png?crop=focalpoint&fit=crop&fp-x=0.7131&fp-y=0.5132&fp-z=2.9821&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=523&mark-y=360&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNTMmaD04NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+### Step 10. Select Background Music
+
+For each segment, you can choose background music that fits the mood and content. Click the **music** icon to browse and select from available tracks.
+
+Different segments can have different background music to match their content and tone.
+
+![Step 10 screenshot](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/c6799e1c-b754-4ea4-9975-edae2fc25d4a/d3cc0edc-6a65-4ed0-9945-5269b08e8905.png?crop=focalpoint&fit=crop&fp-x=0.9292&fp-y=0.5643&fp-z=2.9139&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=778&mark-y=352&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zNDgmaD0xMDEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+
+![Step 10 screenshot - Music selection](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/98b1e873-982a-45fa-891c-baa0f686e4da/3ad688dd-548a-408d-8a74-cea110bf1ae4.png?crop=focalpoint&fit=crop&fp-x=0.9216&fp-y=0.7007&fp-z=3.1354&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=637&mark-y=353&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01MzUmaD05OSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+### Step 11. Edit Manual Segments
+
+If you want more control, you can manually edit the segment's script. Click **Edit segment** to modify the text that will be converted to audio.
+
+<Warning>
+Manual edits will require regenerating the segment audio. Make sure you're satisfied with your edits before regenerating.
+</Warning>
+
+![Step 11 screenshot](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/dc54b1d2-f346-4927-b937-be826bcf4c05/7ce3af50-7f4c-47e9-9613-0dd4cdd0b60c.png?crop=focalpoint&fit=crop&fp-x=0.7922&fp-y=0.4308&fp-z=2.5342&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=32&mark-y=375&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTM2Jmg9NTYmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+
+### Step 12. Verify Segment
+
+When you're completely satisfied with a segment—including its content, variant selection, and background music—click **Verify segment**.
+
+Verified segments are locked in and ready for the final podcast. You can always unverify and make changes if needed.
+
+<Note>
+The overview segment can only be generated once all content segments are verified. This ensures your introduction accurately reflects your finalized content.
+</Note>
+
+![Step 12 screenshot](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/288f5c91-25d1-4274-a014-733353ec8ced/552ad26d-cbd3-49c8-8422-99b0d04bacd0.png?crop=focalpoint&fit=crop&fp-x=0.9638&fp-y=0.5132&fp-z=2.9476&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=1018&mark-y=356&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDcmaD05MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+### Step 13. Repeat for All Segments
+
+Repeat Steps 4-12 for each segment in your podcast:
+1. Add articles
+2. Generate segment
+3. Play and review
+4. Select best variant
+5. Choose background music
+6. Make any manual edits
+7. Verify the segment
+
+### Step 14. Generate Overview Segment
+
+Once all your content segments are verified, you can generate the **Overview segment**. This is typically an introduction or summary that encompasses the entire episode.
+
+Click **Generate overview** to create this special segment.
+
+<Warning>
+The overview segment will only generate successfully if all other segments have been verified. If you see an error, check that all content segments show a "Verified" status.
+</Warning>
+
+![Step 14 screenshot](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/d75df718-f74f-4aab-b620-7356ab846d24/b6d48516-ba41-41c8-b769-953086cf3b24.png?crop=focalpoint&fit=crop&fp-x=0.7922&fp-y=0.2581&fp-z=2.1881&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=209&mark-y=264&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz04OTEmaD0yNzcmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+
+### Step 15. Verify Overview Segment
+
+Review, select the best variant, and verify the overview segment just like you did with your content segments.
+
+![Step 15 screenshot](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/6d886e8f-38dd-4020-8a03-b89750d1dfef/39cc1864-751f-4295-8f71-65f24697d592.png?crop=focalpoint&fit=crop&fp-x=0.9539&fp-y=0.4249&fp-z=2.9476&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=983&mark-y=356&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDcmaD05MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+
+### Step 16. Publish Podcast
+
+When all segments (including the overview) are verified and you're satisfied with the complete episode, click **Publish**.
+
+This combines all verified segments into a single, finalized podcast file.
+
+<Note>
+Publishing generates the final audio file and marks your podcast as "Ready to Publish" in the Square overview.
+</Note>
+
+![Step 16 screenshot](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/af47d62a-7302-4899-93a3-ea15db396041/5d56915c-073e-49fe-aac3-8375182a5bbe.png?crop=focalpoint&fit=crop&fp-x=0.9552&fp-y=0.9666&fp-z=4.0000&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=846&mark-y=628&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNzgmaD0xMzkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+
+### Step 17. Listen to Finished Podcast
+
+Once publishing is complete, you can listen to your finished podcast using the built-in player. This is your complete, final episode with all segments combined.
+
+![Step 17 screenshot](https://images.tango.us/workflows/541793cf-23b6-45c6-8348-7eb1d1813e38/steps/491202a6-1df6-44c3-ab55-a3bf7f0e4287/29ee1a72-4e1d-4d61-b5de-a734657f57c1.png?crop=focalpoint&fit=crop&fp-x=0.2708&fp-y=0.2463&fp-z=2.9139&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=549&mark-y=352&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDEmaD0xMDEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+
+### Step 18. Download or Share
+
+You can now:
+- Download the podcast file for distribution on external platforms
+- Share the podcast directly from BeatSquares
+- Edit individual segments (requires unverifying and republishing)
+
+## Best Practices
+
+- **Work Segment by Segment:** Focus on perfecting one segment at a time rather than trying to generate everything at once
+- **Explore All Variants:** Always listen to all available variants before choosing one—the AI may surprise you with creative interpretations
+- **Match Music to Content:** Use different background music for different segments to create variety and emotional resonance
+- **Verify Strategically:** Only verify segments when you're completely satisfied, as this locks them in for the overview generation
+- **Generate Overview Last:** Always generate and verify all content segments before creating your overview segment
+- **Review Before Publishing:** Listen to the complete podcast at least once before downloading or sharing
+
+## Understanding the Workflow
+
+### Segment States
+
+Segments move through several states:
+1. **Draft:** Articles added, not yet generated
+2. **Generated:** Audio created, ready for review
+3. **Edited:** Manual changes made, may need regeneration
+4. **Verified:** Finalized and locked in for publishing
+
+### Why Verify Segments?
+
+Verification serves two purposes:
+- It signals that a segment is complete and ready for the final podcast
+- It enables overview segment generation, which needs to know what content is finalized
+
+### The Overview Segment
+
+The overview segment is special because it:
+- Can only be generated when all content segments are verified
+- Typically serves as an introduction or summary
+- Has access to information about all verified segments
+- Should be generated and verified last
+
+## Troubleshooting
+
+**Problem:** Can't generate overview segment
+**Solution:** Ensure all content segments are verified. Check each segment's status.
+
+**Problem:** Variant selection disappeared after editing
+**Solution:** Manual edits require regeneration, which creates new variants. You'll need to select from the new variants.
+
+**Problem:** Background music not applying
+**Solution:** Make sure you've saved your music selection before generating or regenerating the segment.
 
 ## Conclusion
 
-You now know how to create a podcast in BeatSquares: select a Square, assemble segments from articles, optionally guide generation with prompts, review and edit the script, generate audio, and then publish or download the final audio. For best results, keep segments focused and maintain a clear structure across episodes.
+You now understand BeatSquares' segment-based podcast workflow: create segments individually, generate and review audio, select from variants, choose background music, verify each segment, generate an overview when all segments are verified, publish the complete podcast, and download or share the final file.
 
+This workflow gives you precise control over every part of your podcast, with the flexibility to perfect each segment independently before committing to the final product.
 
-## What’s Next?
+## What's Next?
 
-- [Creating Newsletters](/core-features/creating-newsletters)  
-- [Creating WhatsApp Messages](/core-features/creating-whatsapp-messages)  
-- [Manually Adding Articles](/core-features/manually-adding-articles)  
-
-
+- [Creating Newsletters](/core-features/creating-newsletters)
+- [Creating WhatsApp Messages](/core-features/creating-whatsapp-messages)
+- [Manually Adding Articles](/core-features/manually-adding-articles)
+- [Podcast Player Embeds](/core-features/podcast-player-embeds)

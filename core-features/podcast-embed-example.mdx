@@ -1,0 +1,114 @@
+---
+title: "Podcast Embed Example"
+description: "Live example of an embedded BeatSquares podcast player"
+---
+
+This page demonstrates a live BeatSquares podcast player embed. You can interact with the player below to see how it looks and functions on a real page.
+
+---
+
+## Live Player Demo
+
+Below is a working example of an embedded BeatSquares podcast using the Podigee player integration with the original script method:
+
+<div className="podigee-podcast-player" data-configuration="https://beatsquares-test-podcast.podigee.io/embed?context=external"></div>
+
+---
+
+## About This Embed
+
+This player is powered by Podigee, a professional podcast hosting and distribution platform that BeatSquares integrates with for advanced podcast features.
+
+This example uses the **original script method** recommended by Podigee, which provides the most features and best user experience. The player is loaded dynamically using the `podigee-player.js` script included in this documentation.
+
+### Features Demonstrated
+- **Multi-episode display** - Browse through all available episodes
+- **Playback controls** - Play, pause, skip, and adjust playback speed
+- **Episode information** - View titles, descriptions, and publish dates
+- **Responsive design** - Adapts to different screen sizes
+- **Share functionality** - Share episodes with your audience
+- **Dynamic loading** - Player loads without page refresh
+
+---
+
+## How to Implement This
+
+To add a similar player to your website, you can use either the script or iframe method:
+
+### Method 1: Script Embed (Recommended)
+
+```html
+<script 
+  class="podigee-podcast-player" 
+  src="https://player.podigee-cdn.net/podcast-player/javascripts/podigee-podcast-player.js" 
+  data-configuration="https://[YOUR-PODCAST-SLUG].podigee.io/embed?context=external">
+</script>
+```
+
+This method provides the most flexibility and advanced features.
+
+### Method 2: iFrame Embed
+
+```html
+<iframe 
+  src="https://[YOUR-PODCAST-SLUG].podigee.io/embed?context=external" 
+  width="100%" 
+  height="400" 
+  frameborder="0" 
+  scrolling="no">
+</iframe>
+```
+
+This method works better with content management systems and static site generators.
+
+### Steps to Get Your Embed Code
+
+1. Go to your BeatSquares podcast settings
+2. Look for the **Distribution** or **Embed** section
+3. Find your Podigee configuration URL
+4. Replace `[YOUR-PODCAST-SLUG]` with your podcast's unique identifier
+5. Copy and paste the script into your website's HTML
+
+---
+
+## Integration Options
+
+BeatSquares offers multiple ways to embed your podcasts:
+
+### 1. Podigee Player (This Example)
+- Full-featured multi-episode player
+- Advanced customization options
+- Professional distribution across platforms
+- Detailed analytics
+
+### 2. BeatSquares Episode Widget
+- Simple, single-episode player
+- Lightweight and fast
+- Direct from BeatSquares servers
+- Perfect for blog posts
+
+### 3. Podcaster.de Integration
+- Alternative multi-episode player
+- Customizable design themes
+- Wide platform distribution
+
+---
+
+## Learn More
+
+For detailed instructions on embedding podcasts, including customization options and troubleshooting tips, visit:
+
+- [Podcast Player Embeds Guide](/core-features/podcast-player-embeds) - Complete embedding documentation
+- [Creating Podcasts](/core-features/creating-podcasts) - Learn to create podcast episodes
+- [Creating Squares](/core-features/creating-squares) - Organize your podcast content
+
+---
+
+## Need Help?
+
+If you have questions about embedding your BeatSquares podcast:
+
+- Check the [FAQ](/troubleshooting/faq) for common questions
+- Contact [BeatSquares Support](mailto:support@beatsquares.com)
+- Review the [full embed documentation](/core-features/podcast-player-embeds)
+

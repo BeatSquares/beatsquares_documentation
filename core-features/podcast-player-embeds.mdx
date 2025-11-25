@@ -1,0 +1,652 @@
+---
+title: "Podcast Player Embeds"
+description: "Learn how to embed your BeatSquares podcast player on your website, blog, or other platforms"
+---
+
+Podcast player embeds allow you to share your BeatSquares podcasts directly on external websites, blogs, or social media platforms. The embedded player provides a seamless listening experience for your audience without requiring them to leave your site or download files.
+
+BeatSquares offers two different embedding options: the BeatSquares Episode Widget for embedding individual episodes, and integration with Podcaster.de for a full-featured multi-episode player with broader distribution capabilities.
+
+---
+
+## What You'll Learn
+
+You will learn how to:
+- Embed individual episodes using the BeatSquares Episode Widget
+- Integrate with Podcaster.de for multi-episode players
+- Customize player appearance and behavior
+- Choose the right embedding option for your needs
+
+---
+
+## Before You Start
+
+### Prerequisites
+- A BeatSquares account with at least one completed podcast
+- A website or platform where you want to embed the player
+- Basic knowledge of HTML (for manual embedding)
+
+### What You'll Need
+- Your podcast's unique ID or stream URL
+- Access to edit your website's HTML or content management system
+- (Optional) A Podcaster.de account for multi-episode integration
+
+---
+
+## Embedding Options Overview
+
+### Option 1: BeatSquares Episode Widget
+- **Best for**: Embedding single episodes
+- **Advantages**: Simple, lightweight, directly from BeatSquares
+- **Use case**: Blog posts, article pages, landing pages featuring specific episodes
+
+### Option 2: Podigee Integration
+- **Best for**: Full podcast feeds with multiple episodes
+- **Advantages**: Multi-episode display, wider distribution, customizable design, advanced analytics
+- **Use case**: Podcast home pages, show archives, podcast websites
+
+---
+
+## Option 1: BeatSquares Episode Widget
+
+The BeatSquares Episode Widget is a clean, focused player that displays and plays a single podcast episode. It's ideal for embedding specific episodes alongside related content.
+
+### Player Specifications
+- **Height**: 226px
+- **Width**: Responsive (100%)
+- **Features**: Playback controls, episode information
+- **Load time**: Fast and lightweight
+
+### Getting the Embed Code
+
+1. Navigate to your podcast in the [BeatSquares Dashboard](https://app.beatsquares.com/)
+2. Open the episode you want to embed
+3. Copy your podcast's unique ID from the URL or episode settings
+4. Use the embed code template below
+
+### Embed Code Template
+
+```html
+<iframe
+  src="https://app.beatsquares.com/podcasts/[YOUR-PODCAST-ID]/stream/full"
+  width="100%"
+  height="226px"
+  frameBorder="0"
+  allowFullScreen>
+</iframe>
+```
+
+### Example
+
+```html
+<iframe
+  src="https://app.beatsquares.com/podcasts/6878c2cbea398ec14ba1a1f1/stream/full"
+  width="100%"
+  height="226px"
+  frameBorder="0"
+  allowFullScreen>
+</iframe>
+```
+
+### Customization Options
+
+#### Fixed Width
+For specific layouts, set a fixed width instead of 100%:
+
+```html
+<iframe
+  src="https://app.beatsquares.com/podcasts/[YOUR-PODCAST-ID]/stream/full"
+  width="600px"
+  height="226px"
+  frameBorder="0"
+  allowFullScreen>
+</iframe>
+```
+
+#### Responsive Container
+Wrap the iframe in a container for better control:
+
+```html
+<div class="podcast-embed-container">
+  <iframe
+    src="https://app.beatsquares.com/podcasts/[YOUR-PODCAST-ID]/stream/full"
+    width="100%"
+    height="226px"
+    frameBorder="0"
+    allowFullScreen>
+  </iframe>
+</div>
+```
+
+Style with CSS:
+
+```css
+.podcast-embed-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+```
+
+---
+
+## Option 2: Podigee Integration
+
+Podigee is a professional podcast hosting service that provides distribution across major platforms (Apple Podcasts, Spotify, etc.) plus customizable embed players that can display multiple episodes.
+
+BeatSquares integrates with Podigee to offer advanced podcast hosting and embedding capabilities.
+
+### Player Features
+- Display multiple episodes in one player
+- Fully customizable design and styling
+- Automatic updates when new episodes are published
+- Responsive and mobile-friendly
+- Professional appearance
+- Advanced analytics and statistics
+- Cross-platform distribution
+
+### Setting Up Podigee Integration
+
+#### Step 1: Connect Your BeatSquares Account
+
+1. Go to your BeatSquares podcast settings
+2. Look for the **Distribution** or **Integration** section
+3. Enable **Podigee Integration**
+4. Follow the authorization flow to connect your accounts
+
+#### Step 2: Publish to Podigee
+
+Once connected, your BeatSquares podcasts will automatically sync to Podigee, making them available on all major podcast platforms.
+
+#### Step 3: Get Your Embed Code
+
+1. Log in to your Podigee account
+2. Navigate to your podcast dashboard
+3. Click on **Embed** or **Share**
+4. Choose between Script or iFrame embed method
+5. Copy the generated embed code
+
+### Embed Methods
+
+Podigee offers two embedding methods:
+
+#### Method 1: Full Embed Code (Script) - Recommended
+
+This method provides the most flexibility and advanced features. It dynamically loads the player with full functionality.
+
+```html
+<script 
+  class="podigee-podcast-player" 
+  src="https://player.podigee-cdn.net/podcast-player/javascripts/podigee-podcast-player.js" 
+  data-configuration="https://[YOUR-PODCAST-SLUG].podigee.io/embed?context=external">
+</script>
+```
+
+**Example:**
+```html
+<script 
+  class="podigee-podcast-player" 
+  src="https://player.podigee-cdn.net/podcast-player/javascripts/podigee-podcast-player.js" 
+  data-configuration="https://beatsquares-test-podcast.podigee.io/embed?context=external">
+</script>
+```
+
+**Best for:**
+- Custom websites with full HTML/JavaScript control
+- WordPress sites with custom theme access
+- Platforms that allow script tags
+- Maximum customization and features
+
+#### Method 2: Restricted Embed Code (iFrame)
+
+This variant uses an iFrame – ideal for environments without native script support.
+
+```html
+<iframe 
+  src="https://[YOUR-PODCAST-SLUG].podigee.io/embed?context=external"
+  width="100%"
+  height="400"
+  frameborder="0"
+  scrolling="no">
+</iframe>
+```
+
+**Example:**
+```html
+<iframe 
+  src="https://beatsquares-test-podcast.podigee.io/embed?context=external"
+  width="100%"
+  height="400"
+  frameborder="0"
+  scrolling="no">
+</iframe>
+```
+
+**Best for:**
+- Content management systems (CMS)
+- Static site generators
+- Platforms that restrict script tags
+- Simple, quick implementation
+- Environments with strict security policies
+
+### Customization Options
+
+#### Adjusting iFrame Size
+
+Modify the dimensions to fit your layout:
+
+**Standard Player:**
+```html
+<iframe 
+  src="https://[YOUR-PODCAST-SLUG].podigee.io/embed?context=external"
+  width="100%"
+  height="400"
+  frameborder="0">
+</iframe>
+```
+
+**Taller Player (More Episodes Visible):**
+```html
+<iframe 
+  src="https://[YOUR-PODCAST-SLUG].podigee.io/embed?context=external"
+  width="100%"
+  height="600"
+  frameborder="0">
+</iframe>
+```
+
+**Fixed Width:**
+```html
+<iframe 
+  src="https://[YOUR-PODCAST-SLUG].podigee.io/embed?context=external"
+  width="800"
+  height="400"
+  frameborder="0"
+  style="max-width: 100%;">
+</iframe>
+```
+
+#### URL Parameters
+
+Customize the player behavior using URL parameters:
+
+**Auto-play specific episode:**
+```
+?episode=5&autoplay=true
+```
+
+**Start with specific theme:**
+```
+?theme=dark
+```
+
+**Hide certain elements:**
+```
+?hideSubscribeButton=true
+```
+
+**Example with parameters:**
+```html
+<iframe 
+  src="https://beatsquares-test-podcast.podigee.io/embed?context=external&theme=dark&episode=1"
+  width="100%"
+  height="400"
+  frameborder="0">
+</iframe>
+```
+
+---
+
+## Embedding on Different Platforms
+
+### WordPress
+
+#### Using the Classic Editor
+1. Switch to the **Text** or **HTML** tab
+2. Paste the embed code where you want the player
+3. Save or update your post/page
+
+#### Using Gutenberg (Block Editor)
+1. Add a **Custom HTML** block
+2. Paste your embed code
+3. Preview to ensure it displays correctly
+4. Publish your changes
+
+**Pro Tip**: Create a reusable block if you'll be embedding multiple episodes.
+
+### Webflow
+
+1. Drag an **Embed** element onto your page
+2. Paste the iframe code into the embed settings
+3. Adjust the width and height constraints if needed
+4. Publish your site
+
+### Squarespace
+
+1. Add a **Code Block** to your page
+2. Paste the embed code
+3. Make sure "Display Source Code" is **disabled**
+4. Save your changes
+
+**Note**: Squarespace may require you to upgrade to a Business plan or higher to use custom code blocks.
+
+### Wix
+
+1. Click the **Add** button (+)
+2. Select **Embed** → **HTML iframe**
+3. Paste your embed code
+4. Resize the frame as needed
+5. Publish your site
+
+### Notion
+
+1. Type `/embed` to create an embed block
+2. Paste the iframe code or just the source URL
+3. Adjust the size by dragging the corners
+
+**Note**: Notion may strip some iframe attributes, so use the direct URL when possible.
+
+### Ghost
+
+1. Type `/html` to insert an HTML card
+2. Paste your embed code
+3. Click outside the card to render the player
+4. Publish or update your post
+
+### Custom HTML Sites
+
+Simply paste the embed code directly into your HTML file where you want the player to appear.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Podcast</title>
+</head>
+<body>
+  <h1>Latest Episode</h1>
+  
+  <!-- BeatSquares Episode Widget -->
+  <iframe
+    src="https://app.beatsquares.com/podcasts/[YOUR-PODCAST-ID]/stream/full"
+    width="100%"
+    height="226px"
+    frameBorder="0"
+    allowFullScreen>
+  </iframe>
+  
+</body>
+</html>
+```
+
+---
+
+## Choosing the Right Embedding Option
+
+### Use BeatSquares Episode Widget When:
+- You want to highlight a specific episode
+- You're embedding in blog posts or articles
+- You need a lightweight, fast-loading player
+- You want direct control from BeatSquares
+- You're embedding multiple different episodes on different pages
+
+### Use Podigee Integration When:
+- You want to display your entire podcast feed
+- You need a dedicated podcast page or website
+- You want distribution on Apple Podcasts, Spotify, etc.
+- You prefer a customizable multi-episode player
+- You want automatic updates when publishing new episodes
+- You need detailed analytics across platforms
+- You want professional hosting infrastructure
+
+### Can You Use Both?
+**Yes!** Many podcasters use both:
+- **Podigee player** on their main podcast page for the full feed
+- **BeatSquares Episode Widget** on individual blog posts to feature specific episodes
+
+---
+
+## Troubleshooting
+
+### Player Not Displaying
+
+**Issue**: The embed code doesn't show anything on your page.
+
+**Solutions**:
+- Verify the iframe code is complete and properly formatted
+- Check that your CMS or platform allows iframe embeds
+- Ensure the podcast is published (not in draft mode)
+- Verify the podcast ID in the URL is correct
+- Clear your browser cache and reload the page
+- Check browser console for errors (F12 → Console tab)
+
+### Player Shows But Won't Play
+
+**Issue**: Player appears but audio doesn't start.
+
+**Solutions**:
+- Confirm the podcast audio file was generated successfully in BeatSquares
+- Check that your browser allows audio playback
+- Ensure your website uses HTTPS (mixed content warnings may block playback)
+- Test in an incognito/private window to rule out extensions
+- Try a different browser
+
+### Sizing Issues
+
+**Issue**: Player appears too large, too small, or overlaps other content.
+
+**Solutions**:
+
+For BeatSquares Episode Widget:
+- Keep the height at `226px` for proper display
+- Use `width="100%"` for responsive layouts
+- Use fixed pixel width (`600px`) for specific designs
+
+For Podigee Player:
+- Standard height is around 400px, adjust based on content
+- Use `width="100%"` for responsive layouts
+- Test on mobile devices to ensure responsiveness
+- Add CSS to the parent container for better control
+
+### Content Security Policy (CSP) Errors
+
+**Issue**: Browser console shows CSP violations.
+
+**Solutions**:
+- Add `https://app.beatsquares.com` to your CSP `frame-src` directive
+- Add `https://*.podigee.io` and `https://player.podigee-cdn.net` if using Podigee integration
+- Update your CSP header or meta tag:
+
+```html
+<meta http-equiv="Content-Security-Policy" 
+      content="frame-src 'self' https://app.beatsquares.com https://*.podigee.io; script-src 'self' https://player.podigee-cdn.net;">
+```
+
+### Podigee Player Not Updating
+
+**Issue**: New episodes don't appear in the Podigee widget.
+
+**Solutions**:
+- Check that your BeatSquares-Podigee integration is still active
+- Verify the episode is published (not in draft)
+- Wait up to 24 hours for feed updates to propagate
+- Manually trigger a feed refresh in Podigee dashboard
+- Check Podigee status page for platform issues
+- Clear your browser cache to see latest updates
+
+### Mobile Display Issues
+
+**Issue**: Player doesn't work well on mobile devices.
+
+**Solutions**:
+- Ensure the parent container is responsive
+- Test with Chrome DevTools mobile emulator
+- For BeatSquares widget, always use `width="100%"`
+- For Podcaster.de, the min-width of 275px should work on most phones
+- Consider hiding large players on mobile and showing a simpler version
+
+---
+
+## Best Practices
+
+### Placement
+- Place episode widgets near related content or episode descriptions
+- Put multi-episode players on dedicated podcast pages
+- Avoid placing multiple players too close together
+- Consider user scroll behavior when positioning
+
+### Performance
+- Don't embed more than 3-4 single-episode players on one page
+- Use Podigee multi-episode player instead of multiple single-episode embeds
+- Consider lazy loading for players below the fold
+- Monitor page load times after adding embeds
+- Use the iFrame method for better page load performance in most cases
+
+### User Experience
+- Add descriptive text before the player (episode title, description, duration)
+- Explain what the player is if it's not obvious from context
+- Don't enable autoplay (disrupts user experience)
+- Ensure sufficient contrast for readability
+
+### SEO
+- Add episode transcripts or show notes near the player
+- Use semantic HTML headings to structure your content
+- Include relevant keywords in surrounding text
+- Add schema markup for podcasts (PodcastEpisode, PodcastSeries)
+
+### Accessibility
+- Provide episode transcripts for hearing-impaired users
+- Ensure keyboard navigation works (Tab through controls)
+- Test with screen readers (NVDA, JAWS, VoiceOver)
+- Add descriptive text explaining the audio content
+
+### Privacy & Legal
+- Update your privacy policy to mention embedded players
+- Inform users about any analytics or cookies from embeds
+- Comply with GDPR if serving European users
+- Consider cookie consent for third-party embeds (Podigee)
+- Review Podigee's privacy policy and data handling practices
+
+### Analytics
+- Use Podigee for detailed play analytics across platforms
+- Monitor engagement metrics in your website analytics
+- Track which episodes get the most plays
+- Use A/B testing to optimize player placement
+- Review Podigee dashboard for subscriber and download statistics
+
+---
+
+## Advanced Techniques
+
+### Dynamic Episode Loading
+
+Use JavaScript to dynamically change which episode is displayed:
+
+```html
+<div id="podcast-player-container">
+  <iframe
+    id="podcast-player"
+    src="https://app.beatsquares.com/podcasts/episode-1-id/stream/full"
+    width="100%"
+    height="226px"
+    frameBorder="0"
+    allowFullScreen>
+  </iframe>
+</div>
+
+<script>
+function loadEpisode(episodeId) {
+  const player = document.getElementById('podcast-player');
+  player.src = `https://app.beatsquares.com/podcasts/${episodeId}/stream/full`;
+}
+</script>
+
+<button onclick="loadEpisode('episode-2-id')">Load Episode 2</button>
+```
+
+### Styling the Player Container
+
+Add visual enhancements around your embedded player:
+
+```html
+<div class="podcast-card">
+  <div class="podcast-header">
+    <h3>Latest Episode: Building Your First Square</h3>
+    <p class="episode-date">Published: October 20, 2025</p>
+  </div>
+  
+  <iframe
+    src="https://app.beatsquares.com/podcasts/[YOUR-PODCAST-ID]/stream/full"
+    width="100%"
+    height="226px"
+    frameBorder="0"
+    allowFullScreen>
+  </iframe>
+  
+  <div class="podcast-footer">
+    <p>Learn how to create your first BeatSquares Square in this 15-minute episode.</p>
+    <a href="/podcast/full-episode" class="read-more">Full Show Notes →</a>
+  </div>
+</div>
+```
+
+```css
+.podcast-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.podcast-header {
+  padding: 1.5rem;
+  background: #f8f8f8;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.podcast-header h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.episode-date {
+  margin: 0;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.podcast-footer {
+  padding: 1.5rem;
+  background: #fafafa;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+```
+
+---
+
+## Conclusion
+
+You now know how to embed BeatSquares podcasts using both the single-episode widget and the Podigee multi-episode integration. Choose the right option based on your needs: single-episode widgets for focused content, or Podigee integration for full podcast distribution and customizable multi-episode players.
+
+For Podigee embeds, remember to choose between the script method (full features) and iFrame method (maximum compatibility) based on your platform's capabilities.
+
+## What's Next?
+
+- [Creating Podcasts](/core-features/creating-podcasts) - Learn the full podcast creation workflow
+- [Creating Newsletters](/core-features/creating-newsletters) - Share podcast updates via email
+- [Creating Squares](/core-features/creating-squares) - Organize your podcast content efficiently
