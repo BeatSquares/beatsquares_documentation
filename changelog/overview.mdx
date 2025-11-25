@@ -10,6 +10,55 @@ rss: true
 
 ## Recent Updates
 
+<Update label="Version 1.0.0 - Major Release" description="Released November 26, 2025">
+
+**New Features**
+- **Fact Viewer**: Added fact viewer functionality for newsletters and podcasts, allowing users to track names, places, and figures between source material and generated content with interactive highlighting
+- **Overview Segment Type**: Introduced new Overview segment type for generating content summaries (like podcast intros) that use other segments as inputs
+- **Data Source Filtering**: Implemented individual filtering for data sources per square, enabling more granular control over content sources
+
+**Improvements**
+- **Podcast Enhancements**: Updated ElevenLabs TTS model to eleven_v3, added voice selection (Jane and Otto), and fixed HTTP/2 protocol errors in podcast audio streaming
+- **WhatsApp Strategy Migration**: Migrated WhatsApp article generation to use Full Strategy (analysis + generation) in Strategy Builder, consolidating multiple LLM calls into a single strategy execution
+- **Content Selection**: Unified article selection interface across all square types, now using the WhatsApp "Add article" modal for newsletters and podcasts, with support for Events and Press Releases
+- **Podcast UI Redesign**: Updated podcast generation flow to match newsletter UI with blueprint concept, segment variants, verification workflow, and block-based editor
+- **Scheduled Scraping**: Added Tagesspiegel scrapers to scheduled scraping tasks for automated content collection
+- **Performance Optimization**: Fixed Strategy Builder out of memory errors by optimizing Sentry SDK configuration and sampling rates
+
+</Update>
+
+---
+
+<Update label="Version 0.9.0 - Blueprint-Based Content Generation" description="Released November 19, 2025">
+
+**New Features**
+- **Blueprint-Based Newsletter Generation**: Introduced segment blueprint system allowing users to define fixed content structures with AI and manual segments
+- **Tagesspiegel RSS Integration**: Added support for importing Tagesspiegel articles from full-text RSS feed with Media RSS support
+- **Email Data Sources**: Implemented email-based data sources using SendGrid Inbound Parse, allowing editors to send content via email to populate squares
+- **Home Scraper**: Added homepage scraping system with importance scoring for extracting articles from news homepages
+- **Segment Verification**: Added ability to set individual segments to "Verified" status in newsletter and podcast workflows
+- **WhatsApp Event Images**: Extended Strategy Builder to support image handling for WhatsApp event posts
+- **Bezirksnewsletter Sources**: Added Berlin-specific scrapers for events and press releases from various Berlin government sources
+
+**Improvements**
+- **Newsletter UI Redesign**: Completely redesigned newsletter generation flow with block-based editor, segment variants, and improved editing experience
+- **Square Settings Page**: New unified settings page for squares with blueprint configuration, scheduling options, and improved organization
+- **Dashboard Navigation**: Simplified navigation with direct access to media item lists and improved square switching
+- **Media Item Updates**: Refactored media item update system to use granular actions, reducing complexity and improving state management
+- **Health Endpoints**: Added standardized `/health` endpoints across all backend services for better monitoring and observability
+- **Spider Organization**: Reorganized scrapers into client and category-specific folders for better maintainability
+- **Memory Leak Fix**: Resolved Strategy Builder memory leak caused by unclosed LLM HTTP clients
+- **Task Time Limits**: Increased time limits for Events and Press Releases processing tasks to handle larger datasets
+
+**Bug Fixes**
+- **Type Annotations**: Fixed type annotation inconsistencies for strategy parameters across the codebase
+- **Firecrawl Retries**: Added retry mechanism for Firecrawl 502 errors to improve scraping reliability
+- **Validation Errors**: Fixed various validation errors in fact checking, pipeline processing, and strategy configuration
+
+</Update>
+
+---
+
 <Update label="Version 0.8.5 - Strategy Builder & WhatsApp Enhancements" description="Released September 10, 2025">
 
 **New Features**
