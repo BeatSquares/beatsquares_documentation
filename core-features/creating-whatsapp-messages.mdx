@@ -1,261 +1,257 @@
 ---
 title: "Creating WhatsApp Messages"
-description: "Craft and send WhatsApp messages directly from BeatSquares for efficient communication and content distribution"
+description: "Step-by-step guide to creating, editing, and scheduling WhatsApp messages using BeatSquares"
 ---
+
 WhatsApp message creation in BeatSquares transforms your articles, events, or press releases into broadcast-ready content for WhatsApp channels. The workflow centers on a simple selection process: choose your source content, and BeatSquares automatically generates three message variants optimized for WhatsApp's format and audience expectations.
 
 The system streamlines the entire publishing pipeline. Once your messages are generated, you can edit the text, add images, and choose between immediate publishing or scheduling for later. The verification system lets team members flag messages as ready-to-publish, creating a clear approval workflow when multiple people manage the same channel.
 
-Setting up WhatsApp integration requires linking your phone through QR code scanning—similar to WhatsApp Web—and creating broadcast channels that appear in your WhatsApp app. From there, all publishing happens directly through BeatSquares' interface, with messages automatically posting to your connected channels at the times you specify. This approach keeps your content creation centralized while leveraging WhatsApp's massive reach for distribution.
-
-
 ## What You'll Learn
 
 In this guide, you'll learn how to:
-- Set up WhatsApp integration within BeatSquares
-- Create and format WhatsApp messages
-- Manage contact lists and groups
-- Schedule and send messages effectively
+- Create WhatsApp messages from articles
+- Review and select message variants
+- Use the fact viewer to track information between source and generated content
+- Edit and customize message content
+- Verify messages for team approval
+- Schedule messages for future publishing
 
 ## Before You Start
 
 **Prerequisites:**
 - Active BeatSquares account
-- A mobile device with WhatsApp installed
-- At least one Square created for organization
+- A Square created with the "WhatsApp" output format
+- WhatsApp integration configured (see "Create a new WhatsApp channel" section below)
 
-# Guides
+<Note>
+Each square has a specific output format. To create WhatsApp messages, you need a square with the output format "WhatsApp".
+</Note>
 
-## Creating a new WhatsApp message
+## Creating a WhatsApp Post
 
-### 1. Open Beatsquares…
-![Step 1 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/9f6d833f-3b7e-4028-adef-1dfe7e1b8040/80eff971-b64f-459e-8392-e6c631396797.png?crop=focalpoint&fit=crop&fp-x=0.4934&fp-y=0.0400&fp-z=1.0215&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=21&mark-y=2&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xMTU4Jmg9NjUmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+<Steps>
+  <Step title="Navigate to Your Square">
+    Go to your dashboard and click on the WhatsApp Square where you want to create the post.
 
+    ![Step 1 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/5bbf829e-f0db-4b11-85dd-7e44b6c0dfc9/1294fdfc-6e73-4403-880f-3a5b763d47f8.png?crop=focalpoint&fit=crop&fp-x=0.7747&fp-y=0.3356&fp-z=1.4278&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=584&mark-y=156&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz00NjAmaD00NjAmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
 
-### 2. Click on Open WhatsApp Channel
-![Step 2 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/9d9b0350-3172-4fd4-a16f-c74b363e1295/f883bc32-ddae-4cdd-b1dc-d097f2d26a67.png?crop=focalpoint&fit=crop&fp-x=0.8385&fp-y=0.5650&fp-z=2.8942&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=355&mark-y=367&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01NjgmaD0xMTEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  <Step title="Create Post">
+    Click on **Create post** to start creating a new WhatsApp message.
 
+    ![Step 2 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/fe510bf3-3d5c-4c02-9234-fd73dee8769d/5caca4c5-e9f2-4fe4-b8f1-72359ad234b3.png?crop=focalpoint&fit=crop&fp-x=0.8702&fp-y=0.1649&fp-z=2.9139&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=594&mark-y=336&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zMDQmaD0xMDEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
 
-### 3. Click on Create Post
-![Step 3 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/825d769e-b1f5-4ed7-b3dd-33ba6ac2f2cf/72130bb3-1b94-484f-abc4-fb068b1300ce.png?crop=focalpoint&fit=crop&fp-x=0.0589&fp-y=0.1375&fp-z=2.2538&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=22&mark-y=125&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0yNzQmaD0yNzQmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  <Step title="Select Article">
+    Select the article you want to create a message about. Available articles are based on the categories chosen in your Square settings.
 
+    <Note>
+      For WhatsApp messages, you can only select one article or press release per message. You can add multiple events.
+    </Note>
 
-### 4. Choose the type of source you want to use
+    ![Step 3 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/1be1c156-d2d7-41a2-b20f-ba4befa34bbc/e1521c86-f883-47e8-84a7-60c409cdacba.png?crop=focalpoint&fit=crop&fp-x=0.4951&fp-y=0.2620&fp-z=1.1016&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=67&mark-y=192&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDY1Jmg9ODAmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
 
-Depending on your organizations setup, there are three options:
+  <Step title="Create Post">
+    Click on **Create post** to generate the message variants.
 
-*   Articles
-    
-*   Events
-    
-*   Press Releases
+    ![Step 4 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/1f117014-6482-4e26-9408-93abd4088978/077d8189-e2b8-4ac7-bb14-b0881b7a98c5.png?crop=focalpoint&fit=crop&fp-x=0.8696&fp-y=0.9264&fp-z=4.0000&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=417&mark-y=499&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zNjcmaD0xMzkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
+</Steps>
 
-![Step 4 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/db4cb073-07bd-4db3-8aa9-466c27fcbc0e/501ce5e9-f71b-4cfa-a43c-c75e67ae8692.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5003&fp-z=1.1521&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=336&mark-y=64&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01MjcmaD03MTgmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+## Reviewing Message Variants
 
+BeatSquares automatically generates three message variants for each article. You can review and select the one that best fits your needs.
 
-### 5. Select one article you want to create a message about
+<Steps>
+  <Step title="Access Generated Post">
+    Click on the generated post title to view the message variants.
 
-For this output format, there can only be one article, event or press release per message.
+    ![Step 5 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/b9015838-ffc0-4042-85a0-7b593221d846/063a463f-5556-4b63-81ca-079a51d08ddc.png?crop=focalpoint&fit=crop&fp-x=0.4842&fp-y=0.2797&fp-z=1.2222&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=157&mark-y=246&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz04ODcmaD01OCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  </Step>
 
-![Step 5 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/d8793aa1-5be4-40b5-b846-a46bc865499a/f94b4102-befc-4bbc-af4b-bb7bfb8157d0.png?crop=focalpoint&fit=crop&fp-x=0.4934&fp-y=0.5875&fp-z=1.5816&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=285&mark-y=349&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz02MzEmaD0xNDkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  <Step title="Review Variants">
+    Click on **Var 2** or **Var 3** to review the different message variants. Each variant offers a different tone, length, or approach to presenting the content.
 
+    ![Step 6 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/8ae3b2db-3db9-4377-ace1-b745985702b5/8884fcbb-867d-424c-9d7b-8803e3460d54.png?crop=focalpoint&fit=crop&fp-x=0.6841&fp-y=0.1207&fp-z=2.9648&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=524&mark-y=246&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNTImaD04NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
-### 6. Click on Create Post
-![Step 6 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/6067c071-78a9-43bb-a559-ea9690d89343/977dcdef-e026-489e-9b98-ab2dbbf48341.png?crop=focalpoint&fit=crop&fp-x=0.6302&fp-y=0.8030&fp-z=2.5958&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=467&mark-y=373&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0yNjYmaD0xMDAmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+    ![Step 7 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/7aca7376-0a5a-4de2-92d6-d80007b5fad8/712cff86-2e1a-43a1-bb54-2fc129f6b242.png?crop=focalpoint&fit=crop&fp-x=0.7269&fp-y=0.1207&fp-z=2.9821&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=523&mark-y=248&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNTMmaD04NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
 
+    ![Step 8 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/26b32487-b3d9-4f52-8b36-6cb00033e050/597c3b40-6042-43c8-9708-6b142a5538f2.png?crop=focalpoint&fit=crop&fp-x=0.7856&fp-y=0.3430&fp-z=1.4926&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=518&mark-y=180&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01OTYmaD00NDUmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
+</Steps>
 
-### 7. The message is being generated
+## Understanding the Fact Viewer
 
-This can take between 2-3 minutes.
+BeatSquares includes a powerful fact viewer feature that helps you track how information from your source material is used in the generated messages.
 
-![Step 7 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/d1f51873-5293-4a9c-98e1-c4e42197383f/7b550090-41ba-4827-bc7e-0e4d00bf3c2e.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.0338&fp-z=1.0018&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=1&mark-y=2&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xMTk4Jmg9NTMmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+### How It Works
 
+When you view a generated message, BeatSquares automatically identifies and highlights important facts in both the source material and the generated text:
 
-### 8. Click on any tile on the right hand side to open the messages
-![Step 8 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/bde3ac1b-ea70-49d8-b70c-67ed866e456a/61b7382a-77b9-4fc4-a4e8-6c45025c3ed9.png?crop=focalpoint&fit=crop&fp-x=0.0582&fp-y=0.4707&fp-z=2.2374&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=17&mark-y=284&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0yNzgmaD0yNzgmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+- **Names**: People, organizations, and entities
+- **Places**: Locations, cities, countries, and geographical references
+- **Figures**: Numbers, statistics, dates, and quantitative data
 
+![Fact viewer example](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/f67dfcdf-27b8-403b-9fbf-f97b33be8314/a4435885-60bd-472f-a9e8-8da9f4775049.png?crop=focalpoint&fit=crop&fp-x=0.5975&fp-y=0.5137&fp-z=1.0324&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=222&mark-y=2&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05NTgmaD04MDImZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
 
-### 9. Review the variants to finde the correct one
+### Interactive Highlighting
 
-BeatSquares automatically creates three message variants for each articles. You can find them by clicking on the Var 1, Var 2, Var 3 buttons at the top.
+The fact viewer creates a visual connection between your source material and the generated message:
 
-![Step 9 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/88324c14-4b4d-4284-8758-2a21cd69dce3/4d9bbec0-a153-426d-b2a7-98bba2243e9a.png?crop=focalpoint&fit=crop&fp-x=0.2007&fp-y=0.1489&fp-z=2.8764&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=518&mark-y=316&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xNjUmaD05MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+- **Hover over highlighted text** in the source material to see where that fact appears in the generated message
+- **Hover over highlighted text** in the generated message to see where it originated in the source material
+- This bidirectional highlighting helps you verify that important facts are accurately represented
 
+<Tip>
+Use the fact viewer to quickly verify that key information from your source article is correctly included in the generated WhatsApp message.
+</Tip>
 
-## Editing messages
+### When Highlighting Disappears
 
+Once a message is generated and you move on to editing or scheduling, the fact viewer highlighting is automatically removed. The highlighting is only visible during the initial review phase when viewing the generated variants.
 
-### 10. Click on Edit message
-![Step 10 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/cffb0a6e-2b91-4c99-b6e0-76c5d779b524/5eb9b29f-01df-4aa7-9959-4a7afc750812.png?crop=focalpoint&fit=crop&fp-x=0.5027&fp-y=0.2224&fp-z=2.9841&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=556&mark-y=379&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz04OSZoPTg5JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+<Note>
+The fact viewer highlighting is temporary and is removed once you proceed with editing or scheduling the message. This keeps the interface clean while you work with the final message content.
+</Note>
 
+## Editing Messages
 
-### 11. Make changes to the message.
-![Step 11 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/b027bc14-988b-4e57-805c-314e7c637349/a87d9345-7354-4982-b8be-1f00ed680996.png?crop=focalpoint&fit=crop&fp-x=0.3423&fp-y=0.3794&fp-z=1.5624&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=281&mark-y=198&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz02MzgmaD00NDkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+You can customize any message variant to better match your needs before publishing or scheduling.
 
+<Steps>
+  <Step title="Select Variant">
+    Click on the post title again to access the message details, then select the variant you want to edit.
 
-### 12. Click on Save changes
+    ![Step 9 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/f67dfcdf-27b8-403b-9fbf-f97b33be8314/a4435885-60bd-472f-a9e8-8da9f4775049.png?crop=focalpoint&fit=crop&fp-x=0.5975&fp-y=0.5137&fp-z=1.0324&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=222&mark-y=2&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05NTgmaD04MDImZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
 
-Alternatively you can cancel the changes by clicking the "x".
+  <Step title="Edit Message">
+    Click on **Edit message** to modify the message content.
 
-![Step 12 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/20f73215-d721-46ce-960e-5e3f2ddad89f/c0c723cb-0680-4e7f-ab06-a23299cb95a4.png?crop=focalpoint&fit=crop&fp-x=0.4808&fp-y=0.2224&fp-z=2.9841&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=556&mark-y=379&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz04OSZoPTg5JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+    ![Step 10 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/892b39a9-2e4a-40fd-804f-157b57194439/7827ef83-f077-464b-a7ae-f3ed75e738d5.png?crop=focalpoint&fit=crop&fp-x=0.9117&fp-y=0.1207&fp-z=2.9476&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=834&mark-y=240&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDcmaD05MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  </Step>
 
+  <Step title="Make Your Changes">
+    Type or paste your custom message content. You can use emojis, formatting, and WhatsApp-specific features.
 
-## # Verify messages
-To make sure that a message that has already been reviewed can be published or scheduled by other users, BeatSquares allows users to set a message to "Verified". If the verified button was clicked, the variant gets a green checkmark and the post on the left hand overview gets a check-mark as well.
+    ![Step 11 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/1bc12d73-4589-4e50-8dce-afe4f4377e5a/6e5813bf-cb85-4431-9d7f-00e0493c863f.png?crop=focalpoint&fit=crop&fp-x=0.7856&fp-y=0.3435&fp-z=1.6713&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=485&mark-y=202&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz01NjkmaD00MDImZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
 
+  <Step title="Save Changes">
+    Click **Save changes** to save your edits. Alternatively, you can cancel the changes by clicking the "x" button.
 
-### 13. Click on Verify
-![Step 13 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/b5820240-b1eb-46ad-a56a-32d07f299141/0fe1b177-0aa8-4f0c-8cee-f46cf81758d1.png?crop=focalpoint&fit=crop&fp-x=0.3547&fp-y=0.9486&fp-z=2.7881&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=502&mark-y=671&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xOTYmaD0xMDcmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+    ![Step 12 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/db6d93fd-dee7-462c-acc6-d1b22cf82912/bccf4430-027f-42f3-9381-354da2291e88.png?crop=focalpoint&fit=crop&fp-x=0.8992&fp-y=0.2071&fp-z=2.9997&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=797&mark-y=362&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz04MSZoPTgxJmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+  </Step>
+</Steps>
 
+## Verifying Messages
 
-### 14. Click on Message Variants…
-![Step 14 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/4cbca2af-7d66-4b67-8fa0-fb16d4b372b3/6bbae257-49b9-44fb-9c16-68e99f1da68d.png?crop=focalpoint&fit=crop&fp-x=0.5566&fp-y=0.5234&fp-z=1.0534&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=81&mark-y=2&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xMTE4Jmg9ODQyJmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+To ensure that a message that has already been reviewed can be published or scheduled by other users, BeatSquares allows users to set a message to "Verified". When verified, the variant gets a green checkmark and the post in the overview gets a checkmark as well.
 
+<Steps>
+  <Step title="Select Variant">
+    Click on the post title and select the variant you want to verify (e.g., **Var 3**).
 
-## Scheduling
+    ![Step 13 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/cd98abba-5cc1-4af5-b549-328416aba889/98ea72bb-bbae-413e-bc84-54c60f3b2432.png?crop=focalpoint&fit=crop&fp-x=0.5975&fp-y=0.5137&fp-z=1.0324&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=222&mark-y=2&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05NTgmaD04MDImZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
 
+    ![Step 14 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/2775433f-0174-4c0a-bd2f-7d994a03a92b/af9ea4c6-7d35-4263-9957-633a93a3917a.png?crop=focalpoint&fit=crop&fp-x=0.7269&fp-y=0.1207&fp-z=2.9821&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=523&mark-y=248&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNTMmaD04NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  </Step>
 
-### 15. Click on Schedule
-![Step 15 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/1cfb5634-9735-43a3-8106-f282fdc4410c/c7dc4c20-0456-4c1e-9bb3-47c3c6df986b.png?crop=focalpoint&fit=crop&fp-x=0.4237&fp-y=0.9486&fp-z=2.6688&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=480&mark-y=679&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0yMzkmaD0xMDMmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  <Step title="Verify Message">
+    Click on **Verify message** to mark the message as verified and ready for publishing.
 
+    ![Step 15 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/4a986fe3-5ce6-4b6a-a0b2-3b2d5c775e5d/40e50561-0b9f-4c6d-8c6a-663255d8eb6b.png?crop=focalpoint&fit=crop&fp-x=0.9368&fp-y=0.1207&fp-z=2.9476&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=923&mark-y=240&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDcmaD05MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  </Step>
+</Steps>
 
-### 16. Click on Select date and time
-![Step 16 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/c80b98c0-0210-4d05-b059-5befa8c40c97/d67e3fd6-6d58-4c65-81de-eb3446fd5005.png?crop=focalpoint&fit=crop&fp-x=0.4553&fp-y=0.4584&fp-z=2.2834&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=411&mark-y=379&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0zNzgmaD04OCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+## Scheduling Messages
 
+You can schedule messages to be sent at a specific date and time, allowing you to plan your content distribution in advance.
 
-### 17. Pick date and time
-![Step 17 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/a09f3ab4-5c07-4a88-a1b8-9a27f14b8d84/d9afc72f-40ff-4d6e-8fad-55fbec4f2847.png?crop=focalpoint&fit=crop&fp-x=0.4574&fp-y=0.7555&fp-z=3.0365&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=547&mark-y=369&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xMDcmaD0xMDcmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+<Steps>
+  <Step title="Schedule Message">
+    Click on **Schedule** to set up a scheduled send time.
 
+    ![Step 16 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/4bc2b888-80c8-42e5-a73f-e7cacaad4e89/37f06d14-57ae-4544-af17-3d2536781444.png?crop=focalpoint&fit=crop&fp-x=0.8363&fp-y=0.5819&fp-z=2.9139&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=509&mark-y=352&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yMzcmaD0xMDEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
 
-### 18. Click on Submit
-![Step 18 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/e217a5ec-0efc-4b26-a0aa-3a930b14b0c9/98cd00d0-cd67-4060-b4ab-32f80f2ccfce.png?crop=focalpoint&fit=crop&fp-x=0.4812&fp-y=0.9262&fp-z=2.0496&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=369&mark-y=674&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz00NjImaD04NyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  <Step title="Select Date and Time">
+    Click on **Select date and time** to open the date and time picker.
 
+    ![Step 17 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/d4aadea0-6473-43c0-986e-ef1302f56b1e/21c4ba20-00a8-405a-a0e9-d7467a7ab707.png?crop=focalpoint&fit=crop&fp-x=0.4605&fp-y=0.4612&fp-z=2.3593&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=425&mark-y=362&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zNTEmaD04MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  </Step>
 
-### 19. Click on Submit
-![Step 19 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/23cad2eb-5160-4e50-9593-9112e68cc77b/f15160a2-66f0-407c-9e15-6b69aa15e4ef.png?crop=focalpoint&fit=crop&fp-x=0.4812&fp-y=0.8947&fp-z=2.7881&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=502&mark-y=548&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xOTYmaD05OCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  <Step title="Pick Date">
+    Click on the day of the month (e.g., **26**) to select your desired date.
 
+    ![Step 18 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/e5070783-c25f-4d41-8623-1cb8a589a9a8/fb9c3447-7ef3-4f98-a9e6-058ce5db27d1.png?crop=focalpoint&fit=crop&fp-x=0.4835&fp-y=0.7419&fp-z=3.0642&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=552&mark-y=354&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05NyZoPTk3JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+  </Step>
 
-### 20. Click on Schedule Message
-![Step 20 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/abb8a447-a94d-4647-9733-8d037ae337cd/c8ef7c12-83ed-4b30-9db4-cb1bf09af07a.png?crop=focalpoint&fit=crop&fp-x=0.6084&fp-y=0.6730&fp-z=2.3884&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=430&mark-y=377&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0zNDAmaD05MiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  <Step title="Select Time">
+    Click on **hours** to set the time for your scheduled message.
 
+    ![Step 19 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/efcc81c5-98a5-4cfd-9e3a-a0bced4cb0e8/e6e97254-f5a3-41ef-bbdc-99c8efee78e7.png?crop=focalpoint&fit=crop&fp-x=0.4651&fp-y=0.8577&fp-z=2.9683&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=534&mark-y=414&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMzEmaD0xMDMmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
 
-### 21. Once a message is scheduled or the button "verified" is clicked, it gets a green check-mark. This signals to other users that the message is ready to publish.
-![Step 22 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/a8158e74-4784-44c4-9863-eff6c731b835/e5d19e2c-c36d-4e0b-8a7f-7b973e7c6d5e.png?crop=focalpoint&fit=crop&fp-x=0.3423&fp-y=0.5364&fp-z=1.2072&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=191&mark-y=50&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz02MDkmaD03NDUmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  <Step title="Submit Schedule">
+    Click **Submit** to confirm your date and time selection.
 
+    ![Step 20 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/f9a236db-aae3-415c-b4a3-a46614e27ea2/f3dbc8a4-a5b2-4fac-8b36-d565c011b3db.png?crop=focalpoint&fit=crop&fp-x=0.4835&fp-y=0.8734&fp-z=2.8353&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=510&mark-y=472&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNzkmaD05MCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  </Step>
 
-## Adding an image to a message
+  <Step title="Confirm Schedule">
+    Click **Schedule Message** to finalize the scheduled send.
 
+    ![Step 21 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/fd503048-66cf-4e6e-bebe-56321d00cd1e/b1411db9-051b-4c23-898c-33c14e70b8a8.png?crop=focalpoint&fit=crop&fp-x=0.5975&fp-y=0.6634&fp-z=2.4587&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=443&mark-y=360&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zMTUmaD04NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+  </Step>
 
-### 1. Click on Edit message
-![Step 23 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/fe39e13f-db19-45c2-bb39-08db6d1c96c0/2c7f19ab-9284-41db-b5a6-09a1d8be4b31.png?crop=focalpoint&fit=crop&fp-x=0.5027&fp-y=0.2224&fp-z=2.9841&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=556&mark-y=379&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz04OSZoPTg5JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+  <Step title="Close Panel">
+    Click **Close panel** to return to the main view. Once a message is scheduled or verified, it gets a green checkmark, signaling to other users that the message is ready to publish.
 
+    ![Step 22 screenshot](https://images.tango.us/workflows/5e90d7f6-614e-4a96-ab38-c8a07f66c500/steps/3ff205b2-fd8e-4b5a-9a54-3bdaaf93ea70/ecf0f5f0-6735-42d9-8284-5c7565fec346.png?crop=focalpoint&fit=crop&fp-x=0.9750&fp-y=0.0294&fp-z=2.9139&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=1062&mark-y=18&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDEmaD0xMDEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+  </Step>
+</Steps>
 
-### 2. Click on Manage image
-![Step 24 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/23359a9e-4a62-4129-ae7c-36ca90f2fcda/9c2aa26d-f479-45eb-8c90-ce465f1ceb7a.png?crop=focalpoint&fit=crop&fp-x=0.4588&fp-y=0.2224&fp-z=2.9841&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=556&mark-y=379&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz04OSZoPTg5JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+## Publishing Messages Immediately
 
+There are two ways a message can be posted to a WhatsApp channel: either by scheduling (see above) or by clicking "Publish now" for immediate publishing.
 
-### 3. Click on Upload
-![Step 25 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/cb3382ab-662f-4576-b60a-fcbf1598f223/eb1abbd4-e190-4dfd-84a3-ec2577873c57.png?crop=focalpoint&fit=crop&fp-x=0.4040&fp-y=0.4743&fp-z=2.4920&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=449&mark-y=388&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0zMDMmaD03MCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+### Publish Now
 
+Click on **Publish Now** to send the message immediately to your WhatsApp channel. The message will be sent right away.
 
-### 4. Click on Upload from computer
-![Step 26 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/344bd05a-22f3-42a3-a26a-852e8a814cde/4f6731b2-28c3-4190-8b0e-4a9e057f9d36.png?crop=focalpoint&fit=crop&fp-x=0.4998&fp-y=0.5202&fp-z=1.6713&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=301&mark-y=394&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01OTgmaD01OSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+<Note>
+Make sure you've verified the message content before publishing, as it will be sent immediately to your subscribers.
+</Note>
 
+## Adding Images to Messages
 
-### 5. Select a file from your computer and click "ok", the upload will start
-![Step 27 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/b6aee859-2009-4060-992d-2a7d8c95b6c0/426509cd-e3be-483c-b60e-64fc40e61e5a.png?crop=focalpoint&fit=crop&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n)
+You can enhance your WhatsApp messages by adding images that will appear at the top of the post.
 
+### Steps to Add an Image
 
-### 6. The image will show at the top of the post. Click on the green checkmark and  save changes
-![Step 28 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/9e607d5c-e63e-44b0-91a3-2fc67bd4806e/f379d696-af11-4c10-bfad-98eceb74e1e5.png?crop=focalpoint&fit=crop&fp-x=0.4808&fp-y=0.2224&fp-z=2.9841&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=556&mark-y=379&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz04OSZoPTg5JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
+1. Click on **Edit message** to open the editing interface
+2. Click on **Manage image** to access image options
+3. Click on **Upload** and then **Upload from computer**
+4. Select a file from your computer and click "OK" - the upload will start automatically
+5. The image will show at the top of the post. Click on the green checkmark and **Save changes** to confirm
 
-
-## Publishing a message
-There are two ways a message can be posted to a WhatsApp channel: Either by scheduling (see above) or by clicking "Publish now"
-
-
-### 1. Click on Publish Now
-![Step 29 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/9fad0f50-57f8-420c-9595-117382fe08f2/45d21fb7-6677-4f34-a154-186259fc005e.png?crop=focalpoint&fit=crop&fp-x=0.5087&fp-y=0.9486&fp-z=2.5774&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=464&mark-y=684&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0yNzImaD05OSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-
-### 2. Message is send to the WhatsApp channel
-![Step 30 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/8c11fbcc-5cc7-44da-92b4-6aec4381e34a/2efa3f65-7016-4588-aea5-f03b675fa084.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n)
-
-
-## Create a new WhatsApp channel
-Before you can send WhatsApp messages, you need to connect BeatSquares with a cell phone running WhatsApp. Once this connection is established, new channels can be added. We recommend keeping the number of channels per device to a max. of 2.
-
-
-### 1. Click on Create square
-![Step 31 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/f593ef54-526e-4976-b30a-ed3537fd23f7/4c95c5ea-b311-41b8-9dfa-dcc23f8fbf75.png?crop=focalpoint&fit=crop&fp-x=0.8994&fp-y=0.1567&fp-z=2.8942&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=664&mark-y=328&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0zNzQmaD0xMTEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-
-
-### 2. Click on Format…
-![Step 32 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/4f705f1f-4125-444b-93f1-e8b28872d4ac/2069466d-3d87-40b8-9905-5260272e58aa.png?crop=focalpoint&fit=crop&fp-x=0.3566&fp-y=0.8030&fp-z=2.5006&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=450&mark-y=359&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0zMDAmaD0xNDAmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-
-
-### 3. Click on WhatsApp
-![Step 33 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/506469e1-6726-4296-bd0c-edf5edcba725/f833852a-04ee-4070-86d4-34db5f54f936.png?crop=focalpoint&fit=crop&fp-x=0.3634&fp-y=0.9239&fp-z=2.4611&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=443&mark-y=644&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0zMTQmaD04NyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-
-### 4. Click on Connect your WhatsApp account
-![Step 34 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/616fc393-2678-41d8-bd3e-01078a8af89d/a39e980a-9828-4fe5-9c13-9f192173102d.png?crop=focalpoint&fit=crop&fp-x=0.4033&fp-y=0.8404&fp-z=2.0268&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=365&mark-y=529&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz00NzAmaD04NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-
-### 5. Click on Add new account
-![Step 35 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/a7a56046-75bb-4412-8b57-0eb7f34d9eee/2d7b3ca9-dd8d-4650-8718-cf38bff1cc63.png?crop=focalpoint&fit=crop&fp-x=0.4040&fp-y=0.9330&fp-z=2.0749&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=373&mark-y=692&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz00NTMmaD03MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-
-### 6. Click on Scan QR Code…
-
-Open WhatsApp on your device. Go to Settings > Linked Devices and click on "Add device". This will open the camera and allow you to scan the QR code shown below.
-
-![Step 36 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/e888cf50-13bd-47d5-b1c0-11f400f4b315/a841a4ff-402d-4d29-ae95-adac56c615fa.png?crop=focalpoint&fit=crop&fp-x=0.4968&fp-y=0.5156&fp-z=1.4188&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=306&mark-y=158&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01ODgmaD01MjkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-
-
-### 7. Click on Choose your broadcast channel
-![Step 37 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/5946b33d-a6df-4b8d-a434-666015e69079/0d499dfe-3f7b-4026-b250-3e3783e5a4f5.png?crop=focalpoint&fit=crop&fp-x=0.5053&fp-y=0.8417&fp-z=2.0632&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=371&mark-y=526&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz00NTcmaD04NyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-
-### 8. Click on Create new channel
-![Step 38 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/13241bf4-cafc-4425-96ee-ce4a5a461f8c/ff8f5f4e-1175-4d7e-8116-76cb99a19c69.png?crop=focalpoint&fit=crop&fp-x=0.5055&fp-y=0.8914&fp-z=2.1131&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=380&mark-y=615&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz00MzkmaD03NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-
-### 39. Enter the name of the Channel
-
-This name will appear in the WhatsApp overview under "Channels". Pick the name carefully.
-
-![Step 39 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/d7c73e9d-f00c-460d-95ac-e07754ab97a8/435d4f0d-1fca-4293-a39d-e260a9d51c61.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5033&fp-z=1.5491&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=279&mark-y=393&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz02NDImaD02MCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-
-### 40. Click on Create Channel
-![Step 40 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/6a3d851d-7899-4ae0-9c6f-344e26b739f9/9b5ee78d-3ec6-47cd-b961-a54af52ed38c.png?crop=focalpoint&fit=crop&fp-x=0.6212&fp-y=0.5572&fp-z=2.4750&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=446&mark-y=375&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0zMDkmaD05NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-
-### 41. Click on Test Channel
-![Step 41 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/c2aaa5ee-e204-4a8a-aeab-7257c9e78d93/e90ae5d4-8e39-4685-8010-56e02e0cc15c.png?crop=focalpoint&fit=crop&fp-x=0.5050&fp-y=0.8875&fp-z=2.0888&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=376&mark-y=610&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz00NDgmaD03NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-
-### 42. To finish setting up the square, pick categories
-![Step 42 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/612a01ed-3104-4f49-a572-23e7c99f847e/a795d5aa-2df2-4c1d-804b-4c77eb32ab73.png?crop=focalpoint&fit=crop&fp-x=0.1302&fp-y=0.2653&fp-z=1.7965&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=4&mark-y=343&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz01NTMmaD0xMjEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-
-
-### 43. Click on Open WhatsApp Channel
-
-Now you are all setup, ready to get to work.
-
-![Step 43 screenshot](https://images.tango.us/workflows/725158f0-54c5-4f2c-b360-d782069634b4/steps/adea24b3-6278-478c-9c7a-f85e90be5107/edc2556c-c9e3-4ee0-9f61-a68d2b503bdf.png?crop=focalpoint&fit=crop&fp-x=0.3948&fp-y=0.5650&fp-z=2.1570&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=388&mark-y=381&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz00MjMmaD04MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
+The image will appear at the top of your WhatsApp message when it's published.
 
 ## Best Practices
 
 - **Timing Awareness:** Send messages at appropriate times for your audience's time zone
 - **Value-Driven Content:** Ensure every message provides value or important information
+- **Verification Workflow:** Use the verification feature to create a clear approval process for team members
+- **Variant Selection:** Review all three variants before choosing the best one for your audience
 
 ## What's Next?
 
-- [Adding Manual Articles](/core-features/adding-manual-articles)
+- [Manually Adding Articles](/core-features/manually-adding-articles)
 - [Creating Newsletters](/core-features/creating-newsletters)
 - [Creating Podcasts](/core-features/creating-podcasts)
 
 ---
-*Related: [Creating Squares](/core-features/creating-squares) | [Common Errors](/troubleshooting/common-errors)*
+*Related: [Creating Squares](/core-features/creating-squares) | [FAQ](/troubleshooting/faq)*
