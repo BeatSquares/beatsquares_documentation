@@ -22,7 +22,7 @@ rss: true
 - **WhatsApp Strategy Migration**: Migrated WhatsApp article generation to use Full Strategy (analysis + generation) in Strategy Builder, consolidating multiple LLM calls into a single strategy execution
 - **Content Selection**: Unified article selection interface across all square types, now using the WhatsApp "Add article" modal for newsletters and podcasts, with support for Events and Press Releases
 - **Podcast UI Redesign**: Updated podcast generation flow to match newsletter UI with blueprint concept, segment variants, verification workflow, and block-based editor
-- **Scheduled Scraping**: Added Tagesspiegel scrapers to scheduled scraping tasks for automated content collection
+- **Scheduled Scraping**: Added scrapers to scheduled scraping tasks for automated content collection
 - **Performance Optimization**: Fixed Strategy Builder out of memory errors by optimizing Sentry SDK configuration and sampling rates
 
 </Update>
@@ -33,12 +33,12 @@ rss: true
 
 **New Features**
 - **Blueprint-Based Newsletter Generation**: Introduced segment blueprint system allowing users to define fixed content structures with AI and manual segments
-- **Tagesspiegel RSS Integration**: Added support for importing Tagesspiegel articles from full-text RSS feed with Media RSS support
+- **RSS Integration**: Added support for importing articles from full-text RSS feed with Media RSS support
 - **Email Data Sources**: Implemented email-based data sources using SendGrid Inbound Parse, allowing editors to send content via email to populate squares
 - **Home Scraper**: Added homepage scraping system with importance scoring for extracting articles from news homepages
 - **Segment Verification**: Added ability to set individual segments to "Verified" status in newsletter and podcast workflows
 - **WhatsApp Event Images**: Extended Strategy Builder to support image handling for WhatsApp event posts
-- **Bezirksnewsletter Sources**: Added Berlin-specific scrapers for events and press releases from various Berlin government sources
+- **Regional Sources**: Added scrapers for events and press releases from various government sources
 
 **Improvements**
 - **Newsletter UI Redesign**: Completely redesigned newsletter generation flow with block-based editor, segment variants, and improved editing experience
