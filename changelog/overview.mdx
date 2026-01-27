@@ -10,6 +10,123 @@ rss: true
 
 ## Recent Updates
 
+<Update label="Version 1.2.0 - S3 Imports & Editor Polish" description="Released January 27, 2026">
+
+**New Features**
+- **S3 Data Import**: Import e-paper XML and analytics data directly from S3 buckets for automated content ingestion
+- **Edit Published Content**: Return to editing mode for published newsletters and podcasts to fix typos or make corrections
+
+**Improvements**
+- **WhatsApp Scheduling**: Reduced minimum scheduling time from 30 minutes to 5 minutes for faster testing and publishing
+- **WhatsApp Generation Indicator**: Clear visual feedback when WhatsApp posts are being generated
+- **Keyboard Navigation**: Improved escape key behavior for consistent modal dismissal
+- **Background Scrolling**: Media item overlay now allows background list scrolling for easier navigation
+
+**Bug Fixes & Stability**
+- Fixed WhatsApp posts showing outdated images after editing
+- Fixed duplicate podcast segment generation requests
+- Fixed newsletter icons not displaying in editor
+- Fixed user session not updating after login with different account
+- Fixed organization switching from within media items
+- Improved Curation Agent response size handling
+
+</Update>
+
+---
+
+<Update label="Version 1.1.1 - Unified Content Model" description="Released January 23, 2026">
+
+**New Features**
+- **Unified Content Model**: Strategies now work seamlessly with Articles, Events, and Press Releases through a single unified interface—no more format-specific configurations
+- **Free-form Text Generation**: Strategy Builder now supports unstructured text output for use cases that don't require structured data validation
+
+**Improvements**
+- **Mixed Content Support**: Strategies now handle different content types (articles, press releases) within the same segment without errors
+- **Consistent Newsletter Styling**: Improved visual consistency across newsletter segments with standardized image formats and typography
+- **Expanded Podcast Strategies**: Added new podcast segment strategies for editorial commentary, analysis, and news summaries
+
+**Bug Fixes & Stability**
+- Improved reliability of the Curation Agent during content generation
+- Fixed validation errors in automated workflows
+
+</Update>
+
+---
+
+<Update label="Version 1.1.0 - Cross-posting & Design System" description="Released January 19, 2026">
+
+**New Features**
+- **WhatsApp Cross-posting**: Post content to multiple WhatsApp channels simultaneously—create once, distribute everywhere
+- **Google Gemini Voice**: Added Google Gemini as a text-to-speech option for podcast generation
+- **Design System**: Introduced centralized design tokens for consistent colors, typography, and spacing
+
+**Improvements**
+- **Smarter Curation**: Curation Agent now tracks previously published articles to avoid recommending duplicates
+- **Reliable Scheduling**: Fixed timing drift in automated scraping and generation schedules
+- **Newsletter Image Handling**: Improved image support in manual segments including inline icons
+- **Cleaner UI**: Refined header styling and improved login page design
+
+**Bug Fixes & Stability**
+- Fixed empty newsletter segments rendering as "none"
+- Improved health monitoring endpoints for better uptime tracking
+
+</Update>
+
+---
+
+<Update label="Version 1.0.3 - Performance & Automation" description="Released January 12, 2026">
+
+**New Features**
+- **Automated Newsletter Generation**: Schedules can now trigger full newsletter generation automatically using the Curation Agent
+- **Segment Reordering**: Drag and drop to reorder or remove segments in newsletters and podcasts
+- **Article Quantity Controls**: Define minimum and maximum articles per segment in blueprints
+
+**Improvements**
+- **Faster Page Loads**: Migrated to client-side rendering with React Query for significantly improved responsiveness
+- **Real-time WhatsApp Status**: See actual delivery status (Pending, Sent, Failed) with automatic polling
+- **Dynamic Scraping Schedules**: Configurable per-data-source scraping times instead of fixed system schedules
+- **New RSS Data Sources**: Added multiple regional news sources for content aggregation
+
+**Bug Fixes & Stability**
+- Fixed organization switching not updating displayed content
+- Fixed strategy processing errors
+- Improved memory management in Curation Agent
+
+</Update>
+
+---
+
+<Update label="Version 1.0.2 - Curation Agent" description="Released January 6, 2026">
+
+**New Features**
+- **Curation Agent**: AI-powered article selection that analyzes homepage position, analytics data, and article content to recommend the best content for your newsletters
+
+**Improvements**
+- **Strategy Updates**: Enhanced newsletter strategies with improved formatting and field handling
+
+</Update>
+
+---
+
+<Update label="Version 1.0.1 - RSS Export & Stability" description="Released December 17, 2025">
+
+**New Features**
+- **WhatsApp RSS Feed**: Published WhatsApp messages now available as RSS feed for external integrations
+
+**Improvements**
+- **Changelog Collection**: Improved tracking of generated and published content snapshots for evaluation
+- **WhatsApp Session Handling**: Enhanced session caching and automatic cleanup of failed sessions
+
+**Bug Fixes & Stability**
+- Fixed newsletter template not displaying during editing
+- Fixed segment generation UI not updating immediately
+- Fixed image width inconsistencies in manual segments
+- Improved server health monitoring to ignore expected 4xx responses
+
+</Update>
+
+---
+
 <Update label="Version 1.0.0 - Major Release" description="Released November 25, 2025">
 
 **New Features**
