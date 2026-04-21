@@ -10,6 +10,54 @@ rss: true
 
 ## Recent Updates
 
+<Update label="Version 1.1.0 - Improvements" description="Released February 12, 2026">
+
+**Improvements**
+- **Disable WhatsApp article suggestions and metadata processing for SHZ RSS handler**: We have turned off WhatsApp article suggestions and metadata processing for a smoother experience with SHZ RSS feeds.
+
+**Bug Fixes & Stability**
+- HOTFIX audio preview generation timeout in podcast segments: We fixed an issue where audio previews in podcasts were taking too long to generate.
+
+</Update>
+
+<Update label="Version 1.1.1 - Bug Fixes" description="Released February 25, 2026">
+
+**Bug Fixes & Stability**
+- Fix strategy mismatch for WhatsApp messages with events and press releases: We resolved a problem that caused WhatsApp messages to not match correctly with events and press releases.
+- Hotfix WhatsApp article suggestions — per-square tasks and time limits: We addressed an issue with WhatsApp article suggestions to ensure tasks and time limits work properly.
+
+</Update>
+
+<Update label="Version 1.1.2 - Bug Fixes" description="Released March 11, 2026">
+
+**Bug Fixes & Stability**
+- Hotfix media item interface flashing and TTS empty lines: We fixed the flickering issue in the media item interface and removed unnecessary empty lines in text-to-speech.
+- HOTFIX Save Contentful content type to metadataType in ArticleModel: We corrected a problem to ensure content types are saved correctly in articles.
+- Fix IndexError in media item creation by implementing blueprint_index support: We resolved an error that occurred when creating media items, improving stability.
+
+</Update>
+
+<Update label="Version 1.1.3 - Bug Fixes" description="Released April 1, 2026">
+
+**Bug Fixes & Stability**
+- Fix Dachau and Landkreis Dachau press release spiders: We fixed the issues with retrieving press releases from Dachau and Landkreis Dachau, ensuring you receive all updates.
+
+</Update>
+
+<Update label="Version 1.1.4 - Bug Fixes" description="Released April 13, 2026">
+
+**Bug Fixes & Stability**
+- Fix Redis connection exhaustion in cache invalidation: We resolved a problem with cache invalidation to prevent connection issues, ensuring smoother performance.
+
+</Update>
+
+<Update label="Version 1.1.5 - Improvements" description="Released April 20, 2026">
+
+**Improvements**
+- **Apply blueprint formatting_template in WhatsApp auto-suggestions**: We enhanced WhatsApp auto-suggestions by applying a new formatting template for better readability.
+
+</Update>
+
 <Update label="Version 1.2.0 - S3 Imports & Editor Polish" description="Released January 27, 2026">
 
 **New Features**
