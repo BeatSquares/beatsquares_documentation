@@ -10,7 +10,388 @@ rss: true
 
 ## Recent Updates
 
-<Update label="Version 1.2.0 - S3 Imports & Editor Polish" description="Released January 27, 2026">
+<Update label="Version 1.20.1 - Hotfix" description="Released April 21, 2026">
+
+**Bug Fixes & Stability**
+
+- Fixes an issue where the audio briefing screen gets stuck on "Generating" after errors occur.
+
+</Update>
+
+<Update label="Version 1.20.0 - Add Deep Review command for" description="Released April 20, 2026">
+
+**New Features**
+
+- **Add Deep Review command for context-aware code reviews**: Enhances code review by providing context-specific insights.
+- **Soft-delete media item segments with restore, generation guards, and related UI**: Allows you to temporarily remove media segments and restore them if needed.
+- **Allow uploading new logos when creating an organization**: You can now upload logos directly when setting up a new organization.
+
+**Improvements**
+
+- **Email article import cleanup and LLM model upgrade to GPT-5**: Improves email article import quality with the latest AI model.
+- **Split LLM prompts into system and user messages**: Improves clarity by separating system and user prompts.
+
+**Bug Fixes & Stability**
+
+- Fixes issues with some source specific press release processing.
+- Resolves RSS feed fetching problems to prevent task failures.
+
+</Update>
+
+<Update label="Version 1.19.1 - Hotfix" description="Released April 17, 2026">
+
+**Bug Fixes & Stability**
+
+- Fixes an error that occurs when the mood is not set in podcast creation.
+
+</Update>
+
+<Update label="Version 1.19.0" description="Released April 13, 2026">
+
+**New Features**
+
+- **Unify action status, optimistic updates, and Redis-driven cache invalidation**: Streamlines updates and improves performance.
+- **Persist segment generation and publish snapshots for segment analytics**: Keeps track of segment changes for better analytics.
+- **PostHog instrumentation with org/square context and editor events**: Enhances tracking of user interactions.
+- **Scraper monitoring system with run logging, health checks, and Slack alerts**: Improves reliability with better monitoring and alerts.
+- **Streaming audio preview with ElevenLabs SSE and MediaSource API**: Provides real-time audio previews.
+- **Define content source config schema with Firecrawl support**: Standardizes content source setup.
+- **Org settings content source CRUD UI and stacked sources pipeline**: Simplifies managing content sources.
+- **HTTP conditional fetch with ETag/Last-Modified caching**: Speeds up data fetching by using caching.
+- **RSS feed ingestion with Firecrawl enrichment for truncated items**: Enhances RSS feed data with additional context.
+
+**Improvements**
+
+- **Store WhatsApp variant images per tab instead of a single segment field**: Organizes images more efficiently.
+- **Align WhatsApp send controls with in-flight delivery and invalidate client cache on finalize**: Ensures message delivery is smooth and up-to-date.
+- **Replace media item full-replace calls with atomic per-segment endpoints**: Improves media update efficiency.
+
+**Bug Fixes & Stability**
+
+- Fixes disappearing newsletter segment images after script edits.
+- Resolves WhatsApp message delays caused by processing issues.
+- Fixes WhatsApp feeds with image support.
+- Fix fact viewer for WhatsApp segments via unified source content sidebar.
+
+
+</Update>
+
+<Update label="Version 1.18.0" description="Released April 7, 2026">
+
+**New Features**
+
+- **Define content source configuration schema with Firecrawl support**: Simplifies content source management.
+- **Ingest RSS feeds with Firecrawl enrichment for truncated items**: Adds extra details to RSS feeds.
+- **Add organization settings UI for content sources, stacked sources pipeline, and feed test connection**: Makes it easier to manage and test content sources.
+- **Replace full media item updates with atomic per-segment script endpoints**: Enhances media update efficiency.
+- **Show the fact viewer for WhatsApp segments via the unified source content sidebar**: Provides more context for WhatsApp content.
+
+**Improvements**
+
+- **Use conditional HTTP requests with ETag/Last-Modified caching to skip unchanged feeds**: Speeds up feed updates by skipping unchanged content.
+
+**Bug Fixes & Stability**
+
+- Ignores deleted sources during data processing to prevent errors.
+- Fixes disappearing newsletter segment images after script edits.
+
+</Update>
+
+<Update label="Version 1.17.0" description="Released March 30, 2026">
+
+**New Features**
+
+- **Add retry logic for transient Gemini empty response errors in podcast TTS**: Improves podcast text-to-speech reliability by retrying failed requests.
+- **UX Enhancement: Edit/Save Whatsapp message**: Makes editing and saving WhatsApp messages smoother.
+
+</Update>
+
+<Update label="Version 1.16.0 - Curation agent enhancements — cross..." description="Released March 23, 2026">
+
+**New Features**
+
+- **Curation agent enhancements — cross-square memory, article exclusion, fetch limit configuration, and curation settings UI**: Improves content curation with more control and settings.
+- **Show error message when podcast generation fails with structured error handling and banner component**: Provides clear error messages for podcast issues.
+- **Create media item as archived during auto-generation, unarchive after segment generation**: Manages media items more effectively during creation.
+
+**Improvements**
+
+- **Refactor and optimize server actions and navigation performance**: Speeds up server processes and navigation.
+- **Prevent overview and formatting segments from accepting content assignments**: Ensures content is assigned correctly.
+- **Remove segment title from newsletters and podcasts and unify segment editor UI**: Simplifies the segment editing interface.
+- **Unify segment edit buttons and refactor segment editor UI**: Streamlines the editing process.
+
+**Bug Fixes & Stability**
+
+- Fixes loss of verified state when saving segments without changes.
+- Resolves repeated MongoDB migrations on startup.
+- Fixes new data sources not being recognized by the scheduler.
+
+</Update>
+
+<Update label="Version 1.15.0 - Add CurationConfig to squares" description="Released March 18, 2026">
+
+**New Features**
+
+- **Add CurationConfig to squares with cross-square memory, article exclusion, and fetch limit**: Enhances content curation with more flexible settings.
+
+</Update>
+
+<Update label="Version 1.14.0 - Add button to create empty WhatsApp message" description="Released March 16, 2026">
+
+**New Features**
+
+- **Add button to create empty WhatsApp messages from scratch**: Allows you to start new WhatsApp messages easily.
+- **Upload finished podcast audio files to Bunny Storage CDN**: Ensures podcasts are stored securely and efficiently.
+
+**Improvements**
+
+- **Backend logging audit — request context, state transitions,**: Enhances logging for better tracking and debugging.
+- **Defer Claude Agent SDK config import and improve**: Optimizes configuration loading for better performance.
+
+**Bug Fixes & Stability**
+
+- Fixes timeout issues during long podcast generation.
+- Resolves image flickering in the newsletter editor.
+- Adds a timeout for failed segment generation to improve reliability.
+
+</Update>
+
+<Update label="Version 1.13.2 - Hotfix" description="Released March 13, 2026">
+
+**Bug Fixes & Stability**
+
+- Fixes timeout issues during long podcast generation to ensure smoother audio processing.
+
+</Update>
+
+<Update label="Version 1.13.1 - Hotfix" description="Released March 11, 2026">
+
+**Bug Fixes & Stability**
+
+- Ensures imported content types are correctly saved to metadata for better data management.
+
+</Update>
+
+<Update label="Version 1.13.0 - Set up pre-commit hooks" description="Released March 11, 2026">
+
+**New Features**
+
+- **Slack notifications and auto-generation for articles**: Keeps you informed with automatic notifications and article generation.
+
+**Improvements**
+
+- **Optimize FORMATTING segment generation performance**: Speeds up segment formatting.
+- **Add FRONTEND_URL to worker environment in staging and production**: Improves environment configuration for better performance.
+- **Increase Tagesspiegel curation agent memory to 2 days and include all segments (except manual)**: Enhances memory usage for better content curation.
+
+**Bug Fixes & Stability**
+
+- Fix timezone settings
+- Fixes selection count issues in ContentPickerDialog.
+- Removes unnecessary logging from RSS feed processing.
+- Improves update verification by confirming with the server.
+- Resolves disk space issues by cleaning up unused data.
+- Fixes segment verification and rapid generation issues.
+- Resolves media item panel freezing and React errors.
+- Fixes client-side crashes and race conditions in the newsletter editor.
+- Resolves generation tracking and update conflicts.
+- Resets script references when exiting WhatsApp message editing.
+
+</Update>
+
+<Update label="Version 1.12.1 - Hotfix" description="Released March 5, 2026">
+
+**Bug Fixes & Stability**
+
+- Fixes interface flashing and empty lines in text-to-speech for a smoother user experience.
+
+</Update>
+
+<Update label="Version 1.12.0 - Add custom cron scheduling support" description="Released March 4, 2026">
+
+**New Features**
+
+- **Add custom cron scheduling support in ScheduleSettings**: Provides flexible scheduling options.
+- **Add LLM-based article facet classification for some data sources**: Enhances article categorization with AI.
+- **Add playback speed control to segment preview**: Lets you adjust playback speed for better control.
+
+</Update>
+
+<Update label="Version 1.11.0 - Segment generation UX with progress indicator" description="Released March 2, 2026">
+
+**New Features**
+
+- **Segment generation UX with progress bar, error state, verification, and atomic content updates**: Improves user experience with clear progress indicators.
+- **Dynamic ElevenLabs voice resolution via API with TTL cache**: Enhances voice selection for text-to-speech.
+
+**Improvements**
+
+- **Add retry logic for overview segment generation when segments are not yet verified**: Increases reliability by retrying unverified segments.
+- **Increase strategy timeouts from 5 to 10 minutes across different services**: Allows more time for complex strategies to complete.
+- **Refactor scraping module — extract pipeline stages, fix Sentry issues, and add input truncation**: Improves scraping reliability and performance.
+- **Refactor S3 importer to handler pattern and fix duplicate article metadata processing**: Enhances data import efficiency and accuracy.
+- **Add retry logic for transient Firecrawl API errors**: Improves reliability by retrying failed API requests.
+
+**Bug Fixes & Stability**
+
+- Fixes progress bar issues and adds error state polling for segment generation.
+- Resolves concurrency issues in text-to-speech processing.
+- Fixes Google TTS errors and adds retries for temporary issues.
+- Fixes errors in event title extraction for better data accuracy.
+
+</Update>
+
+<Update label="Version 1.10.1 - Hotfix" description="Released February 25, 2026">
+
+**Bug Fixes & Stability**
+
+- Fixes issues with WhatsApp article suggestions to ensure timely and accurate recommendations.
+
+</Update>
+
+<Update label="Version 1.10.0 - Add configurable editor styles" description="Released February 24, 2026">
+
+**New Features**
+
+- **Add configurable newsletter editor styles and custom buttons to square settings**: Customizes the editor to fit your needs.
+- **Allow newsletter AI segment styling through blueprint**: Enhances newsletter design with AI-driven styling.
+- **Media items pagination on square page**: Makes browsing media items easier with pagination.
+- **Integrate Podigee upload for podcast episodes**: Simplifies podcast publishing with direct uploads.
+- **Replace string-based strategy heuristics with explicit metadata fields**: Improves strategy accuracy with better data handling.
+
+</Update>
+
+<Update label="Version 1.9.0 - Add unified segment editing component" description="Released February 17, 2026">
+
+**New Features**
+
+- **Add unified segment editing components, shared segment infrastructure (hooks, context provider), and utility libraries for segment refactoring**: Simplifies segment editing with a unified system.
+
+**Improvements**
+
+- **Refactor segment components to a unified editing provider (newsletter, podcast, WhatsApp)**: Streamlines editing across different platforms.
+- **Centralize segment status logic and improve verification checks**: Ensures segment status is consistent and accurate.
+- **Improve WhatsApp message validation for live editing**: Enhances real-time editing reliability.
+- **Migrate newsletter, podcast, and WhatsApp to unified SegmentEditor and providers**: Unifies the editing experience across platforms.
+- **Enhance segment editing (escape handling, button loading states, ImageUpload, square settings UI)**: Improves editing features for a better user experience.
+- **Improve HTML rendering in newsletter edit view and simplify loading components**: Enhances visual consistency and performance.
+- **Rename newsletter and podcast components for consistency (e.g. PodcastEmbed → PodcastPublished)**: Ensures component names are clear and consistent.
+- **Update segment editor and media item routing; remove deprecated component files**: Cleans up and organizes the editing system.
+
+</Update>
+
+<Update label="Version 1.8.0 - Enable WhatsApp cross-posting" description="Released February 16, 2026">
+
+**New Features**
+
+- **Enable WhatsApp cross-posting and scheduling for RSS-WhatsApp squares**: Expands content reach with cross-posting capabilities.
+- **Allow squares to opt out of auto-suggested media items**: Provides more control over media suggestions.
+
+**Improvements**
+
+- **Optimize article processing LLM usage and remove dead code**: Improves processing efficiency and cleans up the system.
+
+**Bug Fixes & Stability**
+
+- Fixes duplicate analytics and metadata issues.
+- Resolves segment generation failures for WhatsApp messages.
+
+</Update>
+
+<Update label="Version 1.7.0 - Add Contentful webhook integration ..." description="Released February 9, 2026">
+
+**New Features**
+
+- **Add Contentful webhook integration documentation**: Provides clear instructions for integrating webhooks.
+- **Add square-level API key support for TTS providers**: Enhances security with API key management.
+- **Add podcast metadata generation and segment editing UI improvements**: Enhances podcast management and editing.
+- **Add segment labels to help users identify segments in the UI**: Makes segment identification easier.
+- **Allow podcasts to publish with empty segments**: Provides flexibility in podcast publishing.
+- **Improve segment/podcast editing feel with optimistic updates**: Enhances editing responsiveness.
+
+**Bug Fixes & Stability**
+
+- Fixes issues with CDN setup and optional configurations.
+- Resolves disappearing text issues in podcast titles.
+- Changes validation to skip empty segments for better accuracy.
+- Fixes audio preview issues in podcast segments.
+
+</Update>
+
+<Update label="Version 1.6.2 - Hotfix" description="Released February 5, 2026">
+
+**Bug Fixes & Stability**
+
+- Fixes timeout issues during audio preview generation in podcast segments for smoother playback.
+
+</Update>
+
+<Update label="Version 1.6.1 - Hotfix" description="Released February 5, 2026">
+
+**Bug Fixes & Stability**
+
+- Fixes issues with e-paper signals to ensure accurate filtering.
+
+</Update>
+
+<Update label="Version 1.6.0" description="Released February 2, 2026">
+
+**New Features**
+
+- **Use short URLs for WhatsApp posts**: Makes sharing easier with shorter links.
+- **Implement multi-separator segment divider system to distinguish news vs other content**: Enhances content organization.
+- **Add SVG support to TipTap editor**: Expands editing capabilities with SVG support.
+- **Bunny CDN origin-pull for Gmail-safe newsletter images**: Ensures newsletter images are compatible with Gmail.
+- **Show podcast generating status without page reload**: Provides real-time status updates.
+- **Replace drag-and-drop with move up/down buttons for segment reordering**: Simplifies segment reordering.
+
+**Improvements**
+
+- **Make gemini-2.5-pro-preview-tts the default voice model**: Improves text-to-speech quality with a new default model.
+- **Simplify auth by removing refresh tokens**: Streamlines authentication processes.
+
+**Bug Fixes & Stability**
+
+- Fixes data import issues and duplicate data problems.
+- Properly resets user sessions after logout to prevent access issues.
+- Fixes podcast voice mixing and adjusts volume settings.
+
+</Update>
+
+<Update label="Version 1.5.0 - Implement Signal Provider Architecture" description="Released January 27, 2026">
+
+**New Features**
+
+- **Implement Signal Provider Architecture and optimize token usage for article curation**: Enhances content curation efficiency.
+- **Add S3 importer for e-paper XML and analytics data**: Improves data import capabilities.
+- **Allow users to revert podcast and newsletter to draft state**: Provides flexibility to revert changes.
+- **Add generating visual to WhatsApp posts while generation is in progress**: Indicates ongoing content generation.
+- **Implement unified content model for strategy inputs**: Standardizes content input for strategies.
+- **Centralized Escape Handling System**: Improves system reliability with centralized error handling.
+- **Refactor Segment Action Controls into single logic source**: Simplifies action control management.
+
+**Improvements**
+
+- **Invalidate React Query cache when user session changes**: Keeps data fresh by clearing outdated cache.
+- **Prevent duplicate segment generation requests with client and server deduplication**: Reduces unnecessary processing.
+- **Change WhatsApp scheduling minimum time to 5 minutes**: Provides more flexibility in scheduling.
+
+**Bug Fixes & Stability**
+
+- Fixes image update issues in WhatsApp posts.
+- Filters out invalid WhatsApp sessions from scheduling.
+- Prevents placeholder titles from causing interface issues.
+- Fixes thumbnail and segment option issues.
+- Resolves navigation issues when switching organizations.
+- Fixes newsletter segment icon display and improves image handling.
+- Fixes media panel behavior and scrolling issues.
+- Resolves timeout errors for specific spiders with better configuration.
+
+</Update>
+
+
+<Update label="Version 1.4.0 - S3 Imports & Editor Polish" description="Released January 27, 2026">
 
 **New Features**
 - **S3 Data Import**: Import e-paper XML and analytics data directly from S3 buckets for automated content ingestion
@@ -34,7 +415,7 @@ rss: true
 
 ---
 
-<Update label="Version 1.1.1 - Unified Content Model" description="Released January 23, 2026">
+<Update label="Version 1.3.0 - Unified Content Model" description="Released January 23, 2026">
 
 **New Features**
 - **Unified Content Model**: Strategies now work seamlessly with Articles, Events, and Press Releases through a single unified interface—no more format-specific configurations
@@ -51,6 +432,15 @@ rss: true
 
 </Update>
 
+
+
+<Update label="Version 1.2.0 - Bug Fixes" description="Released January 20, 2026">
+
+**Bug Fixes & Stability**
+
+- Fixes an error in the PreToolUse hook by adding necessary fields for better functionality.
+
+</Update>
 ---
 
 <Update label="Version 1.1.0 - Cross-posting & Design System" description="Released January 19, 2026">
