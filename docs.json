@@ -27,7 +27,7 @@
             "pages": [
               "core-features/creating-squares",
               {
-                "group": "Podcasts",
+                "group": "Podcast",
                 "pages": [
                   "core-features/creating-podcasts",
                   "core-features/podcast-player-embeds",
