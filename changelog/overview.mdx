@@ -10,6 +10,47 @@ rss: true
 
 ## Recent Updates
 
+<Update label="Version 1.25.0 - Add nullable hanko_user_id to users" description="Released May 19, 2026">
+
+**New Features**
+
+- **Add nullable hanko_user_id to users with unique constraint**: You can now have a unique ID for each user, even if it's not always filled in.
+- **Hanko JWT dual-auth in require_login and user linkage**: Enjoy enhanced security with dual authentication when logging in and linking accounts.
+- **Integrate Hanko auth — frontend elements, JWT validation, and user linkage**: Experience a seamless login process with improved security checks and account linking.
+- **Hanko webhook, JWT validation, and user identity sync on backend**: Your identity information is now automatically updated and verified for better security.
+- **Add Hanko Admin API client and bulk user migration tooling**: Easily manage users and move them in bulk with new admin tools.
+- **Add Hanko user id, dual auth, and cutover email templates**: Receive clear and helpful email templates during account changes and dual authentication.
+- **Explicit segment blueprint linkage between sub-square and main square**: Enjoy better organization with clear connections between different content areas.
+- **Add content_image_urls to DataSourceModel for static event images**: You can now add images to events for a richer visual experience.
+- **Sync structured_data from selected option to segment and pass title/structured_data to strategy builder**: Your selected options automatically update related content for consistency.
+
+**Improvements**
+
+- **Add Sentry ↔ LangSmith bidirectional trace correlation**: Track issues more effectively with improved error tracing between systems.
+
+**Bug Fixes & Stability**
+
+- Scope audio preview player to the variant it was generated for: Enjoy a more reliable audio preview experience tailored to specific content.
+
+**Other Changes**
+
+- Updated GitHub Actions versions: Benefit from the latest features and security updates in our development processes.
+- Infrastructure: Dockerfile scripts directory, postgres password encoding fixes: Experience smoother operations with improved infrastructure and security enhancements.
+
+</Update>
+
+<Update label="Version 1.24.0 - Migrate podcast dialog to structure..." description="Released May 6, 2026">
+
+**New Features**
+
+- **Migrate podcast dialog to structured_data as the single source of truth**: Enjoy more accurate and consistent podcast information with a centralized data source.
+- **Podcast segments — structured dialogue UI and backend sync**: Experience a streamlined podcast creation process with synchronized content and interface.
+- **Add webhook notification delivery for published podcast audio**: Get instant notifications when your podcast audio is published.
+- **Add dynamic poll option add/remove controls in WhatsApp editor**: Easily manage poll options in your WhatsApp messages with new controls.
+- **Generate audio preview for highlighted text segment**: Listen to a quick audio preview of any highlighted text for faster content review.
+
+</Update>
+
 <Update label="Version 1.23.0 - Introduce static segment type for" description="Released May 11, 2026">
 
 **New Features**
