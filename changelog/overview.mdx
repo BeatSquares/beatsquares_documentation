@@ -10,6 +10,55 @@ rss: true
 
 ## Recent Updates
 
+<Update label="Version 1.25.1 - Hotfix" description="Released May 22, 2026">
+
+**Bug Fixes & Stability**
+
+- We fixed an issue to ensure WhatsApp messages are sent only once, preventing duplicates.
+
+</Update>
+
+<Update label="Version 1.25.0 - Add nullable hanko_user_id to users" description="Released May 19, 2026">
+
+**New Features**
+
+- We added a new user ID feature that can be left empty, ensuring each user has a unique identifier.
+- You can now use Hanko for dual authentication, enhancing security and linking user accounts.
+- The system now includes Hanko authentication, improving login processes and user account connections.
+- Backend improvements now sync user identities and validate security tokens with Hanko.
+- We introduced tools for managing users in bulk and accessing admin features through Hanko.
+- New email templates support the transition to Hanko's user ID and dual authentication.
+- We improved how different parts of the app connect, ensuring seamless data flow.
+- You can now add static images to events, making them more visually appealing.
+- We enhanced data syncing and strategy building by passing more detailed information.
+
+**Improvements**
+
+- We improved error tracking by linking Sentry and LangSmith, making it easier to trace issues.
+
+**Bug Fixes & Stability**
+
+- We fixed the audio preview player to ensure it only plays the correct version.
+
+**Other Changes**
+
+- We updated our GitHub Actions to the latest versions for better performance.
+- Infrastructure improvements include better script organization and secure database passwords.
+
+</Update>
+
+<Update label="Version 1.24.0 - Migrate podcast dialog to structure..." description="Released May 6, 2026">
+
+**New Features**
+
+- We streamlined podcast management by using a single, reliable data source.
+- Podcast segments now have a structured interface and sync seamlessly with the backend.
+- You will receive notifications when your podcast audio is published, keeping you informed.
+- The WhatsApp editor now lets you easily add or remove poll options.
+- You can generate audio previews for selected text, enhancing content engagement.
+
+</Update>
+
 <Update label="Version 1.23.0 - Introduce static segment type for" description="Released May 11, 2026">
 
 **New Features**
