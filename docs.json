@@ -25,18 +25,20 @@
           {
             "group": "Core Features",
             "pages": [
-              "core-features/creating-squares",
               {
                 "group": "Podcast",
                 "pages": [
                   "core-features/creating-podcasts",
-                  "core-features/podcast-player-embeds",
-                  "core-features/podcast-embed-example"
+                  "core-features/podcast-player-embeds"
                 ]
               },
               "core-features/creating-newsletters",
-              "core-features/creating-whatsapp-messages",
-              "core-features/manually-adding-articles"
+              {
+                "group": "WhatsApp",
+                "pages": [
+                  "core-features/creating-whatsapp-messages"
+                ]
+              }
             ]
           },
           {
