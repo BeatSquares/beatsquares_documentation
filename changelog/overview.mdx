@@ -10,6 +10,59 @@ rss: true
 
 ## Recent Updates
 
+<Update label="Version 1.28.0 - User Management tab — admin" description="Released June 2, 2026">
+
+**New Features**
+
+- **User Management tab — admin self-serve user management**: Admins can now manage users directly through a new tab, making it easier to handle user accounts.
+- **Open Org Settings tabs (Sources / CDN / Brevo) to Admins**: Admins now have access to organization settings, allowing for more control over sources, CDN, and Brevo configurations.
+- **Send a bilingual welcome email on user creation via AWS**: New users receive a welcome email in two languages, ensuring clear communication from the start.
+- **Add single/multiple choice options for WhatsApp polls**: You can now create polls in WhatsApp with single or multiple choice options, enhancing engagement.
+- **Trigger WhatsApp article suggestions on article**: Users will receive article suggestions directly in WhatsApp, making it easier to find relevant content.
+- **Add URL path filters and enrichment concurrency to RSS**: RSS feeds now support filtering by URL paths and handle multiple data enrichments simultaneously for better content delivery.
+
+**Improvements**
+
+- **Migrate RSS spiders from Scrapy to the RSS_FEED flow**: RSS feeds are now more efficient, improving the speed and reliability of content updates.
+- **Exclude specific RSS spiders from the migration process**: Certain RSS feeds remain unchanged to ensure uninterrupted service.
+- **Introduce CONTENT_TYPE_REGISTRY for content-type dispatch**: Content is now categorized more effectively, improving how it's managed and delivered.
+- **Add content_type routing to the RSS_FEED pipeline**: Content is routed more accurately, ensuring users receive the right information.
+- **Redesign bilingual welcome email HTML and copy**: The welcome email now looks better and is easier to read, enhancing the user experience.
+- **Add pagination and search to the organization user list**: Finding users in the organization list is now quicker with added search and pagination features.
+- **Migrate the add-new-square page to a dialog in the new**: The process of adding new items is now more intuitive with a dialog interface.
+- **- Add display-name support in the email "From" header (`from_name`)**: Emails now show a display name, making them more recognizable to recipients.
+
+**Bug Fixes & Stability**
+
+- Fix read errors in Firecrawl scraping and handling of: Improved data scraping ensures more reliable information retrieval.
+- Fix broken local LocalStack by pinning to the community: LocalStack stability is enhanced, preventing service interruptions.
+
+**Other Changes**
+
+- Rename `Role.STAFF` to `Role.SUPER_ADMIN` across the: The role name change clarifies user permissions and responsibilities.
+
+</Update>
+
+<Update label="Version 1.27.1 - Hotfix" description="Released May 29, 2026">
+
+**Bug Fixes & Stability**
+
+- [HOTFIX] , BEA-2681, BEA-2547: Fix MongoDB write errors and datetime serialization: Database operations are now more reliable, preventing data errors and ensuring accurate time records.
+
+</Update>
+
+<Update label="Version 1.27.0 - Migrate podcast dialog to structure..." description="Released May 6, 2026">
+
+**New Features**
+
+- **Migrate podcast dialog to structured_data as the single source of truth**: Podcast information is now centralized, ensuring consistency across all platforms.
+- **Podcast segments — structured dialogue UI and backend sync**: The podcast interface is synchronized with backend data, providing a seamless user experience.
+- **Add webhook notification delivery for published podcast audio**: Get instant notifications when new podcast episodes are available.
+- **Add dynamic poll option add/remove controls in WhatsApp editor**: Easily customize polls in WhatsApp by adding or removing options as needed.
+- **Generate audio preview for highlighted text segment**: Listen to a quick audio preview of selected text, making content review faster.
+
+</Update>
+
 <Update label="Version 1.26.1 - Hotfix" description="Released May 28, 2026">
 
 **Bug Fixes & Stability**
