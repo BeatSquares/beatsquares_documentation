@@ -10,6 +10,67 @@ rss: true
 
 ## Recent Updates
 
+<Update label="Version 1.28.1 - Hotfix" description="Released June 3, 2026">
+
+**Bug Fixes & Stability**
+
+- [HOTFIX] We fixed an issue to ensure that your RSS feeds display correctly and allow you to edit linked sections smoothly.
+
+</Update>
+
+<Update label="Version 1.28.0 - User Management tab — admin" description="Released June 2, 2026">
+
+**New Features**
+
+- **User Management tab — admin self-serve user management**: Admins can now manage users directly and efficiently.
+- **Open Org Settings tabs (Sources / CDN / Brevo) to Admins**: Admins have access to more settings for better control over their organization.
+- **Send a bilingual welcome email on user creation via AWS**: New users receive a welcome email in two languages for better communication.
+- **Add single/multiple choice options for WhatsApp polls**: You can now create polls with single or multiple choice answers in WhatsApp.
+- **Trigger WhatsApp article suggestions on article**: Get article suggestions directly in WhatsApp for more engaging content.
+- **Add URL path filters and enrichment concurrency to RSS**: Enjoy more refined RSS feeds with added filtering options.
+
+**Improvements**
+
+- **Migrate RSS spiders from Scrapy to the RSS_FEED flow**: RSS feeds now run more smoothly with an updated process.
+- **Exclude specific RSS spiders from the migration process**: Certain feeds remain unchanged for stability.
+- **Introduce CONTENT_TYPE_REGISTRY for content-type dispatch**: Content is now organized better for easier access.
+- **Add content_type routing to the RSS_FEED pipeline**: Content is delivered more efficiently with improved routing.
+- **Redesign bilingual welcome email HTML and copy**: The welcome email looks better and is easier to understand.
+- **Add pagination and search to the organization user list**: Finding users in your organization is now faster with search and pagination.
+- **Migrate the add-new-square page to a dialog in the new**: The process to add new sections is now more user-friendly.
+- **- Add display-name support in the email "From" header (`from_name`)**: Emails now show a friendly display name for better recognition.
+
+**Bug Fixes & Stability**
+
+- Fix read errors in Firecrawl scraping and handling of: We resolved issues to ensure smoother data scraping.
+- Fix broken local LocalStack by pinning to the community: LocalStack now works reliably with the community version.
+
+**Other Changes**
+
+- Rename `Role.STAFF` to `Role.SUPER_ADMIN` across the: We updated role names for clearer role definitions.
+
+</Update>
+
+<Update label="Version 1.27.1 - Hotfix" description="Released May 29, 2026">
+
+**Bug Fixes & Stability**
+
+- [HOTFIX] , BEA-2681, BEA-2547: We fixed errors in data storage and date handling to improve reliability.
+
+</Update>
+
+<Update label="Version 1.27.0 - Migrate podcast dialog to structure..." description="Released May 6, 2026">
+
+**New Features**
+
+- **Migrate podcast dialog to structured_data as the single source of truth**: Podcast information is now more consistent and reliable.
+- **Podcast segments — structured dialogue UI and backend sync**: Enjoy a seamless experience with synchronized podcast segments.
+- **Add webhook notification delivery for published podcast audio**: Get instant notifications when your podcast is published.
+- **Add dynamic poll option add/remove controls in WhatsApp editor**: Easily customize poll options in WhatsApp.
+- **Generate audio preview for highlighted text segment**: Listen to a preview of selected text for a better audio experience.
+
+</Update>
+
 <Update label="Version 1.26.1 - Hotfix" description="Released May 28, 2026">
 
 **Bug Fixes & Stability**
