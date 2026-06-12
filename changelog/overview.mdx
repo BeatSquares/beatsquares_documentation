@@ -10,6 +10,108 @@ rss: true
 
 ## Recent Updates
 
+<Update label="Version 1.29.1 - Hotfix" description="Released June 8, 2026">
+
+**Bug Fixes & Stability**
+
+- Manual editor styles now support responsive design, making your content look great on any device.
+
+</Update>
+
+<Update label="Version 1.29.0 - WordPress REST API article importer" description="Released June 8, 2026">
+
+**New Features**
+
+- **WordPress REST API article importer for Ruhrnachrichten**: Easily bring in articles from Ruhrnachrichten using the WordPress REST API.
+- **Add "quiz" content type (CSV import → curation → newsletter)**: Create and share quizzes seamlessly from CSV files to newsletters.
+- **LinkedIn output via Zernio — backend foundation**: Prepare your content for LinkedIn sharing with new backend support.
+- **Unified ContentImage model and backend-owned template context**: Enjoy a consistent image handling experience across the platform.
+- **Anchor Curation Agent for poll-anchored segments from related articles**: Enhance your polls with related article segments.
+- **Inject Brevo campaign ID into newsletter outbound links for internal click tracking**: Track clicks on your newsletter links more effectively.
+- **Content import via URL — framework + Article**: Import content directly from URLs with ease.
+- **Parent media-item link in newsletter sub-media-item editor**: Quickly access parent media items when editing newsletters.
+- **Content import — Poll (manual add + Civey URL import)**: Import polls manually or via Civey URLs for more flexibility.
+
+**Improvements**
+
+- **Introduce MediaItemType registry extension point (prep for BEA-2637)**: Get ready for future enhancements with a new media item registry.
+- **E2E test coverage for sub-square picker and blueprint validation**: Enjoy improved reliability with enhanced testing coverage.
+
+**Bug Fixes & Stability**
+
+- Prevent duplicate content issues when updating RSS feed articles.
+- Avoid problems with empty segments during media item creation.
+- Ensure newsletter segments stay intact when reverting changes.
+- Keep manual segments like dividers visible in newsletters.
+
+**Other Changes**
+
+- Move terraform code to its new home for better organization.
+- Pre-commit checks in Docker now only focus on changed lines for efficiency.
+
+</Update>
+
+<Update label="Version 1.28.1 - Hotfix" description="Released June 3, 2026">
+
+**Bug Fixes & Stability**
+
+- [HOTFIX] Ensure RSS feeds keep HTML attributes and improve segment editing.
+
+</Update>
+
+<Update label="Version 1.28.0 - User Management tab — admin" description="Released June 2, 2026">
+
+**New Features**
+
+- **User Management tab — admin self-serve user management**: Admins can now manage users directly from a dedicated tab.
+- **Open Org Settings tabs (Sources / CDN / Brevo) to Admins**: Admins have access to important organization settings.
+- **Send a bilingual welcome email on user creation via AWS**: New users receive a welcome email in two languages.
+- **Add single/multiple choice options for WhatsApp polls**: Create engaging polls with more answer options on WhatsApp.
+- **Trigger WhatsApp article suggestions on article**: Suggest articles directly through WhatsApp for better engagement.
+- **Add URL path filters and enrichment concurrency to RSS**: Enjoy more control and efficiency with RSS feed management.
+
+**Improvements**
+
+- **Migrate RSS spiders from Scrapy to the RSS_FEED flow**: Experience smoother RSS feed processing with a new system.
+- **Exclude specific RSS spiders from the migration process**: Keep certain RSS spiders unchanged for stability.
+- **Introduce CONTENT_TYPE_REGISTRY for content-type dispatch**: Manage content types more effectively with a new registry.
+- **Add content_type routing to the RSS_FEED pipeline**: Route content types efficiently within the RSS feed system.
+- **Redesign bilingual welcome email HTML and copy**: Enjoy a fresh look and feel for welcome emails.
+- **Add pagination and search to the organization user list**: Find users quickly with new search and pagination features.
+- **Migrate the add-new-square page to a dialog in the new**: Experience a streamlined process for adding new squares.
+- **- Add display-name support in the email "From" header (`from_name`)**: Customize the display name in email headers for clarity.
+
+**Bug Fixes & Stability**
+
+- Fix issues with reading errors during web scraping.
+- Resolve problems with local development environments by stabilizing dependencies.
+
+**Other Changes**
+
+- Rename `Role.STAFF` to `Role.SUPER_ADMIN` for clarity in user roles.
+
+</Update>
+
+<Update label="Version 1.27.1 - Hotfix" description="Released May 29, 2026">
+
+**Bug Fixes & Stability**
+
+- [HOTFIX] Fix issues with MongoDB data handling and date/time formatting.
+
+</Update>
+
+<Update label="Version 1.27.0 - Migrate podcast dialog to structure..." description="Released May 6, 2026">
+
+**New Features**
+
+- **Migrate podcast dialog to structured_data as the single source of truth**: Manage podcast information more reliably with a unified data source.
+- **Podcast segments — structured dialogue UI and backend sync**: Enjoy a synchronized experience between podcast segments and their management interface.
+- **Add webhook notification delivery for published podcast audio**: Get instant notifications when your podcast audio is published.
+- **Add dynamic poll option add/remove controls in WhatsApp editor**: Easily modify poll options in WhatsApp for better interaction.
+- **Generate audio preview for highlighted text segment**: Create audio previews from text to enhance your content.
+
+</Update>
+
 <Update label="Version 1.26.1 - Hotfix" description="Released May 28, 2026">
 
 **Bug Fixes & Stability**
