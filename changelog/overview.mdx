@@ -10,35 +10,31 @@ rss: true
 
 ## Recent Updates
 
-<Update label="Version 1.30.0 - Declarative structured newsletter t..." description="Released June 15, 2026">
+<Update label="Version 1.30.0 - Declarative structured newsletter templates" description="Released June 15, 2026">
 
 **New Features**
 
 - **Declarative structured newsletter templates** — Easily create newsletters with pre-designed templates that ensure consistency.
 - **Per-segment structured templates** — Customize newsletter sections individually for a tailored reader experience.
-- **Zernio/LinkedIn connection settings** — Manage LinkedIn connections at both organization and group levels.
-- **Hook LinkedIn media-item type into the frontend create flow** — Seamlessly integrate LinkedIn content into your creation process.
-- **Pexels image search for newsletter segments** — Find and add high-quality images to your newsletters effortlessly.
+- **LinkedIn connection settings** — Manage LinkedIn connections at both organization and group levels.
+- **Automated image search for newsletter segments** — Find and add high-quality images to your newsletters effortlessly.
 - **Shared Jinja datetime helpers for media-item templates** — Use consistent date and time formats across your media templates.
 - **Per-data-source analysis policy + centralized article enrichment** — Automatically enhance articles based on their source for better content quality.
 
 **Improvements**
 
-- **Adapt curation agent to Kraushaar** — Improve content curation with better handling of diverse content types.
 - **Codify & enforce app dependency architecture** — Strengthen app reliability by organizing dependencies more effectively.
 - **Enforce same-layer import cycles** — Maintain system stability by managing import processes efficiently.
 
 **Bug Fixes & Stability**
 
 - Fix issues with missing inbound emails — Ensure emails are delivered reliably with improved routing and notifications.
-- Keep Civey poll links intact — Ensure poll links work correctly when imported.
 - Prevent layout issues by limiting input panel width — Maintain a clean and organized interface.
 - Preserve plain text in RSS feeds — Ensure text is displayed without unwanted formatting.
 - Limit RSS processing time — Prevent delays by managing how long tasks run.
 
 **Other Changes**
 
-- Update deployment process to use ECS — Improve deployment efficiency with a new workflow.
 - Introduce role-based user access — Define user roles for better access control.
 - Add glossary and content journey documentation — Provide helpful resources for understanding key concepts.
 
@@ -56,9 +52,8 @@ rss: true
 
 **New Features**
 
-- **WordPress REST API article importer for Ruhrnachrichten** — Easily bring in articles from WordPress for streamlined content management.
+- **WordPress REST API article importer** — Easily bring in articles from WordPress for streamlined content management.
 - **Add "quiz" content type** — Create and manage quizzes for engaging newsletter content.
-- **LinkedIn output via Zernio** — Set up the foundation for sharing content on LinkedIn.
 - **Unified ContentImage model** — Simplify image management with a single model.
 - **Anchor Curation Agent for poll-anchored segments** — Enhance newsletters with related article segments.
 - **Inject Brevo campaign ID into newsletter links** — Track clicks on newsletter links for better insights.
@@ -99,7 +94,7 @@ rss: true
 
 - **User Management tab** — Allow admins to manage users directly for better control.
 - **Open Org Settings tabs to Admins** — Give admins access to important settings for easier management.
-- **Send a bilingual welcome email** — Welcome new users with emails in multiple languages.
+- **Send a welcome email** — Welcome new users with emails in multiple languages.
 - **Add choice options for WhatsApp polls** — Create interactive polls with single or multiple choice answers.
 - **Trigger WhatsApp article suggestions** — Automatically suggest articles for WhatsApp users.
 - **Add URL path filters and enrichment to RSS** — Improve RSS content with targeted filtering and enhancements.
@@ -108,9 +103,6 @@ rss: true
 
 - **Migrate RSS spiders to a new flow** — Enhance RSS processing with a modern system.
 - **Exclude specific RSS spiders from migration** — Maintain control over which spiders are updated.
-- **Introduce CONTENT_TYPE_REGISTRY** — Streamline content management with a new system.
-- **Add content_type routing to the RSS_FEED pipeline** — Improve content delivery with efficient routing.
-- **Redesign bilingual welcome email** — Enhance the welcome experience with improved design and messaging.
 - **Add pagination and search to user list** — Easily find and manage users with new tools.
 - **Migrate add-new-square page to a dialog** — Simplify the process of adding new sections.
 - **Add display-name support in email headers** — Personalize emails with sender names.
@@ -134,7 +126,7 @@ rss: true
 
 </Update>
 
-<Update label="Version 1.27.0 - Migrate podcast dialog to structure..." description="Released May 6, 2026">
+<Update label="Version 1.27.0 - Migrate podcast dialog to structure" description="Released May 6, 2026">
 
 **New Features**
 
