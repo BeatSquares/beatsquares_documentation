@@ -10,6 +10,134 @@ rss: true
 
 ## Recent Updates
 
+<Update label="Version 1.30.0 - Declarative structured newsletter templates" description="Released June 15, 2026">
+
+**New Features**
+
+- **Declarative structured newsletter templates** — Easily create newsletters with pre-designed templates that ensure consistency.
+- **Per-segment structured templates** — Customize newsletter sections individually for a tailored reader experience.
+- **LinkedIn connection settings** — Manage LinkedIn connections at both organization and group levels.
+- **Automated image search for newsletter segments** — Find and add high-quality images to your newsletters effortlessly.
+- **Shared Jinja datetime helpers for media-item templates** — Use consistent date and time formats across your media templates.
+- **Per-data-source analysis policy + centralized article enrichment** — Automatically enhance articles based on their source for better content quality.
+
+**Improvements**
+
+- **Codify & enforce app dependency architecture** — Strengthen app reliability by organizing dependencies more effectively.
+- **Enforce same-layer import cycles** — Maintain system stability by managing import processes efficiently.
+
+**Bug Fixes & Stability**
+
+- Fix issues with missing inbound emails — Ensure emails are delivered reliably with improved routing and notifications.
+- Prevent layout issues by limiting input panel width — Maintain a clean and organized interface.
+- Preserve plain text in RSS feeds — Ensure text is displayed without unwanted formatting.
+- Limit RSS processing time — Prevent delays by managing how long tasks run.
+
+**Other Changes**
+
+- Introduce role-based user access — Define user roles for better access control.
+- Add glossary and content journey documentation — Provide helpful resources for understanding key concepts.
+
+</Update>
+
+<Update label="Version 1.29.1 - Hotfix" description="Released June 8, 2026">
+
+**Bug Fixes & Stability**
+
+- Ensure editor styles support responsive design — Maintain a consistent look across different devices.
+
+</Update>
+
+<Update label="Version 1.29.0 - WordPress REST API article importer" description="Released June 8, 2026">
+
+**New Features**
+
+- **WordPress REST API article importer** — Easily bring in articles from WordPress for streamlined content management.
+- **Add "quiz" content type** — Create and manage quizzes for engaging newsletter content.
+- **Unified ContentImage model** — Simplify image management with a single model.
+- **Anchor Curation Agent for poll-anchored segments** — Enhance newsletters with related article segments.
+- **Inject Brevo campaign ID into newsletter links** — Track clicks on newsletter links for better insights.
+- **Content import via URL** — Import content directly from web links for easy access.
+- **Parent media-item link in newsletter editor** — Easily manage related media items in newsletters.
+- **Content import — Poll** — Add polls manually or via URL for interactive content.
+
+**Improvements**
+
+- **Introduce MediaItemType registry extension point** — Prepare for future enhancements with a flexible system.
+- **E2E test coverage for sub-square picker and blueprint validation** — Ensure features work correctly with comprehensive testing.
+
+**Bug Fixes & Stability**
+
+- Prevent duplicate content in RSS feeds — Ensure each article is unique and up-to-date.
+- Skip empty segments during creation — Avoid unnecessary content in newsletters.
+- Keep structural segments when reverting newsletters — Ensure newsletters are restored correctly.
+- Preserve manual segments in newsletters — Maintain custom content like dividers.
+
+**Other Changes**
+
+- Move terraform code to a new location — Organize code for better management.
+- Update pre-commit checks in Docker — Improve code quality by focusing on changes.
+
+</Update>
+
+<Update label="Version 1.28.1 - Hotfix" description="Released June 3, 2026">
+
+**Bug Fixes & Stability**
+
+- [HOTFIX] Ensure RSS feeds keep HTML attributes and improve segment editing — Maintain content quality and editing flexibility.
+
+</Update>
+
+<Update label="Version 1.28.0 - User Management tab — admin" description="Released June 2, 2026">
+
+**New Features**
+
+- **User Management tab** — Allow admins to manage users directly for better control.
+- **Open Org Settings tabs to Admins** — Give admins access to important settings for easier management.
+- **Send a welcome email** — Welcome new users with emails in multiple languages.
+- **Add choice options for WhatsApp polls** — Create interactive polls with single or multiple choice answers.
+- **Trigger WhatsApp article suggestions** — Automatically suggest articles for WhatsApp users.
+- **Add URL path filters and enrichment to RSS** — Improve RSS content with targeted filtering and enhancements.
+
+**Improvements**
+
+- **Migrate RSS spiders to a new flow** — Enhance RSS processing with a modern system.
+- **Exclude specific RSS spiders from migration** — Maintain control over which spiders are updated.
+- **Add pagination and search to user list** — Easily find and manage users with new tools.
+- **Migrate add-new-square page to a dialog** — Simplify the process of adding new sections.
+- **Add display-name support in email headers** — Personalize emails with sender names.
+
+**Bug Fixes & Stability**
+
+- Fix errors in Firecrawl scraping — Ensure reliable data collection.
+- Fix local development issues with LocalStack — Stabilize the development environment.
+
+**Other Changes**
+
+- Rename user roles for clarity — Update role names for better understanding.
+
+</Update>
+
+<Update label="Version 1.27.1 - Hotfix" description="Released May 29, 2026">
+
+**Bug Fixes & Stability**
+
+- [HOTFIX] Fix database write errors and date issues — Ensure data is saved correctly and dates are handled properly.
+
+</Update>
+
+<Update label="Version 1.27.0 - Migrate podcast dialog to structure" description="Released May 6, 2026">
+
+**New Features**
+
+- **Migrate podcast dialog to structured_data** — Use a reliable system for managing podcast information.
+- **Podcast segments — structured dialogue UI** — Enjoy a user-friendly interface for podcast segments.
+- **Add webhook notification delivery for podcasts** — Get notified when podcast audio is published.
+- **Add dynamic poll option controls in WhatsApp editor** — Easily manage poll options in WhatsApp.
+- **Generate audio preview for text segments** — Listen to audio previews of highlighted text.
+
+</Update>
+
 <Update label="Version 1.26.1 - Hotfix" description="Released May 28, 2026">
 
 **Bug Fixes & Stability**
