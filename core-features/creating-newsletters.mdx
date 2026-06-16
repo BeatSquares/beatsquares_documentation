@@ -1,232 +1,170 @@
 ---
 title: "Creating Newsletters"
-description: "Step-by-step guide to creating, editing, and publishing newsletters using BeatSquares' newsletter creation features"
+description: "Build a newsletter from articles, events and press releases – segment by segment."
 ---
 
-## What You'll Learn
+Newsletters in BeatSquares are built from **segments**. Some segments are filled with your own text, others are generated from articles, events, or press releases. You work on segments one at a time, review the generated variants, and verify each one before publishing.
 
-In this guide, you'll learn how to:
-- Create a newsletter with custom content segments
-- Add articles to newsletter segments
-- Generate and review newsletter variants
-- Edit and verify newsletter content
-- Publish and export your newsletter
+Prefer a visual walkthrough? Follow the interactive guide below:
 
-## Before You Start
-
-**Prerequisites:**
-- Active BeatSquares account with newsletter access
-- At least one Square created with the "newsletter" output format
+<iframe src="https://app.tango.us/app/embed/1ce188a7-c800-4603-9334-362c20c3bdc2" style={{ minHeight: '640px', width: '100%', border: 0 }} sandbox="allow-scripts allow-top-navigation-by-user-activation allow-popups allow-same-origin" title="Create Newsletters" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
 
 <Note>
-Each square has a specific output format. To create a newsletter, you need a square with the output format "newsletter".
+  Newsletters can only be created inside a Square with the output format **Newsletter**. If you don't have one yet, see [Creating Squares](/core-features/creating-squares).
 </Note>
 
-**What You'll Need:**
-- Newsletter content and messaging strategy
-- Articles or content sources to include
-- Brand assets (logos, colors, fonts) if customizing
+## Understanding segments and templates
 
-## Creating Your Newsletter
+Your newsletter follows a default **template** (also called a _blueprint_) that defines its structure – which segments appear, in what order, and how each one is filled. Your template is configured together with the BeatSquares team during onboarding.
 
-<Steps>
-  <Step title="Navigate to Your Square">
-    Go to your dashboard and click on the square where you want to create the newsletter.
+A newsletter can contain different types of segments:
 
-    ![Step 1 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/448cfc78-d2c9-48b8-abc8-3e195ad5141c/056ada83-ee72-4e65-99af-5d569e6e7899.png?crop=focalpoint&fit=crop&fp-x=0.4954&fp-y=0.4063&fp-z=1.4278&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=370&mark-y=173&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz00NjAmaD00NjAmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-  </Step>
-
-  <Step title="Create Newsletter">
-    Click on **Create newsletter** button in the square interface.
-
-    ![Step 2 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/652fd9ee-dd8d-430f-a5e8-8c5d93a603b8/c3b6183f-bb97-4f17-b14f-bc3cd4d2d696.png?crop=focalpoint&fit=crop&fp-x=0.8518&fp-y=0.1011&fp-z=2.9139&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=484&mark-y=187&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zOTYmaD0xMDEmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-  </Step>
-
-  <Step title="Name Your Newsletter">
-    Type a name for your newsletter in the name field.
-
-    ![Step 3 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/4f8d6959-d65b-4c38-8fe0-b441bf6ed68f/f0cc045e-d273-4145-a424-ec76c4882730.png?crop=focalpoint&fit=crop&fp-x=0.7922&fp-y=0.0530&fp-z=2.5685&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=41&mark-y=65&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTE5Jmg9ODkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-  </Step>
-</Steps>
-
-## Editing Content Segments
-
-Newsletters are built using segments. Each segment can contain custom text content or articles, events or press releases. The segments are pre-defined per Square as part of the so called "Blueprint". If you want to change the segments, please contact BeatSquares. You'll edit segments one at a time.
-
-### Editing a Manual Content Segment
-
-<Steps>
-  <Step title="Add Content Segment">
-    Click on **Click to add content** to create a new segment.
-
-    ![Step 4 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/1b7050b2-15ba-4817-975f-a0caf26d7e35/cbde2c2e-511e-452e-8197-f6d54117004a.png?crop=focalpoint&fit=crop&fp-x=0.7872&fp-y=0.3077&fp-z=2.7500&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=102&mark-y=343&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05OTYmaD0xMjAmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-  </Step>
-
-  <Step title="Add Text Content">
-    You can add custom text content to your segment. Click on **Click to add content** again to add a text element, or highlight existing text to edit it.
-
-    ![Step 5 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/ad90432b-b44c-421f-a782-c833a85dec90/54a11e0f-60e0-4c31-980d-6382dd1fe182.png?crop=focalpoint&fit=crop&fp-x=0.7872&fp-y=0.3077&fp-z=2.7500&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=102&mark-y=343&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05OTYmaD0xMjAmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-  </Step>
-
-  <Step title="Edit Text Content">
-    Click on **highlight** to select and edit text, or paste content directly into the element.
-
-    ![Step 6 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/3603c7b9-36e2-4ea0-9675-aa1cc2fa6de3/834c5fef-5581-4448-8749-607725b9b3c3.png?crop=focalpoint&fit=crop&fp-x=0.7872&fp-y=0.4720&fp-z=2.6696&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=119&mark-y=323&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05NjImaD0xNjAmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-
-    ![Step 7 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/ea965026-ba17-419b-8f57-447b7fc9bb69/dbeef575-4f02-4cf0-b803-38cfeb517210.png?crop=focalpoint&fit=crop&fp-x=0.7872&fp-y=0.5113&fp-z=2.4164&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=203&mark-y=292&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz03OTUmaD0yMjImZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-  </Step>
-
-  <Step title="Save Your Content">
-    Type your content (for example, a greeting like "Guten Morgen!") and click **Save** to save the segment.
-
-    ![Step 8 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/3bd9b053-f38c-4984-a91b-7874d16c2df8/c5f3869a-e7c8-46c5-96b2-acdaf3c50903.png?crop=focalpoint&fit=crop&fp-x=0.7872&fp-y=0.3415&fp-z=2.7500&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=102&mark-y=355&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05OTYmaD05NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-    ![Step 9 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/6aa46325-4d13-4ea4-b204-46a2585b6def/45ec7409-69c3-4aa2-b7ad-cbd9d7222235.png?crop=focalpoint&fit=crop&fp-x=0.9173&fp-y=0.6889&fp-z=3.0237&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=825&mark-y=355&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNTEmaD05NiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-  </Step>
-</Steps>
-
-## Adding Articles to Segments
-
-After creating a content segment, you can add articles to generate newsletter content based on your selected articles.
-
-<Steps>
-  <Step title="Add Article to Segment">
-    Click on **Add article to Segment** to select articles for this segment.
-
-    ![Step 10 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/866c7ff9-ca30-4356-a333-66f474f6d816/eca9ba9c-2431-4653-8a31-b298dca3fc3e.png?crop=focalpoint&fit=crop&fp-x=0.7872&fp-y=0.5751&fp-z=2.1881&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=290&mark-y=264&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz03MDImaD0yNzcmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-  </Step>
-
-  <Step title="Select Articles">
-    Check the articles you want to include in this segment. Available articles are based on the categories chosen in your Square settings.
-
-    ![Step 11 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/dd4b51f2-c1bf-4f3c-9b2f-b99646195197/5f78405b-24fd-4fb2-9179-b8c995a687e8.png?crop=focalpoint&fit=crop&fp-x=0.4951&fp-y=0.5113&fp-z=1.1016&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=67&mark-y=363&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDY1Jmg9ODAmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-  </Step>
-
-  <Step title="Generate Segment">
-    Click **Generate** to create newsletter content for this segment based on the selected articles.
-
-    ![Step 12 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/ac650fc4-9fa4-4824-b9ed-c821910acc78/c4a42c5a-05c9-4f80-9a5e-2eddb695f0d8.png?crop=focalpoint&fit=crop&fp-x=0.8745&fp-y=0.9264&fp-z=4.0000&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=440&mark-y=499&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zMTkmaD0xMzkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-  </Step>
-
-  <Step title="Add Content to More Segments">
-    Repeat the process to add more segments. Click **Add article to Segment** again to create additional segments with articles.
-
-    ![Step 13 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/66528b47-3683-462e-9ff0-1290b1fd5d70/c8a5b697-fe77-47b0-b45a-abe908901864.png?crop=focalpoint&fit=crop&fp-x=0.7872&fp-y=0.6605&fp-z=2.3920&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=216&mark-y=251&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz03NjgmaD0zMDMmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-
-    ![Step 14 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/6b133fcb-61a1-46f7-839d-9b3c257c81b4/259b854a-a84c-4cc4-9823-540119eb8faa.png?crop=focalpoint&fit=crop&fp-x=0.4951&fp-y=0.6369&fp-z=1.1016&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=67&mark-y=443&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDY1Jmg9ODAmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-
-    ![Step 15 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/97bde029-18fd-4df3-bb4a-73f1de6fcbe4/ddc12d37-c55c-4ba7-83b1-16a41c53e4f9.png?crop=focalpoint&fit=crop&fp-x=0.8745&fp-y=0.9264&fp-z=4.0000&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=440&mark-y=499&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0zMTkmaD0xMzkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-  </Step>
-</Steps>
-
-## Reviewing and Editing Segments
-
-Once your segments are generated, you can review different variants and make edits.
-
-<Steps>
-  <Step title="Access Newsletter">
-    Click on your newsletter name to view all segments and variants.
-
-    ![Step 16 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/57006298-9524-4193-ae94-9d3e11dc2b5a/d316f30a-f01e-4589-9216-7ef0302daa6c.png?crop=focalpoint&fit=crop&fp-x=0.4677&fp-y=0.2679&fp-z=1.1286&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=121&mark-y=228&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05NTgmaD0zMiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-  </Step>
-
-  <Step title="Check Variants">
-    Once segments are generated, you can check different variants (Var 2, Var 3, etc.) by clicking on the variant tabs.
-
-    ![Step 17 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/e8e8b9c7-d63e-4c46-9363-dae2822384d9/ea027788-c2be-43fe-aaab-3f612014f080.png?crop=focalpoint&fit=crop&fp-x=0.7072&fp-y=0.1325&fp-z=2.9821&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=523&mark-y=276&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNTMmaD04NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-    ![Step 18 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/17ff7b12-4dc6-4a2f-9a9c-46a542c90c18/2216710b-a766-41de-bcb9-59f55c35ba44.png?crop=focalpoint&fit=crop&fp-x=0.7500&fp-y=0.1325&fp-z=2.9821&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=523&mark-y=276&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNTMmaD04NSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-  </Step>
-
-  <Step title="Edit Segments">
-    Click on **edit** to make changes to any segment as needed.
-
-    ![Step 19 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/4ee7afb4-47aa-40c9-88f3-0c086b1611a3/364668a2-1966-4fc3-9760-1672ee4bab28.png?crop=focalpoint&fit=crop&fp-x=0.9223&fp-y=0.1256&fp-z=3.0175&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=880&mark-y=267&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz03NiZoPTc2JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
-  </Step>
-
-  <Step title="Verify Segments">
-    Click **Verify** to confirm the segment content is correct.
-
-    ![Step 20 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/e0cd2490-62be-48cd-a2a6-8e54ca8e7bae/898ba0a1-d595-4d30-9b43-984bba36e216.png?crop=focalpoint&fit=crop&fp-x=0.9229&fp-y=0.1590&fp-z=2.9476&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=874&mark-y=331&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDcmaD05MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-  </Step>
-</Steps>
-
-## Regenerating Segments
-
-If you want to switch a segment to use different input sources or regenerate the content, you can use the regenerate feature.
-
-<Steps>
-  <Step title="Select Segment to Regenerate">
-    Click on **highlight** to select the segment you want to regenerate.
-
-    ![Step 21 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/048d285e-00e9-4747-af28-e922efc049bb/3efedf5e-8efb-4ffb-8d6c-53a0d0773824.png?crop=focalpoint&fit=crop&fp-x=0.9223&fp-y=0.2826&fp-z=3.0175&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=880&mark-y=365&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz03NiZoPTc2JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
-  </Step>
-
-  <Step title="Regenerate Segment">
-    Click on **Regenerate** to switch the segment to use different input sources.
-
-    ![Step 22 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/86fae54d-e731-4715-b256-7e00e196f6d7/029fdcc3-5d5e-451e-8f3a-3ae031a10825.png?crop=focalpoint&fit=crop&fp-x=0.8900&fp-y=0.3160&fp-z=2.9476&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=757&mark-y=356&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDcmaD05MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-  </Step>
-
-  <Step title="Select Source Type">
-    Choose your content source. Click on **Events** or **Press Releases** depending on your content type.
-
-    ![Step 23 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/b6ac5081-c0fe-41c6-b78f-de86e0b70733/1eff06c6-033d-419b-90ba-61a4dbd05189.png?crop=focalpoint&fit=crop&fp-x=0.1693&fp-y=0.1207&fp-z=2.8566&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=495&mark-y=237&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xNzImaD04MSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-    ![Step 24 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/289c9f5e-245e-4dcd-8f44-e7dbc714178c/5d7d5149-f397-4746-9ac3-afc3a65acffe.png?crop=focalpoint&fit=crop&fp-x=0.2306&fp-y=0.1207&fp-z=2.6020&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=468&mark-y=216&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNjMmaD03NCZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-  </Step>
-
-  <Step title="Verify Regenerated Segment">
-    After selecting new sources, click **Verify** to confirm the regenerated segment.
-
-    ![Step 26 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/a934bc05-162a-4959-bb13-02fb48e17836/a7746b14-957a-4414-83d6-87081bae3123.png?crop=focalpoint&fit=crop&fp-x=0.9229&fp-y=0.2924&fp-z=2.9476&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=874&mark-y=356&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMDcmaD05MyZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-  </Step>
-</Steps>
-
-## Overview Segments
-Overview segments use the content of the other segments and generate an overview. 
-
-<Steps>
-  <Step title="Generate Final Segment">
-    Once all other segments are verified, click **Generate segment** to create the final newsletter content.
-
-    ![Step 27 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/44d4dd15-4465-43b2-90e8-efefffb190be/549c5502-47a3-4eeb-9a5e-f2380f6da601.png?crop=focalpoint&fit=crop&fp-x=0.7872&fp-y=0.5810&fp-z=2.1881&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=290&mark-y=264&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz03MDImaD0yNzcmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-  </Step>
-</Steps>
-
-## Publishing Your Newsletter
-
-Once all segments are verified and you're satisfied with the content, you can publish your newsletter.
-
-<Steps>
-  <Step title="Publish Newsletter">
-    Click **Publish** to finalize your newsletter.
-
-    ![Step 28 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/66f344be-6bfc-4219-be75-ae1ffe3507f8/6e26b624-6f6e-4876-92bc-b9ddef6d70eb.png?crop=focalpoint&fit=crop&fp-x=0.9552&fp-y=0.9666&fp-z=4.0000&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=846&mark-y=628&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0yNzgmaD0xMzkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-  </Step>
-
-  <Step title="Access Published Newsletter">
-    Click on your **Newsletter Name** to access the published newsletter.
-
-    ![Step 29 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/c000e31b-1a41-49e5-b9fe-08abe0fae3ca/8a3a5bf2-cab9-4f76-b9cc-e060ac7bb641.png?crop=focalpoint&fit=crop&fp-x=0.4575&fp-y=0.2679&fp-z=1.1286&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=135&mark-y=228&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz05MzEmaD0zMiZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-  </Step>
-
-  <Step title="Copy to Clipboard">
-    Click on **Copy to clipboard** to copy the complete HTML newsletter. You can then paste it into your email tool.
-
-    ![Step 30 screenshot](https://images.tango.us/workflows/723433c1-5b58-4f98-b0f5-f4e942ed5c3a/steps/ef4db8a1-bad3-4013-af9c-f85ec4ef3eec/b5ae50f1-cde2-43dd-ae48-8c8d135c0383.png?crop=focalpoint&fit=crop&fp-x=0.9140&fp-y=0.9578&fp-z=4.0000&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=577&mark-y=600&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz00MjEmaD0xMzkmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
-  </Step>
-</Steps>
+- **Manual segments** – filled in by hand with your own text. Typically used for editorials, where an editor wants to add a personal note or framing.
+- **Article-based segments** – automatically generated from selected articles, events, or press releases.
+- **Static segments** – the same content every time (e.g. recurring headers or footers).
 
 <Tip>
-Make sure to verify all segments before publishing. Once published, you cannot make edits.
+  If you want to change the structure of your newsletter (e.g. add a new segment type or change the order permanently), reach out to the BeatSquares team.
 </Tip>
 
-## What's Next?
+## 1. Create the newsletter
 
-- [Creating WhatsApp Messages](/core-features/creating-whatsapp-messages)
-- [Manually Adding Articles](/core-features/manually-adding-articles)
-- [Creating Podcasts](/core-features/creating-podcasts)
+<Steps>
+  <Step title="Open your newsletter Square">
+    From the Dashboard, open the Square you want to create a newsletter in.
+  </Step>
+  <Step title="Click 'Create newsletter'">
+    Start a new newsletter from the Square interface.
+  </Step>
+  <Step title="Name your newsletter">
+    Type a name in the name field. You can change it later.
+  </Step>
+</Steps>
 
----
-*Related: [Creating Squares](/core-features/creating-squares) | [FAQ](/troubleshooting/faq)*
+## 2. Fill in your segments
+
+You can work on segments in any order – jump between manual and article-based ones as you like. The only exception is the overview segment, which can only be generated once all other segments are verified.
+
+### Manual segments (e.g. editorials)
+
+<Steps>
+  <Step title="Open the segment">
+    Click **Click to add content** on the segment you want to fill.
+  </Step>
+  <Step title="Add or paste your text">
+    Type or paste your custom text (for example, a greeting like _"Guten Morgen!"_ or a full editorial).
+  </Step>
+  <Step title="Save">
+    Click **Save** to confirm the segment.
+  </Step>
+</Steps>
+
+### Article-based segments
+
+<Steps>
+  <Step title="Add an article">
+    Click **Add article to Segment** to open the article picker.
+  </Step>
+  <Step title="Select articles">
+    Check the articles you want to include. Available articles depend on the categories configured in your Square.
+  </Step>
+  <Step title="Generate">
+    Click **Generate** to create newsletter content based on the selected articles.
+  </Step>
+</Steps>
+
+Repeat this for each article-based segment in your newsletter.
+
+### Reorder segments
+
+Each segment has **Move up** and **Move down** buttons. Use them to change the order in which segments appear in the final newsletter.
+
+## 3. Review and edit
+
+Once a segment is generated, you can review the variants and fine-tune the content.
+
+<Steps>
+  <Step title="Open your newsletter">
+    Click the newsletter name to view all segments.
+  </Step>
+  <Step title="Compare variants">
+    BeatSquares generates multiple variants per segment. Click **Var 2**, **Var 3**, etc. to compare different tones, lengths, or angles.
+  </Step>
+  <Step title="Edit if needed">
+    Click **edit** on a segment to make manual changes to the text.
+  </Step>
+  <Step title="Verify">
+    When you're happy with a segment, click **Verify** to lock it in.
+  </Step>
+</Steps>
+
+## 4. Regenerate a segment
+
+Not happy with a segment? Click **Regenerate** to:
+
+- Switch to a **different article** for the same segment
+- Pick a **different content source** (e.g. _Events_ or _Press Releases_ instead of articles)
+- Generate **fresh variants** from the same input
+
+After regenerating, verify the segment again to lock in your changes.
+
+## 5. Generate the overview segment
+
+Overview segments use the content of all other segments to generate a summary or intro. They can only be generated once all other segments are verified.
+
+<Steps>
+  <Step title="Verify all other segments">
+    Make sure every content segment is verified before continuing.
+  </Step>
+  <Step title="Generate the overview">
+    Click **Generate segment** on the overview segment to create it.
+  </Step>
+  <Step title="Verify the overview">
+    Review the result and verify it like any other segment.
+  </Step>
+</Steps>
+
+## 6. Publish and send
+
+<Steps>
+  <Step title="Publish">
+    Click **Publish** to finalize your newsletter.
+  </Step>
+  <Step title="Open the published newsletter">
+    Click your newsletter name to view the final version.
+  </Step>
+</Steps>
+
+### Send it out
+
+You have two options to send your newsletter:
+
+- **Copy to clipboard** – Click **Copy to clipboard** to copy the complete HTML newsletter and paste it into any email tool.
+- **Direct sending via integration** – BeatSquares can integrate with email tools like **Brevo** for direct sending. If you'd like to set this up, reach out to the BeatSquares team.
+
+## Tips
+
+- **Use manual segments for personal framing** – a short editorial can make a newsletter feel less automated.
+- **Compare variants before editing** – the AI often surprises you with a better angle than the one you'd default to.
+- **Verify segments as you go** – verifying signals teammates that the segment is reviewed and ready.
+- **Generate the overview last** – it needs all other segments verified to work.
+
+## What's next?
+
+<CardGroup cols={2}>
+  <Card title="Creating WhatsApp Messages" icon="comment" href="/core-features/creating-whatsapp-messages">
+    Build a WhatsApp message from a single article.
+  </Card>
+
+  <Card title="Creating Podcasts" icon="microphone" href="/core-features/creating-podcasts">
+    Turn articles into a podcast episode.
+  </Card>
+
+  <Card title="Manually Adding Articles" icon="file-pen" href="/core-features/manually-adding-articles">
+    Expand the article pool your newsletter draws from.
+  </Card>
+
+  <Card title="Creating Squares" icon="plus" href="/core-features/creating-squares">
+    Set up a new Square as a foundation.
+  </Card>
+</CardGroup>

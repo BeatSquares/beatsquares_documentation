@@ -1,0 +1,327 @@
+/* ============================================================
+   beatsquares — Mintlify theme overrides
+   Applies the brand design system over the maple theme.
+   Tokens mirror colors_and_type.css from the design bundle.
+   ============================================================ */
+
+:root {
+  /* Primary palette — warm neutrals + ink */
+  --bs-ink: #333350;
+  --bs-slate: #5C6670;
+  --bs-beige: #DBC7BD;
+  --bs-cream: #FCF7F3;
+  --bs-cream-2: #F5EDE4;
+  --bs-cream-3: #ECE0D6;
+
+  /* Secondary, meaning-tagged accents */
+  --bs-red: #F27272;
+  --bs-blue: #ACE5D9;
+  --bs-yellow: #FFC066;
+  --bs-green: #C3E76F;
+  --bs-orange: #FF9650;
+
+  /* Type-safe deepened versions */
+  --bs-red-ink: #D5453F;
+  --bs-green-ink: #4F9A4A;
+  --bs-blue-ink: #2E8C7A;
+  --bs-press: #1A0E2E;
+
+  /* Ink alphas / rules */
+  --bs-ink-soft: rgba(51, 51, 80, 0.72);
+  --bs-ink-mute: rgba(51, 51, 80, 0.45);
+  --bs-rule: rgba(51, 51, 80, 0.14);
+  --bs-rule-2: rgba(51, 51, 80, 0.22);
+}
+
+/* ------------------------------------------------------------
+   Page surfaces — warm cream in light, solid ink in dark.
+   The brand rejects ink-plus-gradient; dark stays solid.
+   ------------------------------------------------------------ */
+body,
+.bg-background-light {
+  background-color: var(--bs-cream);
+}
+
+.dark body,
+.dark .bg-background-dark {
+  background-color: var(--bs-ink);
+}
+
+/* ------------------------------------------------------------
+   Typography — Montserrat carries everything.
+   Tight negative tracking on large sizes per the spec.
+   ------------------------------------------------------------ */
+body {
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: var(--bs-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.dark body {
+  color: var(--bs-cream);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: var(--bs-ink);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: var(--bs-cream);
+}
+
+h1 { font-weight: 800; letter-spacing: -0.03em; }
+h2 { font-weight: 700; letter-spacing: -0.02em; }
+
+/* Sentence lede / subtitle */
+.lead, .text-lg.text-gray-600 {
+  color: var(--bs-ink-soft);
+  font-weight: 500;
+}
+
+/* ------------------------------------------------------------
+   Links & inline accents — red is the brand heartbeat.
+   ------------------------------------------------------------ */
+a {
+  color: var(--bs-ink);
+  text-decoration-color: var(--bs-rule-2);
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+a:hover {
+  color: var(--bs-red-ink);
+  text-decoration-color: var(--bs-red);
+}
+
+.dark a {
+  color: var(--bs-cream);
+  text-decoration-color: rgba(252, 247, 243, 0.4);
+}
+
+.dark a:hover {
+  color: var(--bs-red);
+  text-decoration-color: var(--bs-red);
+}
+
+/* ------------------------------------------------------------
+   Inline code & code blocks — cream-2 surface, hairline border.
+   ------------------------------------------------------------ */
+code {
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  background-color: var(--bs-cream-2);
+  color: var(--bs-ink);
+  border: 1px solid var(--bs-rule);
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  font-size: 0.9em;
+}
+
+.dark code {
+  background-color: rgba(252, 247, 243, 0.08);
+  color: var(--bs-cream);
+  border-color: rgba(252, 247, 243, 0.14);
+}
+
+pre, pre code {
+  background-color: var(--bs-cream-2);
+  border: 1px solid var(--bs-rule);
+  border-radius: 8px;
+}
+
+.dark pre, .dark pre code {
+  background-color: rgba(252, 247, 243, 0.05);
+  border-color: rgba(252, 247, 243, 0.14);
+}
+
+/* ------------------------------------------------------------
+   Callouts — brand-tagged semantic colors.
+   Note=blue trust, Tip=green save, Warning=yellow fun,
+   Info=ink-soft, Check=green ink. No emoji-style decoration.
+   ------------------------------------------------------------ */
+.callout, [class*="callout"] {
+  border-radius: 8px;
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+
+/* Note — Blue Trust */
+[class*="callout-note"], [class*="Note"] {
+  background-color: rgba(172, 229, 217, 0.18);
+  border-left-color: var(--bs-blue-ink);
+}
+
+/* Tip — Green Save */
+[class*="callout-tip"], [class*="Tip"] {
+  background-color: rgba(195, 231, 111, 0.20);
+  border-left-color: var(--bs-green-ink);
+}
+
+/* Warning — Red Deep */
+[class*="callout-warning"], [class*="Warning"] {
+  background-color: rgba(242, 114, 114, 0.16);
+  border-left-color: var(--bs-red-ink);
+}
+
+/* Info — warm beige */
+[class*="callout-info"], [class*="Info"] {
+  background-color: rgba(219, 199, 189, 0.30);
+  border-left-color: var(--bs-slate);
+}
+
+/* Check — Green Save success */
+[class*="callout-check"], [class*="Check"] {
+  background-color: rgba(195, 231, 111, 0.22);
+  border-left-color: var(--bs-green-ink);
+}
+
+/* ------------------------------------------------------------
+   Cards — cream-2 surface, hairline border, square corners
+   per brand surface rule (radius 0 on brand surfaces,
+   12px on product UI). Docs cards land in the middle: 8px.
+   ------------------------------------------------------------ */
+.card, [class*="card"] {
+  background-color: transparent;
+  border: 1px solid var(--bs-rule);
+  border-radius: 8px;
+  transition: border-color 0.15s ease, transform 0.05s ease;
+}
+
+.card:hover, [class*="card"]:hover {
+  border-color: var(--bs-rule-2);
+}
+
+.dark .card, .dark [class*="card"] {
+  background-color: transparent;
+  border-color: rgba(252, 247, 243, 0.14);
+}
+
+/* ------------------------------------------------------------
+   Buttons / CTA — ink default, slate hover, deep-plum pressed.
+   Mirrors the brand component sheet exactly.
+   ------------------------------------------------------------ */
+button[type="submit"], .button-primary, [class*="btn-primary"] {
+  background-color: var(--bs-ink);
+  color: var(--bs-cream);
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+button[type="submit"]:hover, .button-primary:hover, [class*="btn-primary"]:hover {
+  background-color: var(--bs-slate);
+}
+
+button[type="submit"]:active, .button-primary:active, [class*="btn-primary"]:active {
+  background-color: var(--bs-press);
+  transform: translateY(0.5px);
+}
+
+/* ------------------------------------------------------------
+   Hairline dividers — rule the brand uses everywhere.
+   ------------------------------------------------------------ */
+hr {
+  border: none;
+  border-top: 1px solid var(--bs-rule);
+  margin: 2rem 0;
+}
+
+.dark hr {
+  border-top-color: rgba(252, 247, 243, 0.14);
+}
+
+/* ------------------------------------------------------------
+   Sidebar / navigation — warm cream-3 active state,
+   ink text. Mint focus ring per the focus token.
+   ------------------------------------------------------------ */
+nav a[aria-current="page"],
+nav a.active,
+[class*="sidebar"] a[aria-current="page"] {
+  background-color: var(--bs-cream-3);
+  color: var(--bs-ink);
+  font-weight: 600;
+}
+
+.dark nav a[aria-current="page"],
+.dark nav a.active,
+.dark [class*="sidebar"] a[aria-current="page"] {
+  background-color: rgba(252, 247, 243, 0.10);
+  color: var(--bs-cream);
+}
+
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(172, 229, 217, 0.55);
+  border-radius: 4px;
+}
+
+/* ------------------------------------------------------------
+   Tables — hairline rules, no heavy borders.
+   ------------------------------------------------------------ */
+table {
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border-bottom: 1px solid var(--bs-rule);
+  padding: 10px 14px;
+}
+
+table th {
+  color: var(--bs-slate);
+  font-weight: 600;
+  font-size: 0.85em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.dark table th, .dark table td {
+  border-bottom-color: rgba(252, 247, 243, 0.14);
+}
+
+.dark table th {
+  color: rgba(252, 247, 243, 0.72);
+}
+
+/* ------------------------------------------------------------
+   Blockquotes — quiet ink-soft, hairline left rule.
+   No colored-blob highlight (retired in the brand).
+   ------------------------------------------------------------ */
+blockquote {
+  border-left: 2px solid var(--bs-rule-2);
+  color: var(--bs-ink-soft);
+  padding-left: 1rem;
+  font-style: normal;
+}
+
+.dark blockquote {
+  border-left-color: rgba(252, 247, 243, 0.30);
+  color: rgba(252, 247, 243, 0.72);
+}
+
+/* ------------------------------------------------------------
+   Selection — warm peach tint.
+   ------------------------------------------------------------ */
+::selection {
+  background-color: rgba(242, 114, 114, 0.28);
+  color: var(--bs-ink);
+}
+
+.dark ::selection {
+  background-color: rgba(255, 192, 102, 0.32);
+  color: var(--bs-cream);
+}
+
+/* ------------------------------------------------------------
+   Reduced motion — brand respects it.
+   ------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

@@ -3,11 +3,21 @@
   "theme": "maple",
   "name": "BeatSquares Documentation",
   "colors": {
-    "primary": "#000000",
-    "light": "#E8E8E8", 
-    "dark": "#FFFFFF"
+    "primary": "#333350",
+    "light": "#ACE5D9",
+    "dark": "#1A0E2E"
   },
-  "favicon": "https://beatsquare.com/favicon/favicon.ico?v=20241220001",
+  "fonts": {
+    "heading": {
+      "family": "Montserrat",
+      "weight": 700
+    },
+    "body": {
+      "family": "Montserrat",
+      "weight": 400
+    }
+  },
+  "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -25,18 +35,20 @@
           {
             "group": "Core Features",
             "pages": [
-              "core-features/creating-squares",
               {
                 "group": "Podcast",
                 "pages": [
                   "core-features/creating-podcasts",
-                  "core-features/podcast-player-embeds",
-                  "core-features/podcast-embed-example"
+                  "core-features/podcast-player-embeds"
                 ]
               },
               "core-features/creating-newsletters",
-              "core-features/creating-whatsapp-messages",
-              "core-features/manually-adding-articles"
+              {
+                "group": "WhatsApp",
+                "pages": [
+                  "core-features/creating-whatsapp-messages"
+                ]
+              }
             ]
           },
           {
@@ -70,8 +82,8 @@
     }
   },
   "logo": {
-    "light": "https://www.beatsquares.com/logo/logo_beatsquares.png",
-    "dark": "https://www.beatsquares.com/logo/logo_beatsquares.png"
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
