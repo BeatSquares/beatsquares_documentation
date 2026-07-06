@@ -10,7 +10,39 @@ rss: true
 
 ## Recent Updates
 
-<Update label="Version 1.31.0 - Generate and store LinkedIn carouse..." description="Released June 22, 2026">
+<Update label="Version 1.33.0 - Group Civey poll answers into" description="Released July 6, 2026">
+
+**New Features**
+
+- **Add "Verify all segments" button to newsletter**: Quickly check all parts of your newsletter for accuracy.
+- **Candidate pre-filters & curation modes for homescraper**: Customize news scraping to show only relevant content.
+- **Anchor agent pre-analysis — research brief**: Get a summary of poll data before diving into details.
+- **Extract image captions for strategies input and segment templates**: Use image captions to enhance content strategies.
+
+**Improvements**
+
+- **Unsaved-changes guard for the tabbed Settings modal**: Prevent losing changes by alerting you before exiting without saving.
+- **Constrain organization logo size in header**: Keep logos looking neat and consistent in the header.
+
+</Update>
+
+<Update label="Version 1.32.0 - Improve LinkedIn carousels" description="Released June 29, 2026">
+
+**New Features**
+
+- **LinkedIn carousel**:: slide editor, layout & preview, per-slide content selection, blueprint settings, and full publish/schedule flow to LinkedIn PDF carousel
+- **Image picker overhaul**: pick images from the input document, unified add/swap image modal, and lossless newsletter image swap that preserves booking links and email table layout**: Seamlessly update images without losing important links or formatting.
+- **Make image-curation prompts editable per client, with base-prompt override and batch preview**: Customize image suggestions to better fit your needs.
+
+**Bug Fixes & Stability**
+
+- Validate curated content ids to prevent empty strategy input (IndexError 500): Ensure all content is correctly linked to avoid errors.
+- Stop counting IgnoreRequest as a spider error and drop items on API send failure: Reduce false error reports and improve data handling.
+- Retry anchor curation task on SoftTimeLimitExceeded: Improve task reliability by automatically retrying when needed.
+
+</Update>
+
+<Update label="Version 1.31.0 - Generate and store LinkedIn carousels" description="Released June 22, 2026">
 
 **New Features**
 
