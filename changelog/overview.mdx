@@ -10,6 +10,68 @@ rss: true
 
 ## Recent Updates
 
+<Update label="Version 1.34.0 - Group Civey poll answers into" description="Released July 6, 2026">
+
+**New Features**
+
+- **Group Civey poll answers into positive/negative/neutral buckets**: Easily see poll results categorized by sentiment.
+- **Civey "Zahl des Tages" — Google-Sheet ingestion, rendering, and newsletter injection**: Automatically include daily stats in newsletters using Google Sheets.
+- **Add "Verify all segments" button to newsletter media items**: Quickly check all parts of your newsletter for accuracy.
+- **Candidate pre-filters & curation modes for the Ruhrnachrichten Frühschicht homescraper**: Customize news scraping to show only relevant content.
+- **Anchor agent pre-analysis — research brief for Civey polls**: Get a summary of poll data before diving into details.
+- **Extract image captions for strategies input and segment templates**: Use image captions to enhance content strategies.
+
+**Improvements**
+
+- **Unsaved-changes guard for the tabbed Settings modal**: Prevent losing changes by alerting you before exiting without saving.
+- **Constrain organization logo size in header**: Keep logos looking neat and consistent in the header.
+
+**Bug Fixes & Stability**
+
+- Skip Ruhrnachrichten articles with duplicate content: Avoid reading the same article twice.
+
+**Other Changes**
+
+- Point LangSmith tracing at the EU region endpoint: Ensure data compliance by using the EU server.
+- Update strategy-builder-sdk to v2.10.0 (UnifiedApartment support in the content converter): Enhance content conversion with the latest SDK update.
+
+</Update>
+
+<Update label="Version 1.33.0 - , BEA-2775] LinkedIn carousel: slid..." description="Released June 29, 2026">
+
+**New Features**
+
+- **, BEA-2775] LinkedIn carousel: slide editor, layout & preview, per-slide content selection, blueprint settings, and full publish/schedule flow to LinkedIn (PDF carousel via Zernio)**: Create and schedule engaging LinkedIn carousels with ease.
+- **, BEA-2836, BEA-2839] Hanko-only authentication: decommission legacy email/password auth and mint Hanko session JWTs for Swagger via a dev-only endpoint**: Enjoy a more secure login process with Hanko authentication.
+- **, BEA-2855] Image picker overhaul: pick images from the input document, unified add/swap image modal, and lossless newsletter image swap that preserves booking links and email table layout**: Seamlessly update images without losing important links or formatting.
+- **Make image-curation prompts editable per client, with base-prompt override and batch preview**: Customize image suggestions to better fit your needs.
+
+**Improvements**
+
+- **Lean domain `__init__` files to break model→handler import cycles**: Improve system performance by optimizing file structure.
+- **Migrate e2e/Playwright auth to Hanko and remove staging-only e2e tests**: Streamline authentication processes for better efficiency.
+
+**Bug Fixes & Stability**
+
+- Validate curated content ids to prevent empty strategy input (IndexError 500): Ensure all content is correctly linked to avoid errors.
+- Stop counting IgnoreRequest as a spider error and drop items on API send failure: Reduce false error reports and improve data handling.
+- Recover hidden /rental prices and dedupe slug ↔ /rental apartment listings: Ensure accurate and unique rental listings.
+- Retry anchor curation task on SoftTimeLimitExceeded: Improve task reliability by automatically retrying when needed.
+
+</Update>
+
+<Update label="Version 1.32.0 - Migrate podcast dialog to structure..." description="Released May 6, 2026">
+
+**New Features**
+
+- **Migrate podcast dialog to structured_data as the single source of truth**: Centralize podcast data for consistency and accuracy.
+- **Podcast segments — structured dialogue UI and backend sync**: Enjoy a seamless experience with synchronized podcast segments.
+- **Add webhook notification delivery for published podcast audio**: Get instant updates when your podcast is published.
+- **Add dynamic poll option add/remove controls in WhatsApp editor**: Easily adjust poll options directly within WhatsApp.
+- **Generate audio preview for highlighted text segment**: Quickly hear a preview of selected text to ensure it sounds right.
+
+</Update>
+
 <Update label="Version 1.31.0 - Generate and store LinkedIn carouse..." description="Released June 22, 2026">
 
 **New Features**
