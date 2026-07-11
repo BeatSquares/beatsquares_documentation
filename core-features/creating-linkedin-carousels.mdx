@@ -1,0 +1,181 @@
+---
+title: "Creating LinkedIn Carousels"
+description: "Build a LinkedIn carousel from slides – edit each slide, generate the carousel PDF, then post or schedule it straight to LinkedIn."
+---
+
+LinkedIn carousels in BeatSquares are built from **slides** plus a **post caption**. Each slide is generated from your articles, events, or press releases; you edit the slides directly, generate a downloadable carousel PDF, and then either post it to LinkedIn immediately or schedule it for later.
+
+{/* TODO: Add an interactive Tango walkthrough embed here once recorded, matching the other format pages. */}
+
+<Note>
+  LinkedIn carousels can only be created inside a Square with the output format **LinkedIn**. If you don't have one yet, see [Creating Squares](/core-features/creating-squares).
+</Note>
+
+## Understanding slides and templates
+
+Your carousel follows a default **template** (also called a _blueprint_) that defines its structure – which slides appear, in what order, and how each one is filled. Your template is configured together with the BeatSquares team during onboarding.
+
+A carousel is made up of two kinds of segments:
+
+- **AI segments (slides)** – each AI segment generates **one slide** of the carousel. You select the content **strategy** for each AI segment, which determines how that slide is generated (for example a cover, a news slide, or an outro). A carousel needs **at least one** AI segment and can have as many as you like – one per slide.
+- **Overview segment (post caption)** – generates the post text that accompanies the carousel when it's posted to LinkedIn. Every Square has **exactly one** overview segment.
+
+<Note>
+  A LinkedIn Square always has **exactly one** overview segment (the post text) and **one or more** AI segments (the slides). Add another AI segment for every extra slide you want in the carousel.
+</Note>
+
+Each AI segment renders as a single slide with a headline, body text, and a background image. Its layout comes from a **slide template** – by default generated for you from the segment's content strategy, so you can start creating right away. If you want to design your own slide layout, see [Customizing your slide templates](#customizing-your-slide-templates) below.
+
+<Tip>
+  Want to change the structure of your carousel (add slides, change the order, adjust how a slide is generated)? Reach out to the BeatSquares team.
+</Tip>
+
+## 1. Connect your LinkedIn account
+
+Before you can post, your organization needs a connected LinkedIn account. This is a one-time setup.
+
+<Steps>
+  <Step title="Open LinkedIn settings">
+    Go to **Settings** and open the **LinkedIn** section. You can manage LinkedIn connections at both the organization and group level.
+  </Step>
+  <Step title="Connect an account">
+    Start the connection flow and authorize BeatSquares to publish on your behalf. Once authorized, the connected account appears in your settings.
+  </Step>
+  <Step title="Select the target account in your Square">
+    In your LinkedIn Square's settings, choose which connected account this carousel should be posted to.
+  </Step>
+</Steps>
+
+<Note>
+  You can build and generate a carousel before connecting an account, but **Post to LinkedIn** stays disabled until your organization is connected **and** a target account is selected for the Square.
+</Note>
+
+## 2. Create the carousel
+
+<Steps>
+  <Step title="Open your LinkedIn Square">
+    From the Dashboard, open the Square configured for LinkedIn output.
+  </Step>
+  <Step title="Create a new carousel">
+    Start a new carousel from the Square interface.
+  </Step>
+  <Step title="Name your carousel">
+    Enter a name. It's used to identify the carousel and as the document title on the posted PDF.
+  </Step>
+</Steps>
+
+## 3. Build each slide
+
+You work through the slides one at a time. The flow for each slide is the same: pick the content, generate it, review and edit, then verify.
+
+<Steps>
+  <Step title="Select content for the slide">
+    Choose the article, event, or press release the slide should be based on. Available content depends on the categories configured in your Square.
+  </Step>
+  <Step title="Generate the slide">
+    Generate the slide content. BeatSquares fills the slide's headline, body, and image from the selected content.
+  </Step>
+  <Step title="Edit directly on the slide">
+    Edit the text right on the slide preview – what you see is what gets rendered. Use the text formatting options to adjust the on-brand styling that your template allows.
+  </Step>
+  <Step title="Write the post caption">
+    Fill in the post caption segment – this is the text that appears alongside the carousel on LinkedIn.
+  </Step>
+  <Step title="Verify each slide">
+    When you're happy with a slide, verify it. Verifying signals that the slide is reviewed and ready.
+  </Step>
+</Steps>
+
+Repeat for each slide in your carousel.
+
+## 4. Generate the carousel
+
+Once your slides are ready, generate the carousel. BeatSquares renders every slide into a single, swipeable **carousel PDF**.
+
+<Steps>
+  <Step title="Generate the carousel">
+    Click **Generate carousel**. Your slides are combined and rendered into a carousel PDF. This runs in the background and can take a moment.
+  </Step>
+  <Step title="Download and check the PDF">
+    When it's ready, use **Download PDF** to open the rendered carousel and confirm it looks right before posting.
+  </Step>
+</Steps>
+
+<Note>
+  Generating the carousel does **not** post anything to LinkedIn – it only produces the PDF. Posting is a separate, deliberate step (see below).
+</Note>
+
+## 5. Post or schedule to LinkedIn
+
+<Steps>
+  <Step title="Post now or schedule">
+    Click **Post to LinkedIn** to publish immediately, or **Schedule** to post at a future time.
+  </Step>
+  <Step title="Track the status">
+    The carousel shows a delivery status: **Pending** (post-now, awaiting confirmation), **Scheduled** (accepted for a future time), or **Published** (live on LinkedIn). If something goes wrong, it shows **Failed** with a message, and you can post again.
+  </Step>
+</Steps>
+
+<Warning>
+  If you edit a slide after generating the carousel, you must **Generate carousel** again before posting. Posting stays disabled until the PDF matches your current slides, so what goes live always reflects your latest edits.
+</Warning>
+
+## Customizing your slide templates
+
+By default, each slide's layout is generated for you from its content strategy. If you want to design your own slide layout, you can author a custom **slide template** on the slide segment. Slide templates use the same structured, block-based editor as newsletters – see [Structured Templates](/core-features/structured-templates) for the full guide.
+
+The recommended pipeline for turning an existing raw Jinja/HTML layout into a clean structured slide template:
+
+<Steps>
+  <Step title="Reformat the raw template">
+    Run your raw Jinja/HTML through the **`reformat-jinja-template`** Claude skill first. It rewrites the markup so it converts cleanly into structured blocks instead of opaque raw fragments. Installation and usage are documented in the [skills repository](https://github.com/BeatSquares/skills/tree/main/reformat-jinja-template).
+  </Step>
+  <Step title="Paste it into the Slide Template field">
+    In the Square's blueprint, open the slide segment's **Slide Template** field and switch to the **Raw Jinja** tab. Paste the reformatted template.
+  </Step>
+  <Step title="Convert to structured">
+    Click **Convert to structured**. The editor breaks the template into structured blocks and shows how many fragments (if any) were _kept as raw_. Aim for zero – reformat again if the count is higher than expected.
+  </Step>
+  <Step title="Refine and save">
+    Review the blocks, map each variable binding, adjust styling, and save the blueprint. See [Structured Templates](/core-features/structured-templates) for how blocks, bindings, and styles work.
+  </Step>
+</Steps>
+
+<Tip>
+  New to structured templates? Start with [Structured Templates](/core-features/structured-templates) to understand blocks, variable bindings, and styling before authoring your own slide layout.
+</Tip>
+
+## Tips
+
+- **Connect LinkedIn early** – posting stays disabled until your account is connected and a target account is selected, so set this up before your first carousel.
+- **Always check the PDF** – download and review the carousel before posting; the PDF is exactly what your audience will swipe through.
+- **Re-generate after edits** – any slide change requires generating the carousel again before you can post.
+- **Start with the default layout** – the auto-generated slide template is enough to publish; only author a custom template when you need a specific design.
+
+## Troubleshooting
+
+**Post to LinkedIn is disabled?** Check three things: your organization has a connected LinkedIn account, a target account is selected in the Square, and you've generated the carousel PDF (and re-generated it since your last slide edit).
+
+**The carousel didn't post as a swipeable document?** Make sure you generated the carousel PDF before posting – posting delivers the rendered PDF, not the individual slides.
+
+**A slide won't bind or shows empty fields?** The slide's content comes from its strategy. Reach out to the BeatSquares team if a slide's fields aren't filling in.
+
+## What's next?
+
+<CardGroup cols={2}>
+  <Card title="Structured Templates" icon="table-cells" href="/core-features/structured-templates">
+    Author custom slide layouts with structured blocks.
+  </Card>
+
+  <Card title="Creating Newsletters" icon="envelope" href="/core-features/creating-newsletters">
+    Build a newsletter from articles.
+  </Card>
+
+  <Card title="Creating WhatsApp Messages" icon="comment" href="/core-features/creating-whatsapp-messages">
+    Generate WhatsApp updates from a single article.
+  </Card>
+
+  <Card title="Creating Squares" icon="plus" href="/core-features/creating-squares">
+    Set up a new Square as a foundation.
+  </Card>
+</CardGroup>

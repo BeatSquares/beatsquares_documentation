@@ -48,6 +48,18 @@
                 "pages": [
                   "core-features/creating-whatsapp-messages"
                 ]
+              },
+              {
+                "group": "LinkedIn",
+                "pages": [
+                  "core-features/creating-linkedin-carousels"
+                ]
+              },
+              {
+                "group": "Templates",
+                "pages": [
+                  "core-features/structured-templates"
+                ]
               }
             ]
           },
