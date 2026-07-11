@@ -1,0 +1,135 @@
+---
+title: "Structured Templates"
+description: "Author schema-validated, block-based templates for newsletters and LinkedIn slides – convert from raw Jinja, bind variables, and control styling."
+---
+
+Structured templates let you build a template out of editable **blocks** instead of hand-writing Jinja and HTML. Each block – a heading, a paragraph, an image – is a real object you can edit, bind to a variable, and style, with a live preview that renders exactly what your audience will see.
+
+The same structured editor powers two places in BeatSquares:
+
+- **Newsletters** – the newsletter's overall layout (**Square → Newsletter → Template**).
+- **LinkedIn slides** – a slide's layout, via the **Slide Template** field on a slide segment (see [Creating LinkedIn Carousels](/core-features/creating-linkedin-carousels)).
+
+<Note>
+  Templates are configured with the BeatSquares team during onboarding. You'll usually start from an existing template and adjust it – you rarely build one from a blank canvas.
+</Note>
+
+## Structured vs. raw
+
+Every template can be viewed in two modes, shown as the **Structured** and **Raw Jinja** tabs:
+
+- **Structured** – the block-based document. This is the source of truth. Bindings are checked against your data's schema, each field can be styled on its own, blocks are edited individually, and the preview matches the final output.
+- **Raw Jinja** – the compiled Jinja template. After you save a structured document, this tab becomes read-only and simply shows the compiled result.
+
+Structured templates give you several things raw Jinja can't:
+
+- **Schema-validated bindings** – the editor checks every variable path against the real data and flags mistakes before you save.
+- **Per-field styling** – colors, fonts, and spacing are set per block, not buried in a stylesheet.
+- **Block-by-block editing** – reorder, duplicate, or change one block without touching the rest.
+- **Faithful preview** – the preview and the final render go through the same engine, so they can't diverge.
+- **On-brand controls** – styling stays within the bounds your template allows.
+
+## Opening the editor
+
+The editor has two working tabs, **Edit** and **Preview**:
+
+- **Edit** shows the block list (the "layers" panel) on the left and an inspector for the selected block on the right. Insert a block with the **+** control between rows.
+- **Preview** renders the template with sample data so you can see the result as you go.
+
+Two actions guard your work:
+
+- **Validate** checks every binding against the real schema. Binding errors must be fixed before you can save; warnings save fine but are worth a look.
+- **Save** runs the same validation, compiles the structured document to Jinja, and stores it. After a successful save, the **Raw Jinja** tab becomes read-only.
+
+## Block types
+
+Add blocks from the **+** insert menu. The available blocks:
+
+| Block | What it is |
+|-------|------------|
+| **Heading** | A heading (levels H1–H6). Holds a bound value, static text, or inline HTML. |
+| **Field** | A single inline value – typically one bound variable. |
+| **Paragraph** | A block of body text. Holds a binding, static text, or inline HTML. |
+| **Span** | An inline piece of text, the inline peer of a paragraph. |
+| **Text** | Plain static prose with no wrapper. Appears when imported content contains bare text; it's a source you can convert into another block, not something you add from the menu. |
+| **Image** | An image, from a bound source or a static URL. Can auto-hide when its bound source is empty. |
+| **Section** | A container that groups other blocks and can be styled and nested. |
+| **Table** | An email-style table of rows and cells for layout. |
+| **Segments** | The newsletter content loop that renders each segment. Its structure is fixed – you only control its styling. |
+| **Raw Jinja** | An escape hatch for markup the structured blocks can't express. It renders correctly but isn't block-editable or schema-checked, so use it as a last resort. |
+
+<Note>
+  The editor can also author **Repeat** (loop over a list) and **Conditional** (show only when a value is present) blocks. These are only added by hand in the editor – converting a raw template never produces them, so `{% for %}` and `{% if %}` in pasted markup fall back to raw blocks.
+</Note>
+
+You can change a text block's type in place from the inspector's **Type** dropdown – for example, switch a Heading to a Paragraph or a Field – and it keeps your content and styling where possible.
+
+## Binding variables
+
+Heading, Field, and Paragraph blocks (and a newsletter's document title) can bind to a variable instead of holding static text. In the inspector, set the **Source** to **Variable binding** and pick a path from the **Binding path** combobox – you can also type a path directly.
+
+You can set a **Default** for each binding – a fallback used when the value is empty. Rendering is strict: an unguarded missing value is an error, not a blank, so give a default to anything that might be empty.
+
+The variables you can bind to depend on where the template is used:
+
+- **Newsletters** bind to nested paths like `item.name`, `date`, and `item.segments`.
+- **LinkedIn slides** bind to **top-level** fields like `{{ headline }}`, `{{ body }}`, and `{{ image }}`, which come from the slide's content strategy.
+
+## Styling
+
+Every block has a collapsible **Styles** editor over a curated, safe set of CSS properties:
+
+- **Colors** – text color and background color, chosen with a color picker.
+- **Alignment and text** – text alignment, font weight, and font style.
+- **Fonts and spacing** – font family, font size, line height, padding, margin, border, border radius, and width.
+
+Styles are set per block, so two paragraphs can look different without any shared stylesheet.
+
+### Slide-specific styling
+
+Slide templates add two things on top of the base styling:
+
+- **Style controls** – a slide template can expose specific properties (such as size or color, or vertical/text alignment) as bounded editor controls, while locking the rest to keep every slide on-brand. A property with no control is locked to the value the template author set.
+- **Hard length caps** – text fields and repeated lists can carry a hard cap (`max_chars` / `max_items`). When content overruns the cap it's surfaced as a non-blocking warning – it's never silently truncated.
+
+## Converting a raw template
+
+You don't have to build from scratch. Paste an existing Jinja/HTML template into the **Raw Jinja** tab and click **Convert to structured** (also labelled **Convert from raw** when the structured document is still empty).
+
+The importer breaks the markup into structured blocks. Anything it can't model is kept **verbatim in a raw block** – lossless and still rendering, just not block-editable – and the editor tells you how many: **"Partially structured — N block(s) kept as raw"**, with an inline note on how to fix it. The convert toast reports the same count (`Converted — N fragment(s) kept as raw`).
+
+Your goal is **zero** raw fragments, so the whole template is editable and validated. Common causes of raw fallbacks are unsupported tags (`<section>`, `<ul>`, …), `{% if %}` / `{% for %}` logic, `<style>` blocks, and complex variable expressions.
+
+<Tip>
+  Before pasting, run your raw template through the **`reformat-jinja-template`** Claude skill. It rewrites the markup – preserving the design – so it converts with zero (or justified-minimum) raw fragments. Installation and usage are in the [skills repository](https://github.com/BeatSquares/skills/tree/main/reformat-jinja-template).
+</Tip>
+
+<Warning>
+  Converting replaces the current structured document. If you have unsaved structured edits, the editor asks you to confirm before converting. Saving on the **Raw Jinja** tab discards the structured version, so treat structured as the source of truth.
+</Warning>
+
+## Validate and save
+
+1. Fix any **binding errors** flagged by Validate – click an error to jump to the offending block.
+2. Review **warnings** – raw blocks and unchecked bindings save fine but are worth a second look.
+3. **Save** – the document is validated again, compiled to Jinja, and stored. The **Raw Jinja** tab now shows the read-only compiled output.
+
+## Best practices
+
+- **Aim for zero raw blocks** – reformat before converting so the whole template stays editable and validated.
+- **Give every binding a default** – rendering is strict, so a missing value without a default is an error.
+- **Keep styling in the block, not in raw HTML** – per-field styles are what make blocks independently editable.
+- **Use Raw Jinja sparingly** – it's a deliberate escape hatch, not a default; its bindings aren't schema-checked.
+- **Preview before saving** – the preview is the real render, so it catches problems early.
+
+## What's next?
+
+<CardGroup cols={2}>
+  <Card title="Creating LinkedIn Carousels" icon="linkedin" href="/core-features/creating-linkedin-carousels">
+    Author custom slide layouts for a LinkedIn carousel.
+  </Card>
+
+  <Card title="Creating Newsletters" icon="envelope" href="/core-features/creating-newsletters">
+    Build a newsletter that uses a structured template.
+  </Card>
+</CardGroup>
