@@ -10,6 +10,482 @@ rss: true
 
 ## Recent Updates
 
+<Update label="Version 1.42.0 - Curation suggestions shown to custo..." description="Released September 16, 2026">
+{/* pr:1499 */}
+
+**New Features**
+
+- **Curation suggestions are now visible to users in the interface, with PostHog feature flags active in testing and live environments (#1446, #1490, #1491)**
+- **Curation suggestions include proposal records and an application path (#1396)**
+- **Identify issues and generate a weekly curation report (#1395)**
+- **Create LinkedIn posts with text and a single image as a unified option (#1466)**
+- **Newsletter summaries are processed and integrated into strategies (#1458)**
+- **Regional event sources for Ostsee/Fehmarn are consolidated into four platforms instead of nineteen sites (#1423)**
+
+**Improvements**
+
+- **Spiders now efficiently read URLs from an index, speeding up the process (#1495)**
+- **Bookkeeping for ingested data is streamlined in `BeatsquaresSpider` (#1430)**
+- **Captions are now sourced directly from the picture's markup, thanks to updates in the WZ feed (#1439)**
+- **Email sources now specify the type of content they produce (#1418)**
+- **Gate A ensures consistent curation outputs (#1431)**
+- **Gate B manages case sets and allows prompt-change replays (#1457)**
+
+**Bug Fixes & Stability**
+
+- The strategy-builder connection remains active beyond the NAT gateway's 350-second timeout (#1493)
+- RSS deduplication now correctly recognizes stored content (#1404)
+- Press releases still convert to events even if source analysis is disabled (#1415)
+- Two unprotected writers to `Square.curation_config` are now secured (#1384)
+
+**Other Changes**
+
+- Deep review process restructured with a job matrix and no write token, and plans are computed by gates ([BEA-3598] #1416), with a history-blind evaluation harness ([BEA-3579] #1417) (#1403)
+- Deep review avoids hotfix duplicates and limits comment re-reviews (#1467)
+- The findings.json Edit rule is now fixed to the launch directory (#1442)
+- Review step 4 can now discard items, and severity levels have a minimum threshold (#1445)
+- Checks that measure nothing are now blockers (#1454)
+- Every escape-catalogue section now names its owning check (#1441)
+- A headless test-backfill pipeline is added in CI, along with podigee and WhatsApp tests (#1406, #1432, #1437, #1438, #1464, #1465, #1468, #1456, #1470, #1472)
+- Test-backfill improvements include two hardening PRs and catalogue-row checks (#1444, #1447, #1461)
+- e2e: MinIO is now sourced from quay.io, and image pulls are retried (#1482, #1486)
+- Chores: a new wait-what skill (#1433), and local Codex setup files are now ignored (#1484)
+
+</Update>
+
+<Update label="Version 1.41.6 - Hotfix" description="Released September 16, 2026">
+{/* pr:1492 */}
+
+**Bug Fixes & Stability**
+
+- Hotfix: The anchor curation task now has a 900-second limit before the Civey editorial brief is sent
+
+</Update>
+
+<Update label="Version 1.41.5 - Hotfix" description="Released September 16, 2026">
+{/* pr:1488 */}
+
+**Bug Fixes & Stability**
+
+- Hotfix: Articles are now sorted by date, ensuring undated ones still reach the anchor agent
+
+</Update>
+
+<Update label="Version 1.41.4 - Hotfix" description="Released September 15, 2026">
+{/* pr:1485 */}
+
+**Bug Fixes & Stability**
+
+- Hotfix: Newsletter issue summaries are processed and integrated into strategies upon intake
+
+</Update>
+
+<Update label="Version 1.41.3 - Hotfix" description="Released September 15, 2026">
+{/* pr:1489 */}
+
+**Bug Fixes & Stability**
+
+- Hotfix: Roundup articles are now dated using page metadata and JSON-LD, with a script to update undated ones
+
+</Update>
+
+<Update label="Version 1.41.2 - Hotfix" description="Released September 14, 2026">
+{/* pr:1483 */}
+
+**Bug Fixes & Stability**
+
+- Hotfix: The overview strategy now reads canvas siblings within their namespace
+
+</Update>
+
+<Update label="Version 1.41.1 - Hotfix" description="Released September 11, 2026">
+{/* pr:1463 */}
+
+**Bug Fixes & Stability**
+
+- Hotfix: Polls can now be found in the picker using their Civey number or link
+
+</Update>
+
+<Update label="Version 1.41.0 - Feature flags are evaluated through" description="Released September 7, 2026">
+{/* pr:1429 */}
+
+**New Features**
+
+- **Feature flags are now managed through PostHog, supporting trunk-based development**
+- **Curated segments are captured in real-time and linked to published content**
+- **Newsletter reports now confirm the actual list each send targets with Brevo**
+- **Only Admin and Super Admin can create Squares**
+- **The image picker now includes folders across Library, Upload, and URL tabs, supported by Vercel Blob prefixes**
+- **Inline elements are now editable blocks, and link destinations are validated**
+
+**Improvements**
+
+- **Outdated database indexes are removed, and article sort dates are updated to ensure proper sorting**
+- **A unified email-safety vocabulary provides consistent verdicts across channels**
+- **Articles, events, and press releases are rendered from backend templates**
+
+**Bug Fixes & Stability**
+
+- The sitemap importer now retains article images, and previously affected articles have been corrected
+- Blocks inserted in generated runs can be selected and removed
+
+**Other Changes**
+
+- Added test pipeline skills, backend test agents, and conventions
+- E2E specs now cover RER pillars, square-detail metrics, and per-format milestones
+- Canvas e2e suite expanded with 60 new scenarios, 10 phantom fixes, and cross-org tenancy coverage
+- Agents added for enhanced test generation
+- `/deep-review` now runs automatically in PR CI
+- A PR now reports when a deep review starts and ends
+- Review findings are categorized, and fixes are verified against claims
+
+</Update>
+
+<Update label="Version 1.40.3 - Hotfix" description="Released September 7, 2026">
+{/* pr:1424 */}
+
+**Bug Fixes & Stability**
+
+- Hotfix: The squares list now efficiently renders without reading every media item
+
+</Update>
+
+<Update label="Version 1.40.2 - Hotfix" description="Released September 7, 2026">
+{/* pr:1421 */}
+
+**Bug Fixes & Stability**
+
+- / BEA-3602 Hotfix: Prevent a single slow request from affecting the entire API by optimizing the article text search
+
+</Update>
+
+<Update label="Version 1.40.1 - Hotfix" description="Released September 4, 2026">
+{/* pr:1412 */}
+
+**Bug Fixes & Stability**
+
+- Hotfix: Ensure the derived script remains when a canvas segment is verified
+
+</Update>
+
+<Update label="Version 1.40.0 - A Variant may differ by" description="Released August 27, 2026">
+{/* pr:1387 */}
+
+**New Features**
+
+- **A Variant can now have different templates, offering multiple designs for a single content piece. Shared segments are managed on a Blueprint, and templates are promoted to the library when slots switch to shared mode. Newsletter rollout is controlled by `SHARED_SEGMENTS_ENABLED`, which is initially off. Decision recorded in ADR-0037**
+- **The image picker for articles now replaces the image-URL field with a gallery of tiles, allowing for easy image management and promotion to thumbnails**
+
+**Improvements**
+
+- **`MaxSegmentOptionsLength` and `MaxGeneratedSegmentOptionsLength` are now separate, allowing editors to store more Variants without affecting storage limits**
+- **Shared-segments Blueprints are now managed to prevent unnecessary creation, and sub-squares inherit shared segments from their parent**
+- **`ImageLibraryModal` now accurately reflects its context, and segments and AI Generate options are hidden when not applicable**
+
+**Bug Fixes & Stability**
+
+- Publishing now correctly uses the selected Variant's content, and the verify gate no longer misreads generated Variants. Promotion moves templates instead of copying them, preventing outdated templates from being used
+- Variant chips now correctly display their width, and unnamed chips no longer duplicate their position
+- Article publication dates are now stored as precise instants, preventing timezone errors
+- The add-content dialog's layout is improved for better usability
+- Image validation messages are now correctly displayed, and the image picker no longer loses selections
+
+**Other Changes**
+
+- ADR-0037 accepted; `docs/DOMAIN.md` clarifies **Variant** vs **Shared Segment** and editor-mode rules
+- `docs/DOMAIN.md` expanded with Blueprint rules and image handling notes
+- e2e coverage added for article form's image gallery, and SDK updated for `CreateContentImage` fields
+- e2e: `AddContentModalPage.goto()` now ensures the editor opens before proceeding
+- **No database migrations** in this release
+
+</Update>
+
+<Update label="Version 1.39.0 - Surface LinkedIn and Instagram acro..." description="Released August 25, 2026">
+{/* pr:1371 */}
+
+**New Features**
+
+- **LinkedIn and Instagram metrics are now visible in the analytics UI, with engagement rates sourced from Zernio and social posts showing time-to-publish metrics**
+- **Curation trace windows are now recorded for better configuration tracking**
+- **Table-of-contents entries can now be jump-links and editable simultaneously**
+- **The Return key now splits paragraphs correctly, and block insertions are reversible**
+- **Linked stylesheet fonts are resolved into slide themes for consistent PDF rendering**
+- **Template re-import costs are now reported before execution, and editable template shapes are noted**
+- **New sources added for Tempelhof-Schöneberg, Treptow-Köpenick, and Reinickendorf, with a shared Umweltkalender spider**
+- **Pankow sources are now fully onboarded with new spiders and feeds**
+- **Research agents now handle search failures more gracefully**
+
+**Improvements**
+
+- **Queries now only read necessary fields, improving efficiency**
+- **Post-merge frontend typechecks are now part of CI, reducing unnecessary builds**
+- **New skills added for test coverage analysis and backend mutation testing**
+- **Standards/spec reviews are now more accurately named and implemented**
+- **Canvas block insertion now has e2e acceptance tests**
+
+**Bug Fixes & Stability**
+
+- Editing ratios are now correctly bounded, and variant selection is no longer counted as editing
+- Squares now load more reliably, and failed analytics reads are clearly reported
+- Channels without measurements no longer report incorrect Reach metrics
+- Campaigns now report real numbers, and silent failures are addressed
+- Spider triage improvements prevent unnecessary refetching and ensure deterministic link discovery
+- Beanie is initialized once per worker, improving stability
+
+**Other Changes**
+
+- Article intake processes are now more clearly defined and located
+- Three canvas specs are parked with reasons provided
+
+</Update>
+
+<Update label="Version 1.38.3 - Hotfix" description="Released August 19, 2026">
+{/* pr:1340 */}
+
+**Bug Fixes & Stability**
+
+- Hotfix: The canvas image picker now offers the segment's own images and AI-generated options
+
+</Update>
+
+<Update label="Version 1.38.2 - Hotfix" description="Released August 13, 2026">
+{/* pr:1314 */}
+
+**Bug Fixes & Stability**
+
+- Hotfix: The strategy namespace is restored in the overview sibling context
+
+</Update>
+
+<Update label="Version 1.38.1 - Hotfix" description="Released August 12, 2026">
+{/* pr:1311 */}
+
+**Bug Fixes & Stability**
+
+- Hotfix: Convert segments with strategy namespaces and provide useful reports for unknown fields
+
+</Update>
+
+<Update label="Version 1.38.0 - Canvas editor: insert blocks into" description="Released August 12, 2026">
+{/* pr:1308 */}
+
+**New Features**
+
+- **Canvas editor now allows block insertion into any segment using a per-square vocabulary**
+- **Access every position and element within a segment using the canvas editor**
+- **Added the visitBerlin Pankow event calendar with event-specific dates**
+- **Track which strategy run produced each generated segment**
+- **Edit and mark generated body paragraphs in the canvas editor**
+- **Bold styling now applies to block-level elements in the canvas**
+
+**Improvements**
+
+- **Reduced PR pipeline time with faster frontend builds and 4-way e2e sharding**
+- **Expanded e2e coverage for Instagram Tiles, including publishing and tile-editor scenarios**
+- **Integration tests can now target specific subsets of the suite**
+- **Vercel builds are optimized to prevent container overflow, and source maps are retained on staging**
+- **Test images now have a build context that includes tests**
+- **Feature branches are no longer built on Vercel**
+- **e2e images now use zstd layer compression**
+- **Integration stack now supports local template-asset extraction**
+- **Markdown-only PRs are now skipped in CI**
+- **Fixed 30 existing backend test failures on main**
+- **A fake WAHA is added for end-to-end WhatsApp testing**
+- **Frontend unit tests now run in CI, with checks named for clarity**
+- **Release fails if Vercel does not build the frontend**
+- **Reader now understands `inline_marks` ahead of a migration**
+
+**Bug Fixes & Stability**
+
+- Fixed a 500 error in square-config due to missing imports, with CI now gating this bug class
+- e2e health checks now accurately report server health during initialization
+- RSS fields with more content are prioritized for inline image imports
+- Zernio webhook URLs are now only registered if reachable
+- Manual image styles are now derived instead of accumulated
+- Segments that have never been generated can now be deleted
+- Three unguarded WhatsApp paths are now secured, and untested domain seams are pinned
+- Curation tools now take organization scope from the run, not the model
+
+**Other Changes**
+
+- Macroscope PR review exclusions are added
+- /deep-review is reworked into a verified defect hunt
+- Spider-writing skills and scraped-item lifecycle documentation are now part of the repo
+
+</Update>
+
+<Update label="Version 1.37.1 - Hotfix" description="Released August 3, 2026">
+{/* pr:1255 */}
+
+**Bug Fixes & Stability**
+
+- Route WhatsApp messages to the published view based on the wasSent status
+
+</Update>
+
+<Update label="Version 1.37.0 - Bug Fixes" description="Released August 3, 2026">
+{/* pr:1253 */}
+
+**Bug Fixes & Stability**
+
+- Fixes blocks by collapsing them into the already rendered slot, ensuring no changes to output as dropped values never reached newsletters
+- 46 documents affected: 5 squares, 41 media items, with exact counts. The `20260722120000` block-id backfill parses every square with a `format_config` and every media item with segments
+- Analytics scans now tolerate malformed media-item documents and report skipped/total with failing fields
+- Production panel hides on opt-out and unsticks after failed fetches
+- Load-time layout jump is removed by prefetching config and grid, with placeholder geometry sized from real measurements
+- Analytics cards now align with the media-item list and header
+- `isFormatEnabled` now only answers settings questions, with channel-config requirements moved to necessary components
+- Duplicate WhatsApp production panel removed, and seeder cache-invalidation fixed
+- Idempotent: blocks with one content slot remain unchanged, ensuring re-runs and unaffected documents are no-ops. Safe if data was repaired out-of-band, reporting zeros if so
+- Logs every document id it touches and which slot it kept and dropped
+- Rollback is a no-op: dropped slots never rendered, restoring them would reproduce the failure
+- **BEA-3264 needs forward-porting to `main`** — branched off `staging` during the incident, `main` lacks it and will regress on the next release train
+- **BEA-3268** — repaired documents lack persistent block ids from `20260722120000`; migration is recorded as applied and won't re-run for them. Blocked by this release
+- **BEA-3267** — square detail page renders every fetch failure as "Square not found," causing misdiagnosis as missing record rather than a 500
+
+</Update>
+
+<Update label="Version 1.36.0 - ADRs for type placement, tile" description="Released August 3, 2026">
+{/* pr:1250 */}
+
+**New Features**
+
+- **ADRs for type placement, tile rendering, and ratio ownership**
+- **Backend width — ratio chain, full publish gate, capabilities contract + SDK**
+- **Instagram delivery on a shared social delivery service, plus publish endpoints**
+- **Capability-driven tile editor with caption and first comment**
+- **Publish screen generalized across Zernio platforms**
+- **Reference 1:1 tile template, slide-scoped `supported_ratios`, and a backfill onto Instagram segment blueprints**
+- **Zernio Instagram connection settings + e2e coverage**
+- **Rendered tile JPEGs shown in the publish preview**
+- **Structured AST foundations — table descent, rich text, href safety**
+- **Model-authoritative save contract (`editor_mode`, `derive_script`, fail-closed validation)**
+- **Editable per-segment canvas, shared draft lifecycle, rich-text marks**
+- **Static text editable and styleable; validation-UX cleanup**
+- **Image Slot — binding, static default, editor replace**
+- **Canvas fidelity — union round-trip, per-anchor fallback, shell CSS, always-on editing**
+- **Working canvas for intro/outro segments**
+- **Link editing, image delete, and a truthful template-field vocabulary**
+- **Structured-template import fixes, lenient preview, and a Reformat action**
+- **ListBlock / ListItemBlock decomposition instead of raw fallback**
+- **Inline-formatted text structured into runs (backend)**
+- **Block-level `<a>` imported into LinkBlock**
+- **Inline rich-text (bold/italic) editing in the block inspector**
+- **`{% if %}` / `{% for %}` imported instead of raw-falling-back**
+- **Email-safe Style Catalog — §A controls, §B emission rules**
+- **Template authoring UX — bounded pickers, readiness, bulk convert**
+- **Bind-time field offering driven by the template, not the strategy input schema**
+- **Strategy default templates healed into the vocabulary their fields use**
+- **Production-telemetry frontend — item panel + LiveOpsBar**
+- **Read API + derived indices (RER pillars, trend, milestones) with materialized production telemetry**
+- **Analytics frontend — RER pillars, card KPIs, item performance, milestones, manual revenue/milestone config**
+- **LinkedIn/Zernio metrics — client reads, adapter, poller**
+- **Source types — all-types UI with per-square binding**
+- **Google Sheet source creation made generic (decoupled from the Civey ZdT parser)**
+- **Civey Random Polls sheet importer (`random_polls` consumer)**
+- **visitBerlin ChaWi and Kulturring Berlin event spiders**
+- **`brevo_config.list_id` sourced from a Square-level contact-list picker**
+
+**Bug Fixes & Stability**
+
+- Instagram publish view — resolved stuck generation toast and removed tile font flash
+- Fixed invisible profile dropdown trigger in the header
+- `script_changelog` snapshots paired per generation cycle
+- Reachable background image — deep-click cycling, Background button, layer labels, thumbnail sync
+- LiveOpsBar now served with its data instead of a skeleton
+- Data-source picker routed at an Admin-readable endpoint
+- Deactivated sources now shown as deactivated in the square Sources tab
+- Blueprint validation errors are now readable and locatable
+
+</Update>
+
+<Update label="Version 1.35.0 - Newsletter analytics: Brevo metrics..." description="Released July 20, 2026">
+{/* pr:1167 */}
+
+**New Features**
+
+- **Newsletter analytics: Brevo metrics adapter and poller, now active in testing environments**
+- **Source and URL filters available across all content picker tabs**
+- **Picker Source filter now specific to each tab's entity type**
+- **Newsletter overview generation from finalized segments, with subject and preview text sent to Brevo as is**
+- **New `link_roundup` crawler data source with staff UI, error reporting, retries, teaser detection, and hub change-detection**
+- **Tagesspiegel Square spiders for Marzahn-Hellersdorf and Steglitz-Zehlendorf; RSS content sources can now select content type and preserve event dates**
+- **Blueprints now have central save with full unsaved-changes guard (autosave removed), and new segments scroll into view**
+- **LinkedIn slide template pipeline now has test coverage (backend integration chain + e2e specs)**
+
+**Improvements**
+
+- **Analytics: observation instant now separate from dedupe bucket, with old contract preserved on downgrade**
+- **Summary response models and Mongo projections added for list endpoints**
+- **Stale squares list now refetched when the switcher opens, with refetch opt-out limited to the switcher**
+- **`source_url` serialization alias removed, frontend field renamed to `url`**
+- **e2e CI redesigned with shared GHCR cache, conditional builds, 2-shard tests, persisted Next.js incremental cache**
+
+**Bug Fixes & Stability**
+
+- Cron timezone unified to Europe/Berlin, fixing DST spring-forward re-fire loop; hour-anchored jobs retimed to maintain local firing times
+- Square-level Brevo configuration no longer lost after sending
+- Slide render failures are now visible to users
+- Editor no longer remounts on slide save; discards are instant
+- Hydration mismatch, render loop, and layout shift fixed on square editor; DST-safe UTC formatting
+- LLM end time cleared when a feed publishes no end hour
+- Blueprints: empty static segments allowed; dirty-diff no longer triggered by server-computed fields or key ordering; buffer reconciles to server after save
+- Analytics poll bucket derived from captured instant
+- Staff organization jump-to list in header is now scrollable
+
+**Other Changes**
+
+- e2e image builds now based on divergence from `main` instead of PR base
+- Settings-driven CDN base-URL override for e2e fakes; fake-bunny service and read-only API/worker containers
+- Documentation and skills cleanup (issue tracker conventions, CLAUDE docs restructure, comment hygiene)
+
+</Update>
+
+<Update label="Version 1.34.0 - New Analytics domain: metric snapsh..." description="Released July 13, 2026">
+{/* pr:1130 */}
+
+**New Features**
+
+- **New Analytics domain: metric snapshots storage, provider registry, and app integration**
+- **Production telemetry now includes time-to-publish, edit ratio, and AI-trust metrics derived from script changelogs, with weekly org LiveOps averages**
+- **WhatsApp metrics via WAHA: followers and reactions polled every 15 minutes and stored consistently**
+- **Template Theme for LinkedIn carousels: themes and assets are extracted on save, uploaded to Bunny Storage, and injected once at render across editor, filmstrip, and PDF**
+- **Newsletter sends now confirmed back from Brevo, marking items as sent**
+- **, BEA-2956, BEA-2966] Image Library modal for newsletters: AI image generation for Civey polls with research grounding, Pexels search tab, upload/library split, and pixel-level image editing via feedback**
+- **WYSIWYG editing of LinkedIn slides directly on rendered preview, including static slide text**
+- **Content-picker filter bar with URL, Source, Category, and Edition filters, specific to the square's configured sources**
+- **Add segments to a media item directly from the blueprint via an inline inserter**
+
+**Improvements**
+
+- **Remaining Settings tabs (Brevo, General, Manual Styles) migrated to shared settings form hook**
+- **Faster template saves with upload dedup cache, keep-alive, and off-loop work, plus clearer preview render errors**
+- **Improved image handling: SSRF guard on feedback-edit fetches, Zod validation of image responses, atomic suggested-image writes, and scoped `next/image` allowlist**
+- **Raw-Jinja editors now have an inline "Show more" toggle**
+- **Publisher thumbnails from external hosts bypass Next.js image optimization**
+
+**Bug Fixes & Stability**
+
+- , BEA-2951] Slide structured data now flattened by declared output model key instead of a name allow-list
+- , BEA-2901] Stale `slide.*` bindings are now healed in variables, raw Jinja/HTML, and carousel PDF renderer, with a migration for existing documents
+- Selected variant remains in sync when a segment is saved directly
+- Cloudflare-hard spiders are now unblocked, closing the monitoring blind spot
+- Fixed a race condition that could dismiss the create-square dialog
+- GenAI generation state now persists after closing the picker
+- Adding a segment cancels pending schedules to prevent blank segment sends
+
+</Update>
+
+<Update label="Version 1.33.1 - Hotfix" description="Released July 9, 2026">
+{/* pr:1111 */}
+
+**Bug Fixes & Stability**
+
+- (hotfix): Ensure the selected variant remains in sync when saving a segment directly
+
+</Update>
+
 <Update label="Version 1.33.0 - Various" description="Released July 6, 2026">
 
 **New Features**
