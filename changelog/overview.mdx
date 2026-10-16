@@ -11,6 +11,33 @@ rss: true
 ## Recent Updates
 
 <Update label="October 16, 2026" description="Released October 16, 2026">
+{/* release:dbc4493e87e7 */}
+
+**New Features**
+
+- **Verification count in the newsletter editor**: The newsletter editor shows how many segments are verified, next to the actions.
+
+**Improvements**
+
+- **Actions stay in view**: The newsletter, podcast, WhatsApp, LinkedIn and Instagram editors share one action bar that stays at the bottom of the screen while you scroll.
+- **Back to editing**: "Edit Script" on a published newsletter or podcast is now "Back to editing", and the newsletter and podcast editors close with the ✕ instead of a Cancel button.
+- **Disabled actions say why**: Every disabled WhatsApp action, and Generate post on a LinkedIn carousel with no slides, explains in its tooltip why it is unavailable.
+- **Notifications clear of the actions**: On desktop, notifications appear above the action bar instead of covering it.
+
+**Bug Fixes & Stability**
+
+- **No duplicate social posts**: Posting a LinkedIn or Instagram post again after a slow or lost attempt no longer publishes it twice, and the error says for how many hours posting again stays safe.
+- **Failed posts show when they failed**: The Failed label on a LinkedIn or Instagram post shows the time it failed.
+- **Safe Back to editing while sending**: "Back to editing" waits until a LinkedIn or Instagram post has finished sending, and asks first when the last attempt may already be live.
+- **Carousel fades on LinkedIn**: Fades and gradients in a carousel appear on LinkedIn the way they do in the editor, instead of disappearing or turning into hard bands.
+- **Failed segments show as failed**: A segment whose script cannot be rendered during generation now shows an error instead of being marked generated with stale or empty text.
+- **No fallback carousel layout**: A carousel with a slide that cannot be rendered is refused at publish instead of going out in a different layout.
+- **Branded intros and outros**: Generated intros and outros in newsletters now use the brand colour and the Square's link style.
+- **Instagram tiles render as previewed**: A tile whose template asks for content the post does not have now renders as it does in the preview instead of failing.
+
+</Update>
+
+<Update label="October 16, 2026" description="Released October 16, 2026">
 {/* release:51ab959843f3 */}
 
 **Improvements**
