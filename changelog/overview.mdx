@@ -10,6 +10,31 @@ rss: true
 
 ## Recent Updates
 
+<Update label="October 19, 2026" description="Released October 19, 2026">
+{/* release:5fc442522a86 */}
+
+**Improvements**
+
+- **Press-release suggestions arrive through the day**: WhatsApp Squares get a suggestion as soon as a recommended press release arrives, built by the Blueprint that reacts to it, instead of up to three in one batch each morning.
+- **Faster Square page**: The Square page shows its content sooner, shifts less while it loads, and loads each channel's editor only when it is opened.
+- **Faster newsletter editing**: Saving, exiting and verifying a segment respond much faster on long newsletters.
+- **Consistent analytics numbers**: Analytics numbers on the Square page are always written in English style, such as 1,234 and 29.7K, whatever the browser's language.
+- **Calmer update checks**: Open tabs check for changes every 5 to 10 seconds instead of every 3, so a colleague's edit can take up to about 10 seconds to appear.
+- **Verification follows real changes**: Inserting, moving or deleting a canvas block and swapping content now unverify a segment, while a save that changes nothing keeps it verified.
+- **Changed WhatsApp messages stop their schedule**: Any change to a scheduled WhatsApp message, including a content swap, cancels its schedule, and an edit while the message is being sent is refused.
+- **No sign-off during generation**: A segment that is still being generated can no longer be verified.
+- **Slide script warnings**: When a slide keeps its old script after a reorder, delete, restore or repeat, the slide editor shows a warning explaining why.
+
+**Bug Fixes & Stability**
+
+- **WhatsApp posts go out once**: Send now refuses a post that was already sent or is being sent, and a schedule that is already sending can no longer be cancelled or changed.
+- **Failed sends read as failed**: A WhatsApp post whose Send now failed shows "Failed" with its error, and scheduling it again sends it.
+- **Live social posts stay recorded**: Going back to editing a LinkedIn or Instagram post that has just gone live records it as posted, so it can no longer be deleted or posted a second time.
+- **Refused actions explain themselves**: A refused segment repeat or a failed save of a script, LinkedIn post text or Instagram first comment now shows its reason instead of looking like it worked.
+- **Theme fonts on the slide canvas**: The slide editor draws carousels in the Template Theme's fonts, matching the Carousel PDF, also for slide templates without a shell.
+
+</Update>
+
 <Update label="October 16, 2026" description="Released October 16, 2026">
 {/* release:dbc4493e87e7 */}
 
