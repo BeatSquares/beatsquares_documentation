@@ -10,6 +10,234 @@ rss: true
 
 ## Recent Updates
 
+<Update label="October 23, 2026" description="Released October 23, 2026">
+{/* release:a61b4fd773ac */}
+
+**New Features**
+
+- **Emoji picker for WhatsApp**: Insert emoji from a picker in a WhatsApp message and in every poll field, right where the cursor is.
+- **Link tracking for LinkedIn posts**: Admins set link parameters on a LinkedIn Square, and every link in a post to one of its own articles carries them, the article's external ID included.
+- **Article external ID in newsletter templates**: Newsletter templates can insert the external ID of each article.
+- **Press releases from sitemaps**: A sitemap source can now bring in press releases, so a newsroom without an RSS feed can be added as a source.
+
+**Improvements**
+
+- **LinkedIn Square settings for Admins**: Admins can open a LinkedIn Square's settings, its owners included, as they can for newsletter Squares.
+
+**Bug Fixes & Stability**
+
+- **An emoji counts as one character**: WhatsApp messages and poll answers full of emoji are no longer refused at about half their allowed length.
+- **Country flags on Windows**: Flag emoji show as flags rather than letters on Windows.
+- **Typing after Save is kept**: In the LinkedIn and Instagram post editor, text typed right after a Save is no longer overwritten.
+- **Roundup stories read correctly**: When a newsletter roundup is read as a source, the related-link bullets under a story are no longer picked up as stories of their own.
+- **Search text stays clear of the icon**: In the Add content picker, typed search text no longer slides under the search icon.
+
+</Update>
+
+<Update label="October 22, 2026" description="Released October 22, 2026">
+{/* release:830c88521b9f */}
+
+**New Features**
+
+- **Add Squares to a scheduled WhatsApp post**: A scheduled post, or a copy of it, can be cross-posted to more Squares, and Squares that already have the post are shown ticked and locked so no channel gets it twice.
+- **Post to your own LinkedIn profile**: Journalists connect their own LinkedIn profile from inside their Personal Square, and only that Square can post to it.
+- **LinkedIn status on Personal Square cards**: Admins see on each Personal Square card whether its LinkedIn is connected, needs reconnecting or is not connected, and the card updates without a reload.
+
+**Improvements**
+
+- **Reconnect offered right away**: When all of a journalist's LinkedIn profiles have expired, their Personal Square offers Reconnect at once, without first picking the expired account.
+
+**Bug Fixes & Stability**
+
+- **Failed WhatsApp sends stay on record**: A WhatsApp post whose send failed after it may already have reached the channel can no longer be deleted.
+
+</Update>
+
+<Update label="October 21, 2026" description="Released October 21, 2026">
+{/* release:4663c1ecac11 */}
+
+**New Features**
+
+- **Square owners and Personal Squares**: A Square can now have owners, chosen when it is created or on its new Owners tab, and only they publish its media items, while a Personal Square or an Organization Square with owners is visible only to Admins and its owners.
+- **Change a source's content type**: Admins can change the content type of an RSS or sitemap source in Settings → Sources, and the source collects its content again under the new type.
+
+**Improvements**
+
+- **Compact template warnings**: Warnings on the slide and newsletter canvas sit in a small chip that shows only what the post's editor can fix, and the template editor lists its errors and warnings in toolbar chips that take you to the block concerned.
+- **Clearer template warnings**: Each warning now says what goes wrong in the post and what to do about it, including when a missing font will make generating a LinkedIn post fail.
+
+**Bug Fixes & Stability**
+
+- **Back to editing stays on the item**: Reopening a published newsletter or podcast for editing opens its editor in place instead of the Square's Media list.
+- **Smoother sign-in**: After signing in you see a spinner until the app opens instead of a brief error, and a failed sign-in now tells you why.
+
+</Update>
+
+<Update label="October 20, 2026" description="Released October 20, 2026">
+{/* release:5d5315a60753 */}
+
+**Improvements**
+
+- **A consistent look across the app**: Text, code, corners and text colors now follow the design system, while the newsletters, WhatsApp messages, LinkedIn posts and podcasts you send look exactly as before.
+
+**Bug Fixes & Stability**
+
+- **Your user list shows only your team**: The Users tab no longer lists support staff who have opened your organization.
+
+</Update>
+
+<Update label="October 19, 2026" description="Released October 19, 2026">
+{/* release:5fc442522a86 */}
+
+**Improvements**
+
+- **Press-release suggestions arrive through the day**: WhatsApp Squares get a suggestion as soon as a recommended press release arrives, built by the Blueprint that reacts to it, instead of up to three in one batch each morning.
+- **Faster Square page**: The Square page shows its content sooner, shifts less while it loads, and loads each channel's editor only when it is opened.
+- **Faster newsletter editing**: Saving, exiting and verifying a segment respond much faster on long newsletters.
+- **Consistent analytics numbers**: Analytics numbers on the Square page are always written in English style, such as 1,234 and 29.7K, whatever the browser's language.
+- **Calmer update checks**: Open tabs check for changes every 5 to 10 seconds instead of every 3, so a colleague's edit can take up to about 10 seconds to appear.
+- **Verification follows real changes**: Inserting, moving or deleting a canvas block and swapping content now unverify a segment, while a save that changes nothing keeps it verified.
+- **Changed WhatsApp messages stop their schedule**: Any change to a scheduled WhatsApp message, including a content swap, cancels its schedule, and an edit while the message is being sent is refused.
+- **No sign-off during generation**: A segment that is still being generated can no longer be verified.
+- **Slide script warnings**: When a slide keeps its old script after a reorder, delete, restore or repeat, the slide editor shows a warning explaining why.
+
+**Bug Fixes & Stability**
+
+- **WhatsApp posts go out once**: Send now refuses a post that was already sent or is being sent, and a schedule that is already sending can no longer be cancelled or changed.
+- **Failed sends read as failed**: A WhatsApp post whose Send now failed shows "Failed" with its error, and scheduling it again sends it.
+- **Live social posts stay recorded**: Going back to editing a LinkedIn or Instagram post that has just gone live records it as posted, so it can no longer be deleted or posted a second time.
+- **Refused actions explain themselves**: A refused segment repeat or a failed save of a script, LinkedIn post text or Instagram first comment now shows its reason instead of looking like it worked.
+- **Theme fonts on the slide canvas**: The slide editor draws carousels in the Template Theme's fonts, matching the Carousel PDF, also for slide templates without a shell.
+
+</Update>
+
+<Update label="October 16, 2026" description="Released October 16, 2026">
+{/* release:dbc4493e87e7 */}
+
+**New Features**
+
+- **Verification count in the newsletter editor**: The newsletter editor shows how many segments are verified, next to the actions.
+
+**Improvements**
+
+- **Actions stay in view**: The newsletter, podcast, WhatsApp, LinkedIn and Instagram editors share one action bar that stays at the bottom of the screen while you scroll.
+- **Back to editing**: "Edit Script" on a published newsletter or podcast is now "Back to editing", and the newsletter and podcast editors close with the ✕ instead of a Cancel button.
+- **Disabled actions say why**: Every disabled WhatsApp action, and Generate post on a LinkedIn carousel with no slides, explains in its tooltip why it is unavailable.
+- **Notifications clear of the actions**: On desktop, notifications appear above the action bar instead of covering it.
+
+**Bug Fixes & Stability**
+
+- **No duplicate social posts**: Posting a LinkedIn or Instagram post again after a slow or lost attempt no longer publishes it twice, and the error says for how many hours posting again stays safe.
+- **Failed posts show when they failed**: The Failed label on a LinkedIn or Instagram post shows the time it failed.
+- **Safe Back to editing while sending**: "Back to editing" waits until a LinkedIn or Instagram post has finished sending, and asks first when the last attempt may already be live.
+- **Carousel fades on LinkedIn**: Fades and gradients in a carousel appear on LinkedIn the way they do in the editor, instead of disappearing or turning into hard bands.
+- **Failed segments show as failed**: A segment whose script cannot be rendered during generation now shows an error instead of being marked generated with stale or empty text.
+- **No fallback carousel layout**: A carousel with a slide that cannot be rendered is refused at publish instead of going out in a different layout.
+- **Branded intros and outros**: Generated intros and outros in newsletters now use the brand colour and the Square's link style.
+- **Instagram tiles render as previewed**: A tile whose template asks for content the post does not have now renders as it does in the preview instead of failing.
+
+</Update>
+
+<Update label="October 16, 2026" description="Released October 16, 2026">
+{/* release:51ab959843f3 */}
+
+**Improvements**
+
+- **AI images for every segment**: AI image generation in the image picker now works for any segment, with a neutral default style when no visual style has been set.
+- **Consistent podcast background**: Re-composing a podcast made before March now uses the same silent background as every podcast made since.
+
+**Bug Fixes & Stability**
+
+- **LinkedIn slide edits stick**: An edit to a slide's text stays in place after you reorder the slides or publish, instead of the generated text coming back.
+- **Verify all keeps the latest version**: Verifying all segments no longer copies an outdated version of a Variant that was being saved at the same moment, and leaves that segment unverified instead.
+
+</Update>
+
+<Update label="October 15, 2026" description="Released October 15, 2026">
+{/* release:d00b38fb32d1 */}
+
+**Improvements**
+
+- **Clearer API key scopes**: The Create API key dialog says what each scope can and cannot change, keeps Templates ticked while Newsletter authoring is ticked, and names what still needs a logged-in session.
+
+**Bug Fixes & Stability**
+
+- **Caret lands in a new block**: A block you just inserted on the newsletter canvas gets the caret, even when another save finishes first.
+
+</Update>
+
+<Update label="October 14, 2026" description="Released October 14, 2026">
+{/* release:9bb9381d6795 */}
+
+**Improvements**
+
+- **LinkedIn Blueprint rows say what they become**: Each row of a LinkedIn Blueprint shows whether it becomes an overview slide, the post text, a slide or nothing, and a new row asks which one it should be.
+- **Slide rows are edited through their layout**: A LinkedIn slide row can import Jinja into its layout or reset to the strategy's default, and you are asked before a strategy or Type change would leave the layout broken.
+- **Refused saves name the row**: When a LinkedIn Blueprint save is refused, the message names the Blueprint and the segment it is about.
+
+**Bug Fixes & Stability**
+
+- **A colleague's Blueprints save is kept**: Saving Blueprints no longer quietly overwrites a colleague's newer save; you see what would be undone and choose to load their version or save yours over it.
+- **Segment dividers survive a Blueprints save**: A podcast segment divider uploaded while a colleague had the Blueprints tab open is no longer lost when they save.
+- **Error messages say what went wrong**: Pushing a newsletter to your email platform, sending a test email, generating the newsletter overview and connecting LinkedIn or Instagram accounts now show the real reason when they fail.
+- **Text posts no longer carry slide HTML**: Switching a LinkedIn Blueprint to Text no longer turns a slide's HTML into the post text.
+
+</Update>
+
+<Update label="October 13, 2026" description="Released October 13, 2026">
+{/* release:a4a444a06147 */}
+
+**Bug Fixes & Stability**
+
+- **Personalization code is sent as written**: Code from your email service in a newsletter, comparisons included, now reaches the email service unchanged, and quote styles no longer curl the quotation marks inside it.
+- **Templates with personalization tags import whole**: A Template whose tags carry a default value now imports block by block instead of as one raw block, and saving accepts those tags.
+- **Image crops match on slides**: A cropped image on a LinkedIn slide now shows the same region on the canvas as in preview and in the PDF.
+
+</Update>
+
+<Update label="October 13, 2026" description="Released October 13, 2026">
+{/* release:3c7d4f46b8e0 */}
+
+**New Features**
+
+- **Overview slide for LinkedIn carousels**: In the Blueprint editor, a carousel's Overview row can be used either as the post text or as the overview slide that opens the carousel.
+
+**Improvements**
+
+- **One post text per carousel**: The Blueprint editor flags every extra Overview row used as post text, because only the top one is posted.
+- **More control over WordPress sources**: A WordPress source can leave out chosen categories and pick up posts that went live from a schedule.
+
+**Bug Fixes & Stability**
+
+- **Discard refreshes the slide canvas**: On the LinkedIn slide and Instagram tile canvas, Discard after a quick style change no longer leaves a stale page.
+- **Agenda dates stay put**: Matching keeps an occasion's date unless it was moved, corrected or runs longer, and an occasion that may fall today shows under "May be today" instead of Today.
+
+</Update>
+
+<Update label="October 12, 2026" description="Released October 12, 2026">
+{/* release:c1311a80b447 */}
+
+**Bug Fixes & Stability**
+
+- **No more segments stuck generating**: A segment whose generation is interrupted, or still generating after 15 minutes, now shows an error you can retry instead of staying stuck.
+
+</Update>
+
+<Update label="October 9, 2026" description="Released October 9, 2026">
+{/* release:21423988c98d */}
+
+**Improvements**
+
+- **Facts highlighted at the right place**: When the generation supplies a fact's exact position, the fact is highlighted at that place in the script and its source, not at the first text that happens to match.
+
+**Bug Fixes & Stability**
+
+- **Segment buttons stay on one row**: A segment with four or more variants offers them in a dropdown, so hovering a variant no longer pushes the segment's buttons onto a second row.
+- **A newsletter's own publisher is not a second source**: In the agenda, a publisher whose web address is its initials is recognised as the newsletter's own house and no longer counted as another outlet.
+- **API keys survive an organization switch**: A Square API key created by a BeatSquares administrator keeps working when that administrator switches to another organization.
+
+</Update>
+
 <Update label="Version 1.33.0 - Various" description="Released July 6, 2026">
 
 **New Features**
