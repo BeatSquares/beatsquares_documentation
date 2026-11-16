@@ -10,6 +10,27 @@ rss: true
 
 ## Recent Updates
 
+<Update label="November 16, 2026" description="Released November 16, 2026">
+{/* release:2ec4b78ccc29 */}
+
+**New Features**
+
+- **Carousels that draft themselves**: A LinkedIn carousel Blueprint can draft a carousel from each new article, or on a schedule that picks the articles matching a short brief, with up to five drafts per run.
+- **News pages as sources**: A news page without a feed can be added as a source by giving a pattern for its article links, and the preview shows which links match and which are left out.
+- **Article fields on slides**: Slide templates can show fields of the article a slide was built from, such as its image credit, and a new Condition block shows an item only when its field has a value.
+
+**Improvements**
+
+- **Facet filters per Blueprint source**: A Blueprint's sources settings now let you set facet filters for each source, and those filters also narrow the articles picked for the Blueprint automatically.
+
+**Bug Fixes & Stability**
+
+- **Slides no longer go blank**: A slide whose template refers to a field that is not available still shows on the canvas, with that field empty and a warning.
+- **Edited slide fields are kept**: An article field changed on a slide, such as the image credit, is saved and still there after a reload.
+- **Events dated in their title**: Events from a feed that gives the date only in each item's title are now picked up instead of being rejected.
+
+</Update>
+
 <Update label="November 13, 2026" description="Released November 13, 2026">
 {/* release:faf6be6256a5 */}
 
