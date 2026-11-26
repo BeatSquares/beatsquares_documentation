@@ -10,6 +10,31 @@ rss: true
 
 ## Recent Updates
 
+<Update label="November 26, 2026" description="Released November 26, 2026">
+{/* release:42ccca44ba74 */}
+
+**New Features**
+
+- **Open the source article**: In the guided social post editor, a new button opens the shown source in a new tab, and Change article and Full screen become icon buttons that name themselves on hover.
+
+**Improvements**
+
+- **A question before unsaved text is lost**: On the newsletter canvas, Escape and Exit ask before leaving a segment with unsaved text, and Escape leaves the segment first and closes the newsletter only on the next press.
+- **Lists match the text around them**: On a Square with no list style of its own, a new list takes the font, size, line height and colour of the Square's paragraphs, with a small gap between items.
+- **Insert menu stays in view**: The canvas insert menu opens above the + when there is no room below, and no longer sits behind the action bar or gets cut off.
+- **Added blocks stay in the text column**: In templates that set their text between empty side cells, a block added at the edge of the text goes into the text's column instead of running wider than it.
+- **Return in an empty list item**: Return in an empty item that is not the last one opens a new empty item below it.
+
+**Bug Fixes & Stability**
+
+- **Escape closes only the insert menu**: Escape with the insert menu open closes the menu, not the whole newsletter.
+- **A held Escape counts once**: Holding Escape down in a media item panel closes one layer instead of several in a row.
+- **Moved text is saved once**: Typing right after Return no longer saves the moved text in both blocks.
+- **No lost letters while a list item is removed**: Letters typed while Backspace removes an empty list item go into the item the cursor moves to.
+- **Tab stays in the list item**: Tab in a list item on the newsletter canvas no longer moves the cursor into another text or out of the canvas.
+
+</Update>
+
 <Update label="November 25, 2026" description="Released November 25, 2026">
 {/* release:9d1a4135b7d1 */}
 
